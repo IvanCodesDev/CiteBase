@@ -1,0 +1,501 @@
+{
+ "card-concept-card-claim": {
+  "aliases": [
+   "dual granularity",
+   "双粒度",
+   "claim"
+  ],
+  "claims": [
+   {
+    "id": "c1",
+    "status": "active",
+    "text": "知识单元是卡片与论断双粒度：卡片面向人的阅读与检索，论断面向机器的出处绑定、哈希核验、状态流转与矛盾裁决。",
+    "valid_from": null,
+    "valid_until": null
+   },
+   {
+    "id": "c2",
+    "status": "active",
+    "text": "每条论断绑定源位置与内容哈希，quote 时重读源文本并重算哈希，源片段被改动无法静默通过。",
+    "valid_from": null,
+    "valid_until": null
+   }
+  ],
+  "injection_risk": false,
+  "kind": "concept",
+  "name": "卡片与论断双粒度",
+  "path": "cards/concept/card-claim-granularity.md",
+  "status": "active",
+  "summary": "卡片面向人的阅读与检索；论断面向机器的出处绑定、哈希核验与状态流转。",
+  "tags": [
+   "架构"
+  ]
+ },
+ "card-concept-compile-first": {
+  "aliases": [
+   "compile-first",
+   "编译式"
+  ],
+  "claims": [
+   {
+    "id": "c1",
+    "status": "active",
+    "text": "Citebase 把理解前置到编译期，源材料先编译成结构化卡片，检索直接复用已蒸馏的结论。",
+    "valid_from": null,
+    "valid_until": null
+   },
+   {
+    "id": "c2",
+    "status": "active",
+    "text": "编译式知识库的交付物是长期维护的知识资产，卡片、论断、出处与审计记录都是 Git 里的文件。",
+    "valid_from": null,
+    "valid_until": null
+   }
+  ],
+  "injection_risk": false,
+  "kind": "concept",
+  "name": "编译式知识库",
+  "path": "cards/concept/compile-first.md",
+  "status": "active",
+  "summary": "把理解前置到编译期，检索复用已蒸馏结论；交付物是 Git 中可治理的长期知识资产。",
+  "tags": [
+   "架构"
+  ]
+ },
+ "card-concept-federation-lock": {
+  "aliases": [
+   "vault.lock",
+   "federation",
+   "联邦"
+  ],
+  "claims": [
+   {
+    "id": "c1",
+    "status": "active",
+    "text": "vault 依赖用 vault.lock 锁定（resolved_rev + 逐卡内容哈希），跨库卡片以 <vault-id>::<card-id> 标识。",
+    "valid_from": null,
+    "valid_until": null
+   },
+   {
+    "id": "c2",
+    "status": "active",
+    "text": "升级依赖是显式的 lock 文件变更，上游内容永不静默传播。",
+    "valid_from": null,
+    "valid_until": null
+   }
+  ],
+  "injection_risk": false,
+  "kind": "concept",
+  "name": "联邦依赖锁定",
+  "path": "cards/concept/federation-lock.md",
+  "status": "active",
+  "summary": "跨库依赖由 vault.lock 锁定版本与逐卡哈希；升级是显式变更，上游永不静默传播。",
+  "tags": [
+   "架构",
+   "治理"
+  ]
+ },
+ "card-concept-retrieval-funnel": {
+  "aliases": [
+   "retrieval funnel",
+   "检索协议"
+  ],
+  "claims": [
+   {
+    "id": "c1",
+    "status": "active",
+    "text": "检索拆成四个只读动作：search 返回候选卡摘要，read 读卡片全文，follow 沿受控关系跳邻居，quote 取论断源片段并核验哈希。",
+    "valid_from": null,
+    "valid_until": null
+   },
+   {
+    "id": "c2",
+    "status": "active",
+    "text": "检索默认排除 suspect / superseded / retired 状态的卡片；无命中时返回显式降级信号。",
+    "valid_from": null,
+    "valid_until": null
+   }
+  ],
+  "injection_risk": false,
+  "kind": "concept",
+  "name": "检索漏斗",
+  "path": "cards/concept/retrieval-funnel.md",
+  "status": "active",
+  "summary": "search → read → follow → quote 四个只读动作；无命中显式降级，不冒充库内知识。",
+  "tags": [
+   "检索"
+  ]
+ },
+ "card-concept-suspect-lifecycle": {
+  "aliases": [
+   "suspect",
+   "漂移治理",
+   "drift"
+  ],
+  "claims": [
+   {
+    "id": "c1",
+    "status": "active",
+    "text": "drift 聚合源修订变化、span 哈希不匹配与时效过期信号，只把受影响卡片标记为 suspect，从不自动改写或删除知识。",
+    "valid_from": null,
+    "valid_until": null
+   },
+   {
+    "id": "c2",
+    "status": "active",
+    "text": "机器提出并拦截，人来裁决：无出处论断被质量闸拒绝；矛盾、合并候选与 suspect 卡进入人工工作流。",
+    "valid_from": null,
+    "valid_until": null
+   },
+   {
+    "id": "c3",
+    "status": "active",
+    "text": "矛盾卡由编译器检测并记录，但哪一方正确永远由人工 resolve 裁决。",
+    "valid_from": null,
+    "valid_until": null
+   }
+  ],
+  "injection_risk": false,
+  "kind": "concept",
+  "name": "失效治理生命周期",
+  "path": "cards/concept/suspect-lifecycle.md",
+  "status": "active",
+  "summary": "drift 只把受影响卡标为 suspect 并退出检索；改写与裁决永远由人完成。",
+  "tags": [
+   "治理"
+  ]
+ },
+ "card-decision-docs-private": {
+  "aliases": [
+   "docs 私有",
+   "private docs"
+  ],
+  "claims": [
+   {
+    "id": "c1",
+    "status": "active",
+    "text": "docs/ 设计文档目录不进入公开仓库：.gitignore 排除并已取消跟踪，公开知识经自举 vault 以卡片形式发布。",
+    "valid_from": null,
+    "valid_until": null
+   },
+   {
+    "id": "c2",
+    "status": "active",
+    "text": "pre-commit 钩子拦截 docs/ 路径进入暂存区。",
+    "valid_from": null,
+    "valid_until": null
+   }
+  ],
+  "injection_risk": false,
+  "kind": "decision",
+  "name": "设计文档不随仓库公开",
+  "path": "cards/decision/docs-private.md",
+  "status": "active",
+  "summary": "docs/ 被 gitignore 且取消跟踪；公开知识经自举 vault 以卡片形式发布。",
+  "tags": [
+   "发布"
+  ]
+ },
+ "card-decision-git-source-of-truth": {
+  "aliases": [
+   "source of truth",
+   "事实源"
+  ],
+  "claims": [
+   {
+    "id": "c1",
+    "status": "active",
+    "text": "cards/ 是事实源并纳入版本控制，_index/ 是可随时重建的构建物，SQLite 仅作本地加速缓存。",
+    "valid_from": null,
+    "valid_until": null
+   },
+   {
+    "id": "c2",
+    "status": "active",
+    "text": "_index JSON 是提交物，一致性由 vault index --check 校验（L-IDX-1）。",
+    "valid_from": null,
+    "valid_until": null
+   }
+  ],
+  "injection_risk": false,
+  "kind": "decision",
+  "name": "Git 是唯一事实源",
+  "path": "cards/decision/git-source-of-truth.md",
+  "status": "active",
+  "summary": "cards/ 入版本控制；_index JSON 是可核验提交物，SQLite 只是本地缓存。",
+  "tags": [
+   "架构",
+   "治理"
+  ]
+ },
+ "card-decision-no-llm-kernel": {
+  "aliases": [
+   "no-LLM kernel",
+   "无 LLM 内核"
+  ],
+  "claims": [
+   {
+    "id": "c1",
+    "status": "active",
+    "text": "内核（lint / index / search / eval）全程不调用 LLM，compiler 是唯一会调用 LLM 的子包。",
+    "valid_from": null,
+    "valid_until": null
+   },
+   {
+    "id": "c2",
+    "status": "active",
+    "text": "mcp 子包只读，不得 import compiler；治理动词只在 CLI。",
+    "valid_from": null,
+    "valid_until": null
+   },
+   {
+    "id": "c3",
+    "status": "active",
+    "text": "内核零领域词：领域语义只准住在 Pack；垂直需求一律进 Pack / Adapter。",
+    "valid_from": null,
+    "valid_until": null
+   }
+  ],
+  "injection_risk": false,
+  "kind": "decision",
+  "name": "内核不调用 LLM",
+  "path": "cards/decision/no-llm-kernel.md",
+  "status": "active",
+  "summary": "lint / index / search / eval 全程无 LLM；compiler 是唯一调用点，mcp 只读。",
+  "tags": [
+   "架构"
+  ]
+ },
+ "card-method-commit-hooks": {
+  "aliases": [
+   "pre-commit",
+   "提交钩子"
+  ],
+  "claims": [
+   {
+    "id": "c1",
+    "status": "active",
+    "text": "公开提交的作者与提交者身份固定为 IvanCodesDev，由 pre-commit 钩子强制校验。",
+    "valid_from": null,
+    "valid_until": null
+   },
+   {
+    "id": "c2",
+    "status": "active",
+    "text": "pre-commit 钩子同时拦截 docs/、本地配置、缓存与生成物路径进入暂存区；版本化副本在 .githooks/。",
+    "valid_from": null,
+    "valid_until": null
+   }
+  ],
+  "injection_risk": false,
+  "kind": "method",
+  "name": "提交规范钩子",
+  "path": "cards/method/commit-hooks.md",
+  "status": "active",
+  "summary": "pre-commit 钩子强制提交身份并拦截 docs、缓存与本地配置入库。",
+  "tags": [
+   "工程实践",
+   "发布"
+  ]
+ },
+ "card-method-quality-gates-ci": {
+  "aliases": [
+   "quality gates",
+   "CI 质量门"
+  ],
+  "claims": [
+   {
+    "id": "c1",
+    "status": "active",
+    "text": "CI 在 ubuntu 与 windows 双平台跑六道门：ruff、mypy（strict）、pytest、示例库 lint、index、eval。",
+    "valid_from": null,
+    "valid_until": null
+   },
+   {
+    "id": "c2",
+    "status": "active",
+    "text": "vault 的 _index JSON 是提交物，一致性由 vault index --check 校验（L-IDX-1）；index.sqlite 是本地缓存不入库。",
+    "valid_from": null,
+    "valid_until": null
+   },
+   {
+    "id": "c3",
+    "status": "active",
+    "text": "golden set 命中率与首位命中率的评测验收线都不得低于 0.8。",
+    "valid_from": null,
+    "valid_until": null
+   }
+  ],
+  "injection_risk": false,
+  "kind": "method",
+  "name": "CI 六道质量门",
+  "path": "cards/method/quality-gates-ci.md",
+  "status": "active",
+  "summary": "双平台跑 ruff / mypy / pytest 加示例库 lint / index / eval；评测线 0.8。",
+  "tags": [
+   "工程实践",
+   "治理"
+  ]
+ },
+ "card-method-span-provenance": {
+  "aliases": [
+   "span hash",
+   "出处哈希",
+   "provenance"
+  ],
+  "claims": [
+   {
+    "id": "c1",
+    "status": "active",
+    "text": "每条论断绑定源位置（loc）与内容哈希（span_sha256），quote 时重读源文本并重算哈希。",
+    "valid_from": null,
+    "valid_until": null
+   },
+   {
+    "id": "c2",
+    "status": "active",
+    "text": "无出处论断会被质量闸拒绝。",
+    "valid_from": null,
+    "valid_until": null
+   }
+  ],
+  "injection_risk": false,
+  "kind": "method",
+  "name": "论断出处绑定与核验",
+  "path": "cards/method/span-provenance.md",
+  "status": "active",
+  "summary": "论断记录 loc 与 span_sha256；quote 重读源并重算哈希，改动无法静默通过。",
+  "tags": [
+   "治理"
+  ]
+ },
+ "card-method-windows-ci": {
+  "aliases": [
+   "PYTHONIOENCODING",
+   "pwsh",
+   "Windows CI"
+  ],
+  "claims": [
+   {
+    "id": "c1",
+    "status": "active",
+    "text": "CI 必须设置 PYTHONIOENCODING=utf-8，否则 Windows 运行器上的中文输出会因 GBK 控制台编码报 UnicodeEncodeError。",
+    "valid_from": null,
+    "valid_until": null
+   },
+   {
+    "id": "c2",
+    "status": "active",
+    "text": "GitHub Actions 的 Windows 默认 shell 是 pwsh，多行 run 不会因中间某行失败而中断，质量门必须拆成单命令 step。",
+    "valid_from": null,
+    "valid_until": null
+   },
+   {
+    "id": "c3",
+    "status": "active",
+    "text": "PowerShell 不支持 bash 的 heredoc 语法，多行提交信息要用 here-string 经 stdin 传给 git commit -F -。",
+    "valid_from": null,
+    "valid_until": null
+   },
+   {
+    "id": "c4",
+    "status": "active",
+    "text": "仓库统一用 .gitattributes 归一化行尾，Windows 工作区的 CRLF 在提交时转换为 LF。",
+    "valid_from": null,
+    "valid_until": null
+   }
+  ],
+  "injection_risk": false,
+  "kind": "method",
+  "name": "Windows 平台 CI 约定",
+  "path": "cards/method/windows-ci.md",
+  "status": "active",
+  "summary": "设 PYTHONIOENCODING=utf-8、质量门拆单命令 step、提交信息走 stdin、行尾统一 LF。",
+  "tags": [
+   "工程实践"
+  ]
+ },
+ "card-pitfall-stale-editable-install": {
+  "aliases": [
+   "editable install",
+   "ModuleNotFoundError"
+  ],
+  "claims": [
+   {
+    "id": "c1",
+    "status": "active",
+    "text": "整仓更名后，虚拟环境里的可编辑安装仍指向更名前的旧目录，导致 pytest 报 ModuleNotFoundError。",
+    "valid_from": null,
+    "valid_until": null
+   },
+   {
+    "id": "c2",
+    "status": "active",
+    "text": "可编辑安装在 site-packages 里写的是绝对路径，项目目录改名后必须重新安装一次才能生效。",
+    "valid_from": null,
+    "valid_until": null
+   },
+   {
+    "id": "c3",
+    "status": "active",
+    "text": "更名残留最容易漏在被 gitignore 的本地配置里，排查要用 --no-ignore 连同被忽略文件一起全库搜索。",
+    "valid_from": null,
+    "valid_until": null
+   }
+  ],
+  "injection_risk": false,
+  "kind": "pitfall",
+  "name": "更名后可编辑安装失效",
+  "path": "cards/pitfall/stale-editable-install.md",
+  "status": "active",
+  "summary": "项目目录改名后 venv 里的 editable 安装仍指旧绝对路径，导入随即报错。",
+  "tags": [
+   "工程实践"
+  ]
+ },
+ "card-pitfall-typestub-drift": {
+  "aliases": [
+   "type stub drift",
+   "unused-ignore"
+  ],
+  "claims": [
+   {
+    "id": "c1",
+    "status": "active",
+    "text": "CI 全新安装拿到 mcp 2.1.1 而本地是 2.0.0：mcp.server.fastmcp 模块存根重新出现但不再暴露 FastMCP 属性。",
+    "valid_from": null,
+    "valid_until": null
+   },
+   {
+    "id": "c2",
+    "status": "active",
+    "text": "挂在兼容回退 import 上的 type: ignore[import-not-found] 注释随依赖存根形态漂移，反过来变成 unused-ignore 报错。",
+    "valid_from": null,
+    "valid_until": null
+   },
+   {
+    "id": "c3",
+    "status": "active",
+    "text": "修复方式：主路径静态导入保持类型完整，旧版回退分支改用 importlib 动态导入 + cast，与类型存根彻底解耦。",
+    "valid_from": null,
+    "valid_until": null
+   },
+   {
+    "id": "c4",
+    "status": "active",
+    "text": "本地依赖版本要与 CI 全新安装对齐，否则本地绿、CI 红。",
+    "valid_from": null,
+    "valid_until": null
+   }
+  ],
+  "injection_risk": false,
+  "kind": "pitfall",
+  "name": "第三方类型存根漂移",
+  "path": "cards/pitfall/typestub-drift.md",
+  "status": "active",
+  "summary": "依赖新版类型存根增删符号，静态 import 加 ignore 注释的兼容分支在 CI 崩掉。",
+  "tags": [
+   "工程实践"
+  ]
+ }
+}

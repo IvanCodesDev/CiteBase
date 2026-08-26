@@ -275,7 +275,7 @@ core/citebase/              Python package and CLI
 spec/                        JSON Schemas for cards, packs, and execution events
 examples/generic-basics/     Single-vault starter example
 examples/federation/         Cross-vault dependency example
-docs/                        Architecture, governance, security, and ADRs
+examples/citebase-self/      Dogfood vault: the project's own engineering knowledge
 tests/                       Test suite
 ```
 
@@ -307,15 +307,13 @@ Before committing code, at minimum make sure the example vault passes lint, inde
 
 ## Further reading
 
-- [Architecture overview](./docs/architecture/system-overview.md) (Chinese)
-- [Object model](./docs/architecture/object-model.md) (Chinese)
-- [Compile pipeline](./docs/architecture/compile-pipeline.md) (Chinese)
-- [Retrieval protocol](./docs/architecture/retrieval-protocol.md) (Chinese)
-- [Storage and versioning](./docs/architecture/storage-and-versioning.md) (Chinese)
-- [Provenance and drift governance](./docs/governance/provenance-and-drift.md) (Chinese)
-- [Quality gates](./docs/governance/quality-gates.md) (Chinese)
-- [Threat model](./docs/security/threat-model.md) (Chinese)
-- [Architecture decision records](./docs/adr/) (Chinese)
+The project's design and engineering knowledge is dogfooded in [`examples/citebase-self/`](./examples/citebase-self/) — a Citebase vault about Citebase itself, covering the compile-first design, kernel boundaries, governance lifecycle, release conventions, and real pitfalls hit during development (card content is written in Chinese). Browse it with the retrieval funnel:
+
+```bash
+vault search "编译式" --vault examples/citebase-self
+vault read card-decision-no-llm-kernel --vault examples/citebase-self
+vault quote "card-pitfall-typestub-drift#c3" --vault examples/citebase-self
+```
 
 ## License
 

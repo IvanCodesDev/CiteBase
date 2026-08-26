@@ -275,7 +275,7 @@ core/citebase/              Python 包与 CLI
 spec/                        卡片、Pack、执行事件的 JSON Schema
 examples/generic-basics/     单库入门示例
 examples/federation/         跨库依赖示例
-docs/                        架构、治理、安全与 ADR
+examples/citebase-self/      自举库：本项目自身的工程知识
 tests/                       测试套件
 ```
 
@@ -307,15 +307,13 @@ python -m mypy
 
 ## 深入阅读
 
-- [架构总览](./docs/architecture/system-overview.md)
-- [对象模型](./docs/architecture/object-model.md)
-- [编译管线](./docs/architecture/compile-pipeline.md)
-- [检索协议](./docs/architecture/retrieval-protocol.md)
-- [存储与版本化](./docs/architecture/storage-and-versioning.md)
-- [出处与漂移治理](./docs/governance/provenance-and-drift.md)
-- [质量门](./docs/governance/quality-gates.md)
-- [威胁模型](./docs/security/threat-model.md)
-- [架构决策记录](./docs/adr/)
+本项目的设计与工程知识以「自举」方式沉淀在 [`examples/citebase-self/`](./examples/citebase-self/)——一个用 Citebase 管理 Citebase 自身知识的 vault，覆盖编译式设计、内核边界、治理生命周期、发布约定与开发中踩过的真实陷阱。用检索漏斗浏览：
+
+```bash
+vault search "编译式" --vault examples/citebase-self
+vault read card-decision-no-llm-kernel --vault examples/citebase-self
+vault quote "card-pitfall-typestub-drift#c3" --vault examples/citebase-self
+```
 
 ## License
 

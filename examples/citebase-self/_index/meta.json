@@ -1,0 +1,28 @@
+{
+ "avgdl": 157.285714,
+ "cards": 14,
+ "doclen": {
+  "card-concept-card-claim": 185,
+  "card-concept-compile-first": 159,
+  "card-concept-federation-lock": 128,
+  "card-concept-retrieval-funnel": 140,
+  "card-concept-suspect-lifecycle": 191,
+  "card-decision-docs-private": 140,
+  "card-decision-git-source-of-truth": 130,
+  "card-decision-no-llm-kernel": 126,
+  "card-method-commit-hooks": 139,
+  "card-method-quality-gates-ci": 147,
+  "card-method-span-provenance": 137,
+  "card-method-windows-ci": 177,
+  "card-pitfall-stale-editable-install": 191,
+  "card-pitfall-typestub-drift": 212
+ },
+ "field_weights": {
+  "aliases": 4,
+  "claims": 1,
+  "name": 4,
+  "summary": 2,
+  "tags": 3
+ },
+ "schema": "citebase-index/0.1"
+}

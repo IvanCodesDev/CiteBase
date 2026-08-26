@@ -13,7 +13,7 @@
 ## 校验模型
 
 - 卡片以 YAML frontmatter 书写，校验时解析为 JSON 后对 `card.schema.json` 验证；
-- schema 只管**结构**；跨对象一致性（source id 存在、span 哈希一致、谓词在 Pack 词表内、终态卡不被引用）由 lint 规则承担（见[质量门](../docs/governance/quality-gates.md)）——两层分工：schema 验形，lint 验义；
+- schema 只管**结构**；跨对象一致性（source id 存在、span 哈希一致、谓词在 Pack 词表内、终态卡不被引用）由 lint 规则承担（L-* 质量门规则，随 `vault lint` 执行）——两层分工：schema 验形，lint 验义；
 - `kind` 与 `links[].predicate` 的取值域来自启用的 Pack：schema 层只约束格式，词表校验在 lint 层完成（L-LINK-1）。
 
 ## 版本策略

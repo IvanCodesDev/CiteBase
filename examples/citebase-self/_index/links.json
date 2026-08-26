@@ -1,0 +1,174 @@
+{
+ "in": {
+  "card-concept-card-claim": [
+   {
+    "from": "card-concept-compile-first",
+    "predicate": "related_to"
+   },
+   {
+    "from": "card-method-span-provenance",
+    "predicate": "refines"
+   }
+  ],
+  "card-concept-compile-first": [
+   {
+    "from": "card-decision-no-llm-kernel",
+    "predicate": "related_to"
+   }
+  ],
+  "card-concept-retrieval-funnel": [
+   {
+    "from": "card-concept-suspect-lifecycle",
+    "predicate": "related_to"
+   }
+  ],
+  "card-concept-suspect-lifecycle": [
+   {
+    "from": "card-concept-retrieval-funnel",
+    "predicate": "related_to"
+   }
+  ],
+  "card-decision-docs-private": [
+   {
+    "from": "card-method-commit-hooks",
+    "predicate": "related_to"
+   }
+  ],
+  "card-decision-git-source-of-truth": [
+   {
+    "from": "card-concept-federation-lock",
+    "predicate": "related_to"
+   },
+   {
+    "from": "card-method-quality-gates-ci",
+    "predicate": "related_to"
+   }
+  ],
+  "card-method-commit-hooks": [
+   {
+    "from": "card-decision-docs-private",
+    "predicate": "related_to"
+   }
+  ],
+  "card-method-quality-gates-ci": [
+   {
+    "from": "card-decision-git-source-of-truth",
+    "predicate": "related_to"
+   },
+   {
+    "from": "card-method-windows-ci",
+    "predicate": "related_to"
+   },
+   {
+    "from": "card-pitfall-typestub-drift",
+    "predicate": "related_to"
+   }
+  ],
+  "card-method-span-provenance": [
+   {
+    "from": "card-concept-card-claim",
+    "predicate": "related_to"
+   }
+  ],
+  "card-pitfall-typestub-drift": [
+   {
+    "from": "card-method-quality-gates-ci",
+    "predicate": "pitfall"
+   },
+   {
+    "from": "card-pitfall-stale-editable-install",
+    "predicate": "related_to"
+   }
+  ]
+ },
+ "out": {
+  "card-concept-card-claim": [
+   {
+    "predicate": "related_to",
+    "to": "card-method-span-provenance"
+   }
+  ],
+  "card-concept-compile-first": [
+   {
+    "predicate": "related_to",
+    "to": "card-concept-card-claim"
+   }
+  ],
+  "card-concept-federation-lock": [
+   {
+    "predicate": "related_to",
+    "to": "card-decision-git-source-of-truth"
+   }
+  ],
+  "card-concept-retrieval-funnel": [
+   {
+    "predicate": "related_to",
+    "to": "card-concept-suspect-lifecycle"
+   }
+  ],
+  "card-concept-suspect-lifecycle": [
+   {
+    "predicate": "related_to",
+    "to": "card-concept-retrieval-funnel"
+   }
+  ],
+  "card-decision-docs-private": [
+   {
+    "predicate": "related_to",
+    "to": "card-method-commit-hooks"
+   }
+  ],
+  "card-decision-git-source-of-truth": [
+   {
+    "predicate": "related_to",
+    "to": "card-method-quality-gates-ci"
+   }
+  ],
+  "card-decision-no-llm-kernel": [
+   {
+    "predicate": "related_to",
+    "to": "card-concept-compile-first"
+   }
+  ],
+  "card-method-commit-hooks": [
+   {
+    "predicate": "related_to",
+    "to": "card-decision-docs-private"
+   }
+  ],
+  "card-method-quality-gates-ci": [
+   {
+    "predicate": "related_to",
+    "to": "card-decision-git-source-of-truth"
+   },
+   {
+    "predicate": "pitfall",
+    "to": "card-pitfall-typestub-drift"
+   }
+  ],
+  "card-method-span-provenance": [
+   {
+    "predicate": "refines",
+    "to": "card-concept-card-claim"
+   }
+  ],
+  "card-method-windows-ci": [
+   {
+    "predicate": "related_to",
+    "to": "card-method-quality-gates-ci"
+   }
+  ],
+  "card-pitfall-stale-editable-install": [
+   {
+    "predicate": "related_to",
+    "to": "card-pitfall-typestub-drift"
+   }
+  ],
+  "card-pitfall-typestub-drift": [
+   {
+    "predicate": "related_to",
+    "to": "card-method-quality-gates-ci"
+   }
+  ]
+ }
+}

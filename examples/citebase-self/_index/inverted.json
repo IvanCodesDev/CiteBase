@@ -1,0 +1,2735 @@
+{
+ "0.8": {
+  "card-method-quality-gates-ci": 3
+ },
+ "2.0.0": {
+  "card-pitfall-typestub-drift": 1
+ },
+ "2.1.1": {
+  "card-pitfall-typestub-drift": 1
+ },
+ "actions": {
+  "card-method-windows-ci": 1
+ },
+ "adapter": {
+  "card-decision-no-llm-kernel": 1
+ },
+ "bash": {
+  "card-method-windows-ci": 1
+ },
+ "card-id": {
+  "card-concept-federation-lock": 1
+ },
+ "cards": {
+  "card-decision-git-source-of-truth": 3
+ },
+ "cast": {
+  "card-pitfall-typestub-drift": 1
+ },
+ "check": {
+  "card-decision-git-source-of-truth": 1,
+  "card-method-quality-gates-ci": 1
+ },
+ "ci": {
+  "card-method-quality-gates-ci": 9,
+  "card-method-windows-ci": 9,
+  "card-pitfall-typestub-drift": 5
+ },
+ "citebase": {
+  "card-concept-compile-first": 1
+ },
+ "claim": {
+  "card-concept-card-claim": 4
+ },
+ "cli": {
+  "card-decision-no-llm-kernel": 1
+ },
+ "commit": {
+  "card-method-windows-ci": 1
+ },
+ "compile-first": {
+  "card-concept-compile-first": 4
+ },
+ "compiler": {
+  "card-decision-no-llm-kernel": 4
+ },
+ "crlf": {
+  "card-method-windows-ci": 1
+ },
+ "docs": {
+  "card-decision-docs-private": 12,
+  "card-method-commit-hooks": 3
+ },
+ "drift": {
+  "card-concept-suspect-lifecycle": 7,
+  "card-pitfall-typestub-drift": 4
+ },
+ "dual": {
+  "card-concept-card-claim": 4
+ },
+ "editable": {
+  "card-pitfall-stale-editable-install": 6
+ },
+ "eval": {
+  "card-decision-no-llm-kernel": 3,
+  "card-method-quality-gates-ci": 3
+ },
+ "f": {
+  "card-method-windows-ci": 1
+ },
+ "fastmcp": {
+  "card-pitfall-typestub-drift": 1
+ },
+ "federation": {
+  "card-concept-federation-lock": 4
+ },
+ "follow": {
+  "card-concept-retrieval-funnel": 3
+ },
+ "funnel": {
+  "card-concept-retrieval-funnel": 4
+ },
+ "gates": {
+  "card-method-quality-gates-ci": 4
+ },
+ "gbk": {
+  "card-method-windows-ci": 1
+ },
+ "git": {
+  "card-concept-compile-first": 3,
+  "card-decision-git-source-of-truth": 4,
+  "card-method-windows-ci": 1
+ },
+ "gitattributes": {
+  "card-method-windows-ci": 1
+ },
+ "githooks": {
+  "card-method-commit-hooks": 1
+ },
+ "github": {
+  "card-method-windows-ci": 1
+ },
+ "gitignore": {
+  "card-decision-docs-private": 3,
+  "card-pitfall-stale-editable-install": 1
+ },
+ "golden": {
+  "card-method-quality-gates-ci": 1
+ },
+ "granularity": {
+  "card-concept-card-claim": 4
+ },
+ "hash": {
+  "card-method-span-provenance": 4
+ },
+ "here-string": {
+  "card-method-windows-ci": 1
+ },
+ "heredoc": {
+  "card-method-windows-ci": 1
+ },
+ "ignore": {
+  "card-pitfall-typestub-drift": 3
+ },
+ "import": {
+  "card-decision-no-llm-kernel": 1,
+  "card-pitfall-typestub-drift": 3
+ },
+ "import-not-found": {
+  "card-pitfall-typestub-drift": 1
+ },
+ "importlib": {
+  "card-pitfall-typestub-drift": 1
+ },
+ "index": {
+  "card-decision-git-source-of-truth": 5,
+  "card-decision-no-llm-kernel": 3,
+  "card-method-quality-gates-ci": 5
+ },
+ "index.sqlite": {
+  "card-method-quality-gates-ci": 1
+ },
+ "install": {
+  "card-pitfall-stale-editable-install": 4
+ },
+ "ivancodesdev": {
+  "card-method-commit-hooks": 1
+ },
+ "json": {
+  "card-decision-git-source-of-truth": 3,
+  "card-method-quality-gates-ci": 1
+ },
+ "kernel": {
+  "card-decision-no-llm-kernel": 4
+ },
+ "l-idx-1": {
+  "card-decision-git-source-of-truth": 1,
+  "card-method-quality-gates-ci": 1
+ },
+ "lf": {
+  "card-method-windows-ci": 3
+ },
+ "lint": {
+  "card-decision-no-llm-kernel": 3,
+  "card-method-quality-gates-ci": 3
+ },
+ "llm": {
+  "card-decision-no-llm-kernel": 12
+ },
+ "loc": {
+  "card-method-span-provenance": 3
+ },
+ "lock": {
+  "card-concept-federation-lock": 1
+ },
+ "mcp": {
+  "card-decision-no-llm-kernel": 3,
+  "card-pitfall-typestub-drift": 1
+ },
+ "mcp.server.fastmcp": {
+  "card-pitfall-typestub-drift": 1
+ },
+ "modulenotfounderror": {
+  "card-pitfall-stale-editable-install": 5
+ },
+ "mypy": {
+  "card-method-quality-gates-ci": 3
+ },
+ "no-ignore": {
+  "card-pitfall-stale-editable-install": 1
+ },
+ "no-llm": {
+  "card-decision-no-llm-kernel": 4
+ },
+ "of": {
+  "card-decision-git-source-of-truth": 4
+ },
+ "pack": {
+  "card-decision-no-llm-kernel": 2
+ },
+ "powershell": {
+  "card-method-windows-ci": 1
+ },
+ "pre-commit": {
+  "card-decision-docs-private": 1,
+  "card-method-commit-hooks": 8
+ },
+ "private": {
+  "card-decision-docs-private": 4
+ },
+ "provenance": {
+  "card-method-span-provenance": 4
+ },
+ "pwsh": {
+  "card-method-windows-ci": 5
+ },
+ "pytest": {
+  "card-method-quality-gates-ci": 3,
+  "card-pitfall-stale-editable-install": 1
+ },
+ "pythonioencoding": {
+  "card-method-windows-ci": 7
+ },
+ "quality": {
+  "card-method-quality-gates-ci": 4
+ },
+ "quote": {
+  "card-concept-card-claim": 1,
+  "card-concept-retrieval-funnel": 3,
+  "card-method-span-provenance": 3
+ },
+ "read": {
+  "card-concept-retrieval-funnel": 3
+ },
+ "resolve": {
+  "card-concept-suspect-lifecycle": 1
+ },
+ "resolved_rev": {
+  "card-concept-federation-lock": 1
+ },
+ "retired": {
+  "card-concept-retrieval-funnel": 1
+ },
+ "retrieval": {
+  "card-concept-retrieval-funnel": 4
+ },
+ "ruff": {
+  "card-method-quality-gates-ci": 3
+ },
+ "run": {
+  "card-method-windows-ci": 1
+ },
+ "search": {
+  "card-concept-retrieval-funnel": 3,
+  "card-decision-no-llm-kernel": 3
+ },
+ "set": {
+  "card-method-quality-gates-ci": 1
+ },
+ "shell": {
+  "card-method-windows-ci": 1
+ },
+ "site-packages": {
+  "card-pitfall-stale-editable-install": 1
+ },
+ "source": {
+  "card-decision-git-source-of-truth": 4
+ },
+ "span": {
+  "card-concept-suspect-lifecycle": 1,
+  "card-method-span-provenance": 4
+ },
+ "span_sha256": {
+  "card-method-span-provenance": 3
+ },
+ "sqlite": {
+  "card-decision-git-source-of-truth": 3
+ },
+ "stdin": {
+  "card-method-windows-ci": 3
+ },
+ "step": {
+  "card-method-windows-ci": 3
+ },
+ "strict": {
+  "card-method-quality-gates-ci": 1
+ },
+ "stub": {
+  "card-pitfall-typestub-drift": 4
+ },
+ "superseded": {
+  "card-concept-retrieval-funnel": 1
+ },
+ "suspect": {
+  "card-concept-retrieval-funnel": 1,
+  "card-concept-suspect-lifecycle": 8
+ },
+ "truth": {
+  "card-decision-git-source-of-truth": 4
+ },
+ "type": {
+  "card-pitfall-typestub-drift": 5
+ },
+ "ubuntu": {
+  "card-method-quality-gates-ci": 1
+ },
+ "unicodeencodeerror": {
+  "card-method-windows-ci": 1
+ },
+ "unused-ignore": {
+  "card-pitfall-typestub-drift": 5
+ },
+ "utf-8": {
+  "card-method-windows-ci": 3
+ },
+ "vault": {
+  "card-concept-federation-lock": 1,
+  "card-decision-docs-private": 3,
+  "card-decision-git-source-of-truth": 1,
+  "card-method-quality-gates-ci": 2
+ },
+ "vault-id": {
+  "card-concept-federation-lock": 1
+ },
+ "vault.lock": {
+  "card-concept-federation-lock": 7
+ },
+ "venv": {
+  "card-pitfall-stale-editable-install": 2
+ },
+ "windows": {
+  "card-method-quality-gates-ci": 1,
+  "card-method-windows-ci": 11
+ },
+ "一事": {
+  "card-decision-git-source-of-truth": 4
+ },
+ "一会": {
+  "card-decision-no-llm-kernel": 1
+ },
+ "一化": {
+  "card-method-windows-ci": 1
+ },
+ "一律": {
+  "card-decision-no-llm-kernel": 1
+ },
+ "一方": {
+  "card-concept-suspect-lifecycle": 1
+ },
+ "一次": {
+  "card-pitfall-stale-editable-install": 1
+ },
+ "一用": {
+  "card-method-windows-ci": 1
+ },
+ "一致": {
+  "card-decision-git-source-of-truth": 1,
+  "card-method-quality-gates-ci": 1
+ },
+ "一调": {
+  "card-decision-no-llm-kernel": 2
+ },
+ "一起": {
+  "card-pitfall-stale-editable-install": 1
+ },
+ "三方": {
+  "card-pitfall-typestub-drift": 4
+ },
+ "上游": {
+  "card-concept-federation-lock": 3
+ },
+ "上的": {
+  "card-method-windows-ci": 1,
+  "card-pitfall-typestub-drift": 1
+ },
+ "不会": {
+  "card-method-windows-ci": 1
+ },
+ "不入": {
+  "card-method-quality-gates-ci": 1
+ },
+ "不再": {
+  "card-pitfall-typestub-drift": 1
+ },
+ "不冒": {
+  "card-concept-retrieval-funnel": 2
+ },
+ "不匹": {
+  "card-concept-suspect-lifecycle": 1
+ },
+ "不得": {
+  "card-decision-no-llm-kernel": 1,
+  "card-method-quality-gates-ci": 1
+ },
+ "不支": {
+  "card-method-windows-ci": 1
+ },
+ "不自": {
+  "card-concept-suspect-lifecycle": 1
+ },
+ "不调": {
+  "card-decision-no-llm-kernel": 5
+ },
+ "不进": {
+  "card-decision-docs-private": 1
+ },
+ "不随": {
+  "card-decision-docs-private": 4
+ },
+ "不静": {
+  "card-concept-federation-lock": 3
+ },
+ "与": {
+  "card-method-quality-gates-ci": 1,
+  "card-method-span-provenance": 2
+ },
+ "与内": {
+  "card-concept-card-claim": 1,
+  "card-method-span-provenance": 1
+ },
+ "与审": {
+  "card-concept-compile-first": 1
+ },
+ "与提": {
+  "card-method-commit-hooks": 1
+ },
+ "与时": {
+  "card-concept-suspect-lifecycle": 1
+ },
+ "与本": {
+  "card-method-commit-hooks": 2
+ },
+ "与核": {
+  "card-method-span-provenance": 4
+ },
+ "与检": {
+  "card-concept-card-claim": 3
+ },
+ "与状": {
+  "card-concept-card-claim": 2
+ },
+ "与生": {
+  "card-method-commit-hooks": 1
+ },
+ "与矛": {
+  "card-concept-card-claim": 1
+ },
+ "与类": {
+  "card-pitfall-typestub-drift": 1
+ },
+ "与裁": {
+  "card-concept-suspect-lifecycle": 2
+ },
+ "与论": {
+  "card-concept-card-claim": 5
+ },
+ "与逐": {
+  "card-concept-federation-lock": 2
+ },
+ "与首": {
+  "card-method-quality-gates-ci": 1
+ },
+ "且取": {
+  "card-decision-docs-private": 2
+ },
+ "个只": {
+  "card-concept-retrieval-funnel": 3
+ },
+ "中可": {
+  "card-concept-compile-first": 2
+ },
+ "中文": {
+  "card-method-windows-ci": 1
+ },
+ "中断": {
+  "card-method-windows-ci": 1
+ },
+ "中时": {
+  "card-concept-retrieval-funnel": 1
+ },
+ "中显": {
+  "card-concept-retrieval-funnel": 2
+ },
+ "中率": {
+  "card-method-quality-gates-ci": 2
+ },
+ "中间": {
+  "card-method-windows-ci": 1
+ },
+ "主路": {
+  "card-pitfall-typestub-drift": 1
+ },
+ "义只": {
+  "card-decision-no-llm-kernel": 1
+ },
+ "事实": {
+  "card-decision-git-source-of-truth": 9
+ },
+ "交付": {
+  "card-concept-compile-first": 3
+ },
+ "交信": {
+  "card-method-windows-ci": 3
+ },
+ "交时": {
+  "card-method-windows-ci": 1
+ },
+ "交物": {
+  "card-decision-git-source-of-truth": 3,
+  "card-method-quality-gates-ci": 1
+ },
+ "交的": {
+  "card-method-commit-hooks": 1
+ },
+ "交者": {
+  "card-method-commit-hooks": 1
+ },
+ "交规": {
+  "card-method-commit-hooks": 4
+ },
+ "交身": {
+  "card-method-commit-hooks": 2
+ },
+ "交钩": {
+  "card-method-commit-hooks": 4
+ },
+ "人完": {
+  "card-concept-suspect-lifecycle": 2
+ },
+ "人工": {
+  "card-concept-suspect-lifecycle": 2
+ },
+ "人来": {
+  "card-concept-suspect-lifecycle": 1
+ },
+ "人的": {
+  "card-concept-card-claim": 3
+ },
+ "仅作": {
+  "card-decision-git-source-of-truth": 1
+ },
+ "仍指": {
+  "card-pitfall-stale-editable-install": 3
+ },
+ "从不": {
+  "card-concept-suspect-lifecycle": 1
+ },
+ "仓库": {
+  "card-decision-docs-private": 5,
+  "card-method-windows-ci": 1
+ },
+ "仓更": {
+  "card-pitfall-stale-editable-install": 1
+ },
+ "付物": {
+  "card-concept-compile-first": 3
+ },
+ "以卡": {
+  "card-decision-docs-private": 3
+ },
+ "件一": {
+  "card-pitfall-stale-editable-install": 1
+ },
+ "件变": {
+  "card-concept-federation-lock": 1
+ },
+ "份固": {
+  "card-method-commit-hooks": 1
+ },
+ "份并": {
+  "card-method-commit-hooks": 2
+ },
+ "会因": {
+  "card-method-windows-ci": 2
+ },
+ "会被": {
+  "card-method-span-provenance": 1
+ },
+ "会调": {
+  "card-decision-no-llm-kernel": 1
+ },
+ "传播": {
+  "card-concept-federation-lock": 3
+ },
+ "传给": {
+  "card-method-windows-ci": 1
+ },
+ "但不": {
+  "card-pitfall-typestub-drift": 1
+ },
+ "但哪": {
+  "card-concept-suspect-lifecycle": 1
+ },
+ "位命": {
+  "card-method-quality-gates-ci": 1
+ },
+ "位置": {
+  "card-concept-card-claim": 1,
+  "card-method-span-provenance": 1
+ },
+ "低于": {
+  "card-method-quality-gates-ci": 1
+ },
+ "住在": {
+  "card-decision-no-llm-kernel": 1
+ },
+ "作区": {
+  "card-method-windows-ci": 1
+ },
+ "作本": {
+  "card-decision-git-source-of-truth": 1
+ },
+ "作流": {
+  "card-concept-suspect-lifecycle": 1
+ },
+ "作者": {
+  "card-method-commit-hooks": 1
+ },
+ "例库": {
+  "card-method-quality-gates-ci": 3
+ },
+ "依赖": {
+  "card-concept-federation-lock": 8,
+  "card-pitfall-typestub-drift": 4
+ },
+ "保持": {
+  "card-pitfall-typestub-drift": 1
+ },
+ "信号": {
+  "card-concept-retrieval-funnel": 1,
+  "card-concept-suspect-lifecycle": 1
+ },
+ "信息": {
+  "card-method-windows-ci": 3
+ },
+ "修复": {
+  "card-pitfall-typestub-drift": 1
+ },
+ "修订": {
+  "card-concept-suspect-lifecycle": 1
+ },
+ "候选": {
+  "card-concept-retrieval-funnel": 1,
+  "card-concept-suspect-lifecycle": 1
+ },
+ "元是": {
+  "card-concept-card-claim": 1
+ },
+ "充库": {
+  "card-concept-retrieval-funnel": 2
+ },
+ "先编": {
+  "card-concept-compile-first": 1
+ },
+ "入人": {
+  "card-concept-suspect-lifecycle": 1
+ },
+ "入保": {
+  "card-pitfall-typestub-drift": 1
+ },
+ "入公": {
+  "card-decision-docs-private": 1
+ },
+ "入库": {
+  "card-method-commit-hooks": 2,
+  "card-method-quality-gates-ci": 1
+ },
+ "入暂": {
+  "card-decision-docs-private": 1,
+  "card-method-commit-hooks": 1
+ },
+ "入版": {
+  "card-decision-git-source-of-truth": 3
+ },
+ "入随": {
+  "card-pitfall-stale-editable-install": 2
+ },
+ "全库": {
+  "card-pitfall-stale-editable-install": 1
+ },
+ "全文": {
+  "card-concept-retrieval-funnel": 1
+ },
+ "全新": {
+  "card-pitfall-typestub-drift": 2
+ },
+ "全程": {
+  "card-decision-no-llm-kernel": 3
+ },
+ "公开": {
+  "card-decision-docs-private": 8,
+  "card-method-commit-hooks": 1
+ },
+ "六道": {
+  "card-method-quality-gates-ci": 5
+ },
+ "关系": {
+  "card-concept-retrieval-funnel": 1
+ },
+ "兼容": {
+  "card-pitfall-typestub-drift": 3
+ },
+ "内容": {
+  "card-concept-card-claim": 1,
+  "card-concept-federation-lock": 2,
+  "card-method-span-provenance": 1
+ },
+ "内核": {
+  "card-decision-no-llm-kernel": 10
+ },
+ "内知": {
+  "card-concept-retrieval-funnel": 2
+ },
+ "再暴": {
+  "card-pitfall-typestub-drift": 1
+ },
+ "冒充": {
+  "card-concept-retrieval-funnel": 2
+ },
+ "写与": {
+  "card-concept-suspect-lifecycle": 2
+ },
+ "写或": {
+  "card-concept-suspect-lifecycle": 1
+ },
+ "写的": {
+  "card-pitfall-stale-editable-install": 1
+ },
+ "决永": {
+  "card-concept-suspect-lifecycle": 2
+ },
+ "准住": {
+  "card-decision-no-llm-kernel": 1
+ },
+ "出会": {
+  "card-method-windows-ci": 1
+ },
+ "出处": {
+  "card-concept-card-claim": 3,
+  "card-concept-compile-first": 1,
+  "card-concept-suspect-lifecycle": 1,
+  "card-method-span-provenance": 9
+ },
+ "出并": {
+  "card-concept-suspect-lifecycle": 1
+ },
+ "出检": {
+  "card-concept-suspect-lifecycle": 2
+ },
+ "出现": {
+  "card-pitfall-typestub-drift": 1
+ },
+ "分支": {
+  "card-pitfall-typestub-drift": 3
+ },
+ "则本": {
+  "card-pitfall-typestub-drift": 1
+ },
+ "删符": {
+  "card-pitfall-typestub-drift": 2
+ },
+ "删除": {
+  "card-concept-suspect-lifecycle": 1
+ },
+ "到编": {
+  "card-concept-compile-first": 3
+ },
+ "制台": {
+  "card-method-windows-ci": 1
+ },
+ "制提": {
+  "card-method-commit-hooks": 2
+ },
+ "制校": {
+  "card-method-commit-hooks": 1
+ },
+ "前的": {
+  "card-pitfall-stale-editable-install": 1
+ },
+ "前置": {
+  "card-concept-compile-first": 3
+ },
+ "副本": {
+  "card-method-commit-hooks": 1
+ },
+ "加": {
+  "card-pitfall-typestub-drift": 2
+ },
+ "加示": {
+  "card-method-quality-gates-ci": 2
+ },
+ "加速": {
+  "card-decision-git-source-of-truth": 1
+ },
+ "动作": {
+  "card-concept-retrieval-funnel": 3
+ },
+ "动态": {
+  "card-pitfall-typestub-drift": 1
+ },
+ "动改": {
+  "card-concept-suspect-lifecycle": 1
+ },
+ "动无": {
+  "card-concept-card-claim": 1,
+  "card-method-span-provenance": 2
+ },
+ "动词": {
+  "card-decision-no-llm-kernel": 1
+ },
+ "包只": {
+  "card-decision-no-llm-kernel": 1
+ },
+ "化副": {
+  "card-method-commit-hooks": 1
+ },
+ "化卡": {
+  "card-concept-compile-first": 1
+ },
+ "化行": {
+  "card-method-windows-ci": 1
+ },
+ "匹配": {
+  "card-concept-suspect-lifecycle": 1
+ },
+ "区的": {
+  "card-method-windows-ci": 1
+ },
+ "升级": {
+  "card-concept-federation-lock": 3
+ },
+ "协议": {
+  "card-concept-retrieval-funnel": 4
+ },
+ "单元": {
+  "card-concept-card-claim": 1
+ },
+ "单命": {
+  "card-method-windows-ci": 3
+ },
+ "卡内": {
+  "card-concept-federation-lock": 1
+ },
+ "卡哈": {
+  "card-concept-federation-lock": 2
+ },
+ "卡摘": {
+  "card-concept-retrieval-funnel": 1
+ },
+ "卡标": {
+  "card-concept-suspect-lifecycle": 2
+ },
+ "卡片": {
+  "card-concept-card-claim": 8,
+  "card-concept-compile-first": 2,
+  "card-concept-federation-lock": 1,
+  "card-concept-retrieval-funnel": 2,
+  "card-concept-suspect-lifecycle": 1,
+  "card-decision-docs-private": 3
+ },
+ "卡由": {
+  "card-concept-suspect-lifecycle": 1
+ },
+ "卡进": {
+  "card-concept-suspect-lifecycle": 1
+ },
+ "即报": {
+  "card-pitfall-stale-editable-install": 2
+ },
+ "双平": {
+  "card-method-quality-gates-ci": 3
+ },
+ "双粒": {
+  "card-concept-card-claim": 9
+ },
+ "反过": {
+  "card-pitfall-typestub-drift": 1
+ },
+ "发布": {
+  "card-decision-docs-private": 6,
+  "card-method-commit-hooks": 3
+ },
+ "取消": {
+  "card-decision-docs-private": 3
+ },
+ "取论": {
+  "card-concept-retrieval-funnel": 1
+ },
+ "受影": {
+  "card-concept-suspect-lifecycle": 3
+ },
+ "受控": {
+  "card-concept-retrieval-funnel": 1
+ },
+ "变化": {
+  "card-concept-suspect-lifecycle": 1
+ },
+ "变成": {
+  "card-pitfall-typestub-drift": 1
+ },
+ "变更": {
+  "card-concept-federation-lock": 3
+ },
+ "只准": {
+  "card-decision-no-llm-kernel": 1
+ },
+ "只在": {
+  "card-decision-no-llm-kernel": 1
+ },
+ "只把": {
+  "card-concept-suspect-lifecycle": 3
+ },
+ "只是": {
+  "card-decision-git-source-of-truth": 2
+ },
+ "只读": {
+  "card-concept-retrieval-funnel": 3,
+  "card-decision-no-llm-kernel": 3
+ },
+ "可核": {
+  "card-decision-git-source-of-truth": 2
+ },
+ "可治": {
+  "card-concept-compile-first": 2
+ },
+ "可编": {
+  "card-pitfall-stale-editable-install": 6
+ },
+ "可随": {
+  "card-decision-git-source-of-truth": 1
+ },
+ "台编": {
+  "card-method-windows-ci": 1
+ },
+ "台跑": {
+  "card-method-quality-gates-ci": 3
+ },
+ "合并": {
+  "card-concept-suspect-lifecycle": 1
+ },
+ "合源": {
+  "card-concept-suspect-lifecycle": 1
+ },
+ "同时": {
+  "card-method-commit-hooks": 1
+ },
+ "同被": {
+  "card-pitfall-stale-editable-install": 1
+ },
+ "名前": {
+  "card-pitfall-stale-editable-install": 1
+ },
+ "名后": {
+  "card-pitfall-stale-editable-install": 8
+ },
+ "名残": {
+  "card-pitfall-stale-editable-install": 1
+ },
+ "后可": {
+  "card-pitfall-stale-editable-install": 4
+ },
+ "后必": {
+  "card-pitfall-stale-editable-install": 1
+ },
+ "向人": {
+  "card-concept-card-claim": 3
+ },
+ "向更": {
+  "card-pitfall-stale-editable-install": 1
+ },
+ "向机": {
+  "card-concept-card-claim": 3
+ },
+ "否则": {
+  "card-method-windows-ci": 1,
+  "card-pitfall-typestub-drift": 1
+ },
+ "周期": {
+  "card-concept-suspect-lifecycle": 4
+ },
+ "命中": {
+  "card-concept-retrieval-funnel": 3,
+  "card-method-quality-gates-ci": 2
+ },
+ "命令": {
+  "card-method-windows-ci": 3
+ },
+ "命周": {
+  "card-concept-suspect-lifecycle": 4
+ },
+ "哈希": {
+  "card-concept-card-claim": 5,
+  "card-concept-federation-lock": 3,
+  "card-concept-retrieval-funnel": 1,
+  "card-concept-suspect-lifecycle": 1,
+  "card-method-span-provenance": 8
+ },
+ "响卡": {
+  "card-concept-suspect-lifecycle": 3
+ },
+ "哪一": {
+  "card-concept-suspect-lifecycle": 1
+ },
+ "唯一": {
+  "card-decision-git-source-of-truth": 4,
+  "card-decision-no-llm-kernel": 3
+ },
+ "器上": {
+  "card-method-windows-ci": 1
+ },
+ "器提": {
+  "card-concept-suspect-lifecycle": 1
+ },
+ "器检": {
+  "card-concept-suspect-lifecycle": 1
+ },
+ "器的": {
+  "card-concept-card-claim": 3
+ },
+ "四个": {
+  "card-concept-retrieval-funnel": 3
+ },
+ "回候": {
+  "card-concept-retrieval-funnel": 1
+ },
+ "回显": {
+  "card-concept-retrieval-funnel": 1
+ },
+ "回退": {
+  "card-pitfall-typestub-drift": 2
+ },
+ "因中": {
+  "card-method-windows-ci": 1
+ },
+ "固定": {
+  "card-method-commit-hooks": 1
+ },
+ "在": {
+  "card-method-quality-gates-ci": 1
+ },
+ "在兼": {
+  "card-pitfall-typestub-drift": 1
+ },
+ "在提": {
+  "card-method-windows-ci": 1
+ },
+ "在被": {
+  "card-pitfall-stale-editable-install": 1
+ },
+ "地依": {
+  "card-pitfall-typestub-drift": 1
+ },
+ "地加": {
+  "card-decision-git-source-of-truth": 1
+ },
+ "地是": {
+  "card-pitfall-typestub-drift": 1
+ },
+ "地绿": {
+  "card-pitfall-typestub-drift": 1
+ },
+ "地缓": {
+  "card-decision-git-source-of-truth": 2,
+  "card-method-quality-gates-ci": 1
+ },
+ "地配": {
+  "card-method-commit-hooks": 3,
+  "card-pitfall-stale-editable-install": 1
+ },
+ "块存": {
+  "card-pitfall-typestub-drift": 1
+ },
+ "垂直": {
+  "card-decision-no-llm-kernel": 1
+ },
+ "型存": {
+  "card-pitfall-typestub-drift": 7
+ },
+ "型完": {
+  "card-pitfall-typestub-drift": 1
+ },
+ "域词": {
+  "card-decision-no-llm-kernel": 1
+ },
+ "域语": {
+  "card-decision-no-llm-kernel": 1
+ },
+ "境里": {
+  "card-pitfall-stale-editable-install": 1
+ },
+ "增删": {
+  "card-pitfall-typestub-drift": 2
+ },
+ "处与": {
+  "card-concept-compile-first": 1
+ },
+ "处哈": {
+  "card-method-span-provenance": 4
+ },
+ "处绑": {
+  "card-concept-card-claim": 3,
+  "card-method-span-provenance": 4
+ },
+ "处论": {
+  "card-concept-suspect-lifecycle": 1,
+  "card-method-span-provenance": 1
+ },
+ "复方": {
+  "card-pitfall-typestub-drift": 1
+ },
+ "复用": {
+  "card-concept-compile-first": 3
+ },
+ "多行": {
+  "card-method-windows-ci": 2
+ },
+ "失效": {
+  "card-concept-suspect-lifecycle": 4,
+  "card-pitfall-stale-editable-install": 4
+ },
+ "失败": {
+  "card-method-windows-ci": 1
+ },
+ "子包": {
+  "card-decision-no-llm-kernel": 2
+ },
+ "子同": {
+  "card-method-commit-hooks": 1
+ },
+ "子强": {
+  "card-method-commit-hooks": 3
+ },
+ "子拦": {
+  "card-decision-docs-private": 1
+ },
+ "存不": {
+  "card-method-quality-gates-ci": 1
+ },
+ "存与": {
+  "card-method-commit-hooks": 3
+ },
+ "存区": {
+  "card-decision-docs-private": 1,
+  "card-method-commit-hooks": 1
+ },
+ "存根": {
+  "card-pitfall-typestub-drift": 9
+ },
+ "安装": {
+  "card-pitfall-stale-editable-install": 9,
+  "card-pitfall-typestub-drift": 2
+ },
+ "完成": {
+  "card-concept-suspect-lifecycle": 2
+ },
+ "完整": {
+  "card-pitfall-typestub-drift": 1
+ },
+ "定与": {
+  "card-method-span-provenance": 4
+ },
+ "定为": {
+  "card-method-commit-hooks": 1
+ },
+ "定源": {
+  "card-concept-card-claim": 1,
+  "card-method-span-provenance": 1
+ },
+ "定版": {
+  "card-concept-federation-lock": 2
+ },
+ "实源": {
+  "card-decision-git-source-of-truth": 9
+ },
+ "实践": {
+  "card-method-commit-hooks": 3,
+  "card-method-quality-gates-ci": 3,
+  "card-method-windows-ci": 3,
+  "card-pitfall-stale-editable-install": 3,
+  "card-pitfall-typestub-drift": 3
+ },
+ "审计": {
+  "card-concept-compile-first": 1
+ },
+ "容分": {
+  "card-pitfall-typestub-drift": 2
+ },
+ "容哈": {
+  "card-concept-card-claim": 1,
+  "card-concept-federation-lock": 1,
+  "card-method-span-provenance": 1
+ },
+ "容回": {
+  "card-pitfall-typestub-drift": 1
+ },
+ "容易": {
+  "card-pitfall-stale-editable-install": 1
+ },
+ "容永": {
+  "card-concept-federation-lock": 1
+ },
+ "对路": {
+  "card-pitfall-stale-editable-install": 3
+ },
+ "对齐": {
+  "card-pitfall-typestub-drift": 1
+ },
+ "导入": {
+  "card-pitfall-stale-editable-install": 2,
+  "card-pitfall-typestub-drift": 2
+ },
+ "导致": {
+  "card-pitfall-stale-editable-install": 1
+ },
+ "尾统": {
+  "card-method-windows-ci": 2
+ },
+ "属性": {
+  "card-pitfall-typestub-drift": 1
+ },
+ "崩掉": {
+  "card-pitfall-typestub-drift": 2
+ },
+ "工作": {
+  "card-concept-suspect-lifecycle": 1,
+  "card-method-windows-ci": 1
+ },
+ "工工": {
+  "card-concept-suspect-lifecycle": 1
+ },
+ "工程": {
+  "card-method-commit-hooks": 3,
+  "card-method-quality-gates-ci": 3,
+  "card-method-windows-ci": 3,
+  "card-pitfall-stale-editable-install": 3,
+  "card-pitfall-typestub-drift": 3
+ },
+ "已取": {
+  "card-decision-docs-private": 1
+ },
+ "已蒸": {
+  "card-concept-compile-first": 3
+ },
+ "希不": {
+  "card-concept-suspect-lifecycle": 1
+ },
+ "希核": {
+  "card-concept-card-claim": 3
+ },
+ "平台": {
+  "card-method-quality-gates-ci": 3,
+  "card-method-windows-ci": 4
+ },
+ "并候": {
+  "card-concept-suspect-lifecycle": 1
+ },
+ "并已": {
+  "card-decision-docs-private": 1
+ },
+ "并拦": {
+  "card-concept-suspect-lifecycle": 1,
+  "card-method-commit-hooks": 2
+ },
+ "并核": {
+  "card-concept-retrieval-funnel": 1
+ },
+ "并纳": {
+  "card-decision-git-source-of-truth": 1
+ },
+ "并记": {
+  "card-concept-suspect-lifecycle": 1
+ },
+ "并退": {
+  "card-concept-suspect-lifecycle": 2
+ },
+ "并重": {
+  "card-concept-card-claim": 1,
+  "card-method-span-provenance": 3
+ },
+ "库依": {
+  "card-concept-federation-lock": 2
+ },
+ "库公": {
+  "card-decision-docs-private": 4
+ },
+ "库内": {
+  "card-concept-retrieval-funnel": 2
+ },
+ "库卡": {
+  "card-concept-federation-lock": 1
+ },
+ "库搜": {
+  "card-pitfall-stale-editable-install": 1
+ },
+ "库的": {
+  "card-concept-compile-first": 1
+ },
+ "库统": {
+  "card-method-windows-ci": 1
+ },
+ "底解": {
+  "card-pitfall-typestub-drift": 1
+ },
+ "建物": {
+  "card-decision-git-source-of-truth": 1
+ },
+ "建的": {
+  "card-decision-git-source-of-truth": 1
+ },
+ "开仓": {
+  "card-decision-docs-private": 1
+ },
+ "开提": {
+  "card-method-commit-hooks": 1
+ },
+ "开知": {
+  "card-decision-docs-private": 3
+ },
+ "式发": {
+  "card-decision-docs-private": 3
+ },
+ "式变": {
+  "card-concept-federation-lock": 2
+ },
+ "式的": {
+  "card-concept-federation-lock": 1
+ },
+ "式知": {
+  "card-concept-compile-first": 5
+ },
+ "式降": {
+  "card-concept-retrieval-funnel": 3
+ },
+ "强制": {
+  "card-method-commit-hooks": 3
+ },
+ "归一": {
+  "card-method-windows-ci": 1
+ },
+ "录不": {
+  "card-decision-docs-private": 1
+ },
+ "录改": {
+  "card-pitfall-stale-editable-install": 3
+ },
+ "录都": {
+  "card-concept-compile-first": 1
+ },
+ "形式": {
+  "card-decision-docs-private": 3
+ },
+ "形态": {
+  "card-pitfall-typestub-drift": 1
+ },
+ "影响": {
+  "card-concept-suspect-lifecycle": 3
+ },
+ "彻底": {
+  "card-pitfall-typestub-drift": 1
+ },
+ "径进": {
+  "card-decision-docs-private": 1,
+  "card-method-commit-hooks": 1
+ },
+ "径静": {
+  "card-pitfall-typestub-drift": 1
+ },
+ "律进": {
+  "card-decision-no-llm-kernel": 1
+ },
+ "得低": {
+  "card-method-quality-gates-ci": 1
+ },
+ "必须": {
+  "card-method-windows-ci": 2,
+  "card-pitfall-stale-editable-install": 1
+ },
+ "忽略": {
+  "card-pitfall-stale-editable-install": 1
+ },
+ "态导": {
+  "card-pitfall-typestub-drift": 2
+ },
+ "态流": {
+  "card-concept-card-claim": 3
+ },
+ "态漂": {
+  "card-pitfall-typestub-drift": 1
+ },
+ "态的": {
+  "card-concept-retrieval-funnel": 1
+ },
+ "性由": {
+  "card-decision-git-source-of-truth": 1,
+  "card-method-quality-gates-ci": 1
+ },
+ "息要": {
+  "card-method-windows-ci": 1
+ },
+ "息走": {
+  "card-method-windows-ci": 2
+ },
+ "成单": {
+  "card-method-windows-ci": 1
+ },
+ "成四": {
+  "card-concept-retrieval-funnel": 1
+ },
+ "成物": {
+  "card-method-commit-hooks": 1
+ },
+ "成结": {
+  "card-concept-compile-first": 1
+ },
+ "或删": {
+  "card-concept-suspect-lifecycle": 1
+ },
+ "才能": {
+  "card-pitfall-stale-editable-install": 1
+ },
+ "把受": {
+  "card-concept-suspect-lifecycle": 3
+ },
+ "把理": {
+  "card-concept-compile-first": 3
+ },
+ "护的": {
+  "card-concept-compile-first": 1
+ },
+ "报": {
+  "card-pitfall-stale-editable-install": 1
+ },
+ "报错": {
+  "card-pitfall-stale-editable-install": 2,
+  "card-pitfall-typestub-drift": 1
+ },
+ "拆单": {
+  "card-method-windows-ci": 2
+ },
+ "拆成": {
+  "card-concept-retrieval-funnel": 1,
+  "card-method-windows-ci": 1
+ },
+ "拒绝": {
+  "card-concept-suspect-lifecycle": 1,
+  "card-method-span-provenance": 1
+ },
+ "拟环": {
+  "card-pitfall-stale-editable-install": 1
+ },
+ "拦截": {
+  "card-concept-suspect-lifecycle": 1,
+  "card-decision-docs-private": 1,
+  "card-method-commit-hooks": 3
+ },
+ "拿到": {
+  "card-pitfall-typestub-drift": 1
+ },
+ "持类": {
+  "card-pitfall-typestub-drift": 1
+ },
+ "挂在": {
+  "card-pitfall-typestub-drift": 1
+ },
+ "指向": {
+  "card-pitfall-stale-editable-install": 1
+ },
+ "指旧": {
+  "card-pitfall-stale-editable-install": 2
+ },
+ "换为": {
+  "card-method-windows-ci": 1
+ },
+ "排查": {
+  "card-pitfall-stale-editable-install": 1
+ },
+ "排除": {
+  "card-concept-retrieval-funnel": 1,
+  "card-decision-docs-private": 1
+ },
+ "接复": {
+  "card-concept-compile-first": 1
+ },
+ "控关": {
+  "card-concept-retrieval-funnel": 1
+ },
+ "控制": {
+  "card-decision-git-source-of-truth": 3,
+  "card-method-windows-ci": 1
+ },
+ "提交": {
+  "card-decision-git-source-of-truth": 3,
+  "card-method-commit-hooks": 12,
+  "card-method-quality-gates-ci": 1,
+  "card-method-windows-ci": 4
+ },
+ "提出": {
+  "card-concept-suspect-lifecycle": 1
+ },
+ "搜索": {
+  "card-pitfall-stale-editable-install": 1
+ },
+ "摘要": {
+  "card-concept-retrieval-funnel": 1
+ },
+ "支在": {
+  "card-pitfall-typestub-drift": 2
+ },
+ "支持": {
+  "card-method-windows-ci": 1
+ },
+ "支改": {
+  "card-pitfall-typestub-drift": 1
+ },
+ "收线": {
+  "card-method-quality-gates-ci": 1
+ },
+ "改写": {
+  "card-concept-suspect-lifecycle": 3
+ },
+ "改动": {
+  "card-concept-card-claim": 1,
+  "card-method-span-provenance": 2
+ },
+ "改名": {
+  "card-pitfall-stale-editable-install": 3
+ },
+ "改用": {
+  "card-pitfall-typestub-drift": 1
+ },
+ "效治": {
+  "card-concept-suspect-lifecycle": 4
+ },
+ "效过": {
+  "card-concept-suspect-lifecycle": 1
+ },
+ "整仓": {
+  "card-pitfall-stale-editable-install": 1
+ },
+ "文件": {
+  "card-concept-compile-first": 1,
+  "card-concept-federation-lock": 1,
+  "card-pitfall-stale-editable-install": 1
+ },
+ "文本": {
+  "card-concept-card-claim": 1,
+  "card-method-span-provenance": 1
+ },
+ "文档": {
+  "card-decision-docs-private": 5
+ },
+ "文输": {
+  "card-method-windows-ci": 1
+ },
+ "料先": {
+  "card-concept-compile-first": 1
+ },
+ "断会": {
+  "card-method-span-provenance": 1
+ },
+ "断出": {
+  "card-method-span-provenance": 4
+ },
+ "断双": {
+  "card-concept-card-claim": 5
+ },
+ "断源": {
+  "card-concept-retrieval-funnel": 1
+ },
+ "断绑": {
+  "card-concept-card-claim": 1,
+  "card-method-span-provenance": 1
+ },
+ "断被": {
+  "card-concept-suspect-lifecycle": 1
+ },
+ "断记": {
+  "card-method-span-provenance": 2
+ },
+ "断面": {
+  "card-concept-card-claim": 3
+ },
+ "新出": {
+  "card-pitfall-typestub-drift": 1
+ },
+ "新安": {
+  "card-pitfall-stale-editable-install": 1,
+  "card-pitfall-typestub-drift": 2
+ },
+ "新版": {
+  "card-pitfall-typestub-drift": 2
+ },
+ "方式": {
+  "card-pitfall-typestub-drift": 1
+ },
+ "方正": {
+  "card-concept-suspect-lifecycle": 1
+ },
+ "方类": {
+  "card-pitfall-typestub-drift": 4
+ },
+ "无": {
+  "card-decision-no-llm-kernel": 4
+ },
+ "无出": {
+  "card-concept-suspect-lifecycle": 1,
+  "card-method-span-provenance": 1
+ },
+ "无命": {
+  "card-concept-retrieval-funnel": 3
+ },
+ "无法": {
+  "card-concept-card-claim": 1,
+  "card-method-span-provenance": 2
+ },
+ "旧版": {
+  "card-pitfall-typestub-drift": 1
+ },
+ "旧目": {
+  "card-pitfall-stale-editable-install": 1
+ },
+ "旧绝": {
+  "card-pitfall-stale-editable-install": 2
+ },
+ "时拦": {
+  "card-method-commit-hooks": 1
+ },
+ "时效": {
+  "card-concept-suspect-lifecycle": 1
+ },
+ "时转": {
+  "card-method-windows-ci": 1
+ },
+ "时返": {
+  "card-concept-retrieval-funnel": 1
+ },
+ "时重": {
+  "card-concept-card-claim": 1,
+  "card-decision-git-source-of-truth": 1,
+  "card-method-span-provenance": 1
+ },
+ "易漏": {
+  "card-pitfall-stale-editable-install": 1
+ },
+ "是": {
+  "card-method-windows-ci": 1
+ },
+ "是事": {
+  "card-decision-git-source-of-truth": 1
+ },
+ "是卡": {
+  "card-concept-card-claim": 1
+ },
+ "是可": {
+  "card-decision-git-source-of-truth": 3
+ },
+ "是唯": {
+  "card-decision-git-source-of-truth": 4,
+  "card-decision-no-llm-kernel": 3
+ },
+ "是提": {
+  "card-decision-git-source-of-truth": 1,
+  "card-method-quality-gates-ci": 1
+ },
+ "是显": {
+  "card-concept-federation-lock": 3
+ },
+ "是本": {
+  "card-decision-git-source-of-truth": 2,
+  "card-method-quality-gates-ci": 1
+ },
+ "是绝": {
+  "card-pitfall-stale-editable-install": 1
+ },
+ "是长": {
+  "card-concept-compile-first": 1
+ },
+ "显式": {
+  "card-concept-federation-lock": 3,
+  "card-concept-retrieval-funnel": 3
+ },
+ "暂存": {
+  "card-decision-docs-private": 1,
+  "card-method-commit-hooks": 1
+ },
+ "暴露": {
+  "card-pitfall-typestub-drift": 1
+ },
+ "更名": {
+  "card-pitfall-stale-editable-install": 7
+ },
+ "最容": {
+  "card-pitfall-stale-editable-install": 1
+ },
+ "期信": {
+  "card-concept-suspect-lifecycle": 1
+ },
+ "期知": {
+  "card-concept-compile-first": 2
+ },
+ "期维": {
+  "card-concept-compile-first": 1
+ },
+ "本与": {
+  "card-concept-federation-lock": 2
+ },
+ "本化": {
+  "card-method-commit-hooks": 1
+ },
+ "本在": {
+  "card-method-commit-hooks": 1
+ },
+ "本地": {
+  "card-decision-git-source-of-truth": 3,
+  "card-method-commit-hooks": 3,
+  "card-method-quality-gates-ci": 1,
+  "card-pitfall-stale-editable-install": 1,
+  "card-pitfall-typestub-drift": 3
+ },
+ "本并": {
+  "card-concept-card-claim": 1,
+  "card-method-span-provenance": 1
+ },
+ "本控": {
+  "card-decision-git-source-of-truth": 3
+ },
+ "本要": {
+  "card-pitfall-typestub-drift": 1
+ },
+ "机器": {
+  "card-concept-card-claim": 3,
+  "card-concept-suspect-lifecycle": 1
+ },
+ "材料": {
+  "card-concept-compile-first": 1
+ },
+ "条论": {
+  "card-concept-card-claim": 1,
+  "card-method-span-provenance": 1
+ },
+ "来变": {
+  "card-pitfall-typestub-drift": 1
+ },
+ "来裁": {
+  "card-concept-suspect-lifecycle": 1
+ },
+ "构化": {
+  "card-concept-compile-first": 1
+ },
+ "构建": {
+  "card-decision-git-source-of-truth": 1
+ },
+ "架构": {
+  "card-concept-card-claim": 3,
+  "card-concept-compile-first": 3,
+  "card-concept-federation-lock": 3,
+  "card-decision-git-source-of-truth": 3,
+  "card-decision-no-llm-kernel": 3
+ },
+ "某行": {
+  "card-method-windows-ci": 1
+ },
+ "查要": {
+  "card-pitfall-stale-editable-install": 1
+ },
+ "标为": {
+  "card-concept-suspect-lifecycle": 2
+ },
+ "标记": {
+  "card-concept-suspect-lifecycle": 1
+ },
+ "标识": {
+  "card-concept-federation-lock": 1
+ },
+ "校验": {
+  "card-decision-git-source-of-truth": 1,
+  "card-method-commit-hooks": 1,
+  "card-method-quality-gates-ci": 1
+ },
+ "核不": {
+  "card-decision-no-llm-kernel": 4
+ },
+ "核零": {
+  "card-decision-no-llm-kernel": 1
+ },
+ "核验": {
+  "card-concept-card-claim": 3,
+  "card-concept-retrieval-funnel": 1,
+  "card-decision-git-source-of-truth": 2,
+  "card-method-span-provenance": 4
+ },
+ "根增": {
+  "card-pitfall-typestub-drift": 2
+ },
+ "根形": {
+  "card-pitfall-typestub-drift": 1
+ },
+ "根彻": {
+  "card-pitfall-typestub-drift": 1
+ },
+ "根漂": {
+  "card-pitfall-typestub-drift": 4
+ },
+ "根重": {
+  "card-pitfall-typestub-drift": 1
+ },
+ "档不": {
+  "card-decision-docs-private": 4
+ },
+ "档目": {
+  "card-decision-docs-private": 1
+ },
+ "检测": {
+  "card-concept-suspect-lifecycle": 1
+ },
+ "检索": {
+  "card-concept-card-claim": 3,
+  "card-concept-compile-first": 3,
+  "card-concept-retrieval-funnel": 13,
+  "card-concept-suspect-lifecycle": 2
+ },
+ "模块": {
+  "card-pitfall-typestub-drift": 1
+ },
+ "次才": {
+  "card-pitfall-stale-editable-install": 1
+ },
+ "正确": {
+  "card-concept-suspect-lifecycle": 1
+ },
+ "残留": {
+  "card-pitfall-stale-editable-install": 1
+ },
+ "段并": {
+  "card-concept-retrieval-funnel": 1
+ },
+ "段被": {
+  "card-concept-card-claim": 1
+ },
+ "每条": {
+  "card-concept-card-claim": 1,
+  "card-method-span-provenance": 1
+ },
+ "永不": {
+  "card-concept-federation-lock": 3
+ },
+ "永远": {
+  "card-concept-suspect-lifecycle": 3
+ },
+ "求一": {
+  "card-decision-no-llm-kernel": 1
+ },
+ "治理": {
+  "card-concept-compile-first": 2,
+  "card-concept-federation-lock": 3,
+  "card-concept-suspect-lifecycle": 11,
+  "card-decision-git-source-of-truth": 3,
+  "card-decision-no-llm-kernel": 1,
+  "card-method-quality-gates-ci": 3,
+  "card-method-span-provenance": 3
+ },
+ "沿受": {
+  "card-concept-retrieval-funnel": 1
+ },
+ "法静": {
+  "card-concept-card-claim": 1,
+  "card-method-span-provenance": 2
+ },
+ "注释": {
+  "card-pitfall-typestub-drift": 3
+ },
+ "流转": {
+  "card-concept-card-claim": 3
+ },
+ "测并": {
+  "card-concept-suspect-lifecycle": 1
+ },
+ "测线": {
+  "card-method-quality-gates-ci": 2
+ },
+ "测验": {
+  "card-method-quality-gates-ci": 1
+ },
+ "消跟": {
+  "card-decision-docs-private": 3
+ },
+ "游内": {
+  "card-concept-federation-lock": 1
+ },
+ "游永": {
+  "card-concept-federation-lock": 2
+ },
+ "源位": {
+  "card-concept-card-claim": 1,
+  "card-method-span-provenance": 1
+ },
+ "源修": {
+  "card-concept-suspect-lifecycle": 1
+ },
+ "源并": {
+  "card-decision-git-source-of-truth": 1,
+  "card-method-span-provenance": 2
+ },
+ "源文": {
+  "card-concept-card-claim": 1,
+  "card-method-span-provenance": 1
+ },
+ "源材": {
+  "card-concept-compile-first": 1
+ },
+ "源片": {
+  "card-concept-card-claim": 1,
+  "card-concept-retrieval-funnel": 1
+ },
+ "漂移": {
+  "card-concept-suspect-lifecycle": 4,
+  "card-pitfall-typestub-drift": 5
+ },
+ "漏在": {
+  "card-pitfall-stale-editable-install": 1
+ },
+ "漏斗": {
+  "card-concept-retrieval-funnel": 4
+ },
+ "片与": {
+  "card-concept-card-claim": 5
+ },
+ "片以": {
+  "card-concept-federation-lock": 1
+ },
+ "片全": {
+  "card-concept-retrieval-funnel": 1
+ },
+ "片形": {
+  "card-decision-docs-private": 3
+ },
+ "片标": {
+  "card-concept-suspect-lifecycle": 1
+ },
+ "片段": {
+  "card-concept-card-claim": 1,
+  "card-concept-retrieval-funnel": 1
+ },
+ "片面": {
+  "card-concept-card-claim": 3
+ },
+ "版回": {
+  "card-pitfall-typestub-drift": 1
+ },
+ "版本": {
+  "card-concept-federation-lock": 2,
+  "card-decision-git-source-of-truth": 3,
+  "card-method-commit-hooks": 1,
+  "card-pitfall-typestub-drift": 1
+ },
+ "版类": {
+  "card-pitfall-typestub-drift": 2
+ },
+ "物是": {
+  "card-concept-compile-first": 3
+ },
+ "物路": {
+  "card-method-commit-hooks": 1
+ },
+ "状态": {
+  "card-concept-card-claim": 3,
+  "card-concept-retrieval-funnel": 1
+ },
+ "率与": {
+  "card-method-quality-gates-ci": 1
+ },
+ "率的": {
+  "card-method-quality-gates-ci": 1
+ },
+ "环境": {
+  "card-pitfall-stale-editable-install": 1
+ },
+ "现但": {
+  "card-pitfall-typestub-drift": 1
+ },
+ "理动": {
+  "card-decision-no-llm-kernel": 1
+ },
+ "理生": {
+  "card-concept-suspect-lifecycle": 4
+ },
+ "理的": {
+  "card-concept-compile-first": 2
+ },
+ "理解": {
+  "card-concept-compile-first": 3
+ },
+ "生命": {
+  "card-concept-suspect-lifecycle": 4
+ },
+ "生成": {
+  "card-method-commit-hooks": 1
+ },
+ "生效": {
+  "card-pitfall-stale-editable-install": 1
+ },
+ "用已": {
+  "card-concept-compile-first": 3
+ },
+ "用点": {
+  "card-decision-no-llm-kernel": 2
+ },
+ "由": {
+  "card-method-commit-hooks": 1
+ },
+ "由人": {
+  "card-concept-suspect-lifecycle": 3
+ },
+ "由编": {
+  "card-concept-suspect-lifecycle": 1
+ },
+ "留最": {
+  "card-pitfall-stale-editable-install": 1
+ },
+ "略文": {
+  "card-pitfall-stale-editable-install": 1
+ },
+ "的": {
+  "card-method-quality-gates-ci": 1,
+  "card-method-windows-ci": 2
+ },
+ "的中": {
+  "card-method-windows-ci": 1
+ },
+ "的交": {
+  "card-concept-compile-first": 1
+ },
+ "的作": {
+  "card-method-commit-hooks": 1
+ },
+ "的兼": {
+  "card-pitfall-typestub-drift": 2
+ },
+ "的出": {
+  "card-concept-card-claim": 3
+ },
+ "的卡": {
+  "card-concept-retrieval-funnel": 1
+ },
+ "的可": {
+  "card-pitfall-stale-editable-install": 1
+ },
+ "的子": {
+  "card-decision-no-llm-kernel": 1
+ },
+ "的文": {
+  "card-concept-compile-first": 1
+ },
+ "的旧": {
+  "card-pitfall-stale-editable-install": 1
+ },
+ "的是": {
+  "card-pitfall-stale-editable-install": 1
+ },
+ "的本": {
+  "card-pitfall-stale-editable-install": 1
+ },
+ "的构": {
+  "card-decision-git-source-of-truth": 1
+ },
+ "的知": {
+  "card-concept-compile-first": 1
+ },
+ "的结": {
+  "card-concept-compile-first": 1
+ },
+ "的评": {
+  "card-method-quality-gates-ci": 1
+ },
+ "的长": {
+  "card-concept-compile-first": 2
+ },
+ "的阅": {
+  "card-concept-card-claim": 3
+ },
+ "目录": {
+  "card-decision-docs-private": 1,
+  "card-pitfall-stale-editable-install": 4
+ },
+ "目目": {
+  "card-pitfall-stale-editable-install": 3
+ },
+ "直接": {
+  "card-concept-compile-first": 1
+ },
+ "直需": {
+  "card-decision-no-llm-kernel": 1
+ },
+ "盾卡": {
+  "card-concept-suspect-lifecycle": 1
+ },
+ "盾裁": {
+  "card-concept-card-claim": 1
+ },
+ "矛盾": {
+  "card-concept-card-claim": 1,
+  "card-concept-suspect-lifecycle": 2
+ },
+ "知识": {
+  "card-concept-card-claim": 1,
+  "card-concept-compile-first": 8,
+  "card-concept-retrieval-funnel": 2,
+  "card-concept-suspect-lifecycle": 1,
+  "card-decision-docs-private": 3
+ },
+ "码报": {
+  "card-method-windows-ci": 1
+ },
+ "确永": {
+  "card-concept-suspect-lifecycle": 1
+ },
+ "示例": {
+  "card-method-quality-gates-ci": 3
+ },
+ "私有": {
+  "card-decision-docs-private": 4
+ },
+ "移治": {
+  "card-concept-suspect-lifecycle": 4
+ },
+ "程不": {
+  "card-decision-no-llm-kernel": 1
+ },
+ "程实": {
+  "card-method-commit-hooks": 3,
+  "card-method-quality-gates-ci": 3,
+  "card-method-windows-ci": 3,
+  "card-pitfall-stale-editable-install": 3,
+  "card-pitfall-typestub-drift": 3
+ },
+ "程无": {
+  "card-decision-no-llm-kernel": 2
+ },
+ "符号": {
+  "card-pitfall-typestub-drift": 2
+ },
+ "第三": {
+  "card-pitfall-typestub-drift": 4
+ },
+ "算哈": {
+  "card-concept-card-claim": 1,
+  "card-method-span-provenance": 3
+ },
+ "类型": {
+  "card-pitfall-typestub-drift": 8
+ },
+ "粒度": {
+  "card-concept-card-claim": 9
+ },
+ "系跳": {
+  "card-concept-retrieval-funnel": 1
+ },
+ "索协": {
+  "card-concept-retrieval-funnel": 4
+ },
+ "索复": {
+  "card-concept-compile-first": 2
+ },
+ "索拆": {
+  "card-concept-retrieval-funnel": 1
+ },
+ "索漏": {
+  "card-concept-retrieval-funnel": 4
+ },
+ "索直": {
+  "card-concept-compile-first": 1
+ },
+ "索默": {
+  "card-concept-retrieval-funnel": 1
+ },
+ "红": {
+  "card-pitfall-typestub-drift": 1
+ },
+ "约定": {
+  "card-method-windows-ci": 4
+ },
+ "级依": {
+  "card-concept-federation-lock": 1
+ },
+ "级信": {
+  "card-concept-retrieval-funnel": 1
+ },
+ "级是": {
+  "card-concept-federation-lock": 2
+ },
+ "纳入": {
+  "card-decision-git-source-of-truth": 1
+ },
+ "线都": {
+  "card-method-quality-gates-ci": 1
+ },
+ "经": {
+  "card-method-windows-ci": 1
+ },
+ "经自": {
+  "card-decision-docs-private": 3
+ },
+ "绑定": {
+  "card-concept-card-claim": 4,
+  "card-method-span-provenance": 5
+ },
+ "结构": {
+  "card-concept-compile-first": 1
+ },
+ "结论": {
+  "card-concept-compile-first": 3
+ },
+ "绝对": {
+  "card-pitfall-stale-editable-install": 3
+ },
+ "统一": {
+  "card-method-windows-ci": 3
+ },
+ "维护": {
+  "card-concept-compile-first": 1
+ },
+ "缓存": {
+  "card-decision-git-source-of-truth": 3,
+  "card-method-commit-hooks": 3,
+  "card-method-quality-gates-ci": 1
+ },
+ "编码": {
+  "card-method-windows-ci": 1
+ },
+ "编译": {
+  "card-concept-compile-first": 13,
+  "card-concept-suspect-lifecycle": 1
+ },
+ "编辑": {
+  "card-pitfall-stale-editable-install": 6
+ },
+ "置与": {
+  "card-concept-card-claim": 1
+ },
+ "置入": {
+  "card-method-commit-hooks": 2
+ },
+ "置到": {
+  "card-concept-compile-first": 3
+ },
+ "置里": {
+  "card-pitfall-stale-editable-install": 1
+ },
+ "者与": {
+  "card-method-commit-hooks": 1
+ },
+ "者身": {
+  "card-method-commit-hooks": 1
+ },
+ "而中": {
+  "card-method-windows-ci": 1
+ },
+ "而本": {
+  "card-pitfall-typestub-drift": 1
+ },
+ "联邦": {
+  "card-concept-federation-lock": 8
+ },
+ "聚合": {
+  "card-concept-suspect-lifecycle": 1
+ },
+ "能生": {
+  "card-pitfall-stale-editable-install": 1
+ },
+ "自举": {
+  "card-decision-docs-private": 3
+ },
+ "自动": {
+  "card-concept-suspect-lifecycle": 1
+ },
+ "致性": {
+  "card-decision-git-source-of-truth": 1,
+  "card-method-quality-gates-ci": 1
+ },
+ "范钩": {
+  "card-method-commit-hooks": 4
+ },
+ "蒸馏": {
+  "card-concept-compile-first": 3
+ },
+ "虚拟": {
+  "card-pitfall-stale-editable-install": 1
+ },
+ "行器": {
+  "card-method-windows-ci": 1
+ },
+ "行失": {
+  "card-method-windows-ci": 1
+ },
+ "行尾": {
+  "card-method-windows-ci": 3
+ },
+ "行提": {
+  "card-method-windows-ci": 1
+ },
+ "被": {
+  "card-decision-docs-private": 2
+ },
+ "被忽": {
+  "card-pitfall-stale-editable-install": 1
+ },
+ "被改": {
+  "card-concept-card-claim": 1
+ },
+ "被质": {
+  "card-concept-suspect-lifecycle": 1,
+  "card-method-span-provenance": 1
+ },
+ "裁决": {
+  "card-concept-card-claim": 1,
+  "card-concept-suspect-lifecycle": 4
+ },
+ "装一": {
+  "card-pitfall-stale-editable-install": 1
+ },
+ "装仍": {
+  "card-pitfall-stale-editable-install": 3
+ },
+ "装在": {
+  "card-pitfall-stale-editable-install": 1
+ },
+ "装失": {
+  "card-pitfall-stale-editable-install": 4
+ },
+ "装对": {
+  "card-pitfall-typestub-drift": 1
+ },
+ "装拿": {
+  "card-pitfall-typestub-drift": 1
+ },
+ "要与": {
+  "card-pitfall-typestub-drift": 1
+ },
+ "要用": {
+  "card-method-windows-ci": 1,
+  "card-pitfall-stale-editable-install": 1
+ },
+ "规范": {
+  "card-method-commit-hooks": 4
+ },
+ "解前": {
+  "card-concept-compile-first": 3
+ },
+ "解耦": {
+  "card-pitfall-typestub-drift": 1
+ },
+ "计文": {
+  "card-decision-docs-private": 5
+ },
+ "计记": {
+  "card-concept-compile-first": 1
+ },
+ "订变": {
+  "card-concept-suspect-lifecycle": 1
+ },
+ "认排": {
+  "card-concept-retrieval-funnel": 1
+ },
+ "记为": {
+  "card-concept-suspect-lifecycle": 1
+ },
+ "记录": {
+  "card-concept-compile-first": 1,
+  "card-concept-suspect-lifecycle": 1,
+  "card-method-span-provenance": 2
+ },
+ "论断": {
+  "card-concept-card-claim": 9,
+  "card-concept-compile-first": 1,
+  "card-concept-retrieval-funnel": 1,
+  "card-concept-suspect-lifecycle": 1,
+  "card-method-span-provenance": 8
+ },
+ "设": {
+  "card-method-windows-ci": 2
+ },
+ "设置": {
+  "card-method-windows-ci": 1
+ },
+ "设计": {
+  "card-decision-docs-private": 5
+ },
+ "评测": {
+  "card-method-quality-gates-ci": 3
+ },
+ "识单": {
+  "card-concept-card-claim": 1
+ },
+ "识库": {
+  "card-concept-compile-first": 5
+ },
+ "识经": {
+  "card-decision-docs-private": 3
+ },
+ "识资": {
+  "card-concept-compile-first": 3
+ },
+ "词只": {
+  "card-decision-no-llm-kernel": 1
+ },
+ "译器": {
+  "card-concept-suspect-lifecycle": 1
+ },
+ "译式": {
+  "card-concept-compile-first": 9
+ },
+ "译成": {
+  "card-concept-compile-first": 1
+ },
+ "译期": {
+  "card-concept-compile-first": 3
+ },
+ "语义": {
+  "card-decision-no-llm-kernel": 1
+ },
+ "语法": {
+  "card-method-windows-ci": 1
+ },
+ "读与": {
+  "card-concept-card-claim": 3
+ },
+ "读动": {
+  "card-concept-retrieval-funnel": 3
+ },
+ "读卡": {
+  "card-concept-retrieval-funnel": 1
+ },
+ "读源": {
+  "card-concept-card-claim": 1,
+  "card-method-span-provenance": 3
+ },
+ "调用": {
+  "card-decision-no-llm-kernel": 8
+ },
+ "败而": {
+  "card-method-windows-ci": 1
+ },
+ "质量": {
+  "card-concept-suspect-lifecycle": 1,
+  "card-method-quality-gates-ci": 8,
+  "card-method-span-provenance": 1,
+  "card-method-windows-ci": 3
+ },
+ "资产": {
+  "card-concept-compile-first": 3
+ },
+ "赖存": {
+  "card-pitfall-typestub-drift": 1
+ },
+ "赖新": {
+  "card-pitfall-typestub-drift": 2
+ },
+ "赖是": {
+  "card-concept-federation-lock": 1
+ },
+ "赖版": {
+  "card-pitfall-typestub-drift": 1
+ },
+ "赖用": {
+  "card-concept-federation-lock": 1
+ },
+ "赖由": {
+  "card-concept-federation-lock": 2
+ },
+ "赖锁": {
+  "card-concept-federation-lock": 4
+ },
+ "起全": {
+  "card-pitfall-stale-editable-install": 1
+ },
+ "跑六": {
+  "card-method-quality-gates-ci": 1
+ },
+ "跟踪": {
+  "card-decision-docs-private": 3
+ },
+ "跨库": {
+  "card-concept-federation-lock": 3
+ },
+ "路径": {
+  "card-decision-docs-private": 1,
+  "card-method-commit-hooks": 1,
+  "card-pitfall-stale-editable-install": 3,
+  "card-pitfall-typestub-drift": 1
+ },
+ "跳邻": {
+  "card-concept-retrieval-funnel": 1
+ },
+ "身份": {
+  "card-method-commit-hooks": 3
+ },
+ "转与": {
+  "card-concept-card-claim": 1
+ },
+ "转换": {
+  "card-method-windows-ci": 1
+ },
+ "辑安": {
+  "card-pitfall-stale-editable-install": 6
+ },
+ "输出": {
+  "card-method-windows-ci": 1
+ },
+ "过期": {
+  "card-concept-suspect-lifecycle": 1
+ },
+ "过来": {
+  "card-pitfall-typestub-drift": 1
+ },
+ "运行": {
+  "card-method-windows-ci": 1
+ },
+ "返回": {
+  "card-concept-retrieval-funnel": 2
+ },
+ "进入": {
+  "card-concept-suspect-lifecycle": 1,
+  "card-decision-docs-private": 2,
+  "card-method-commit-hooks": 1
+ },
+ "远由": {
+  "card-concept-suspect-lifecycle": 3
+ },
+ "连同": {
+  "card-pitfall-stale-editable-install": 1
+ },
+ "退出": {
+  "card-concept-suspect-lifecycle": 2
+ },
+ "退分": {
+  "card-pitfall-typestub-drift": 1
+ },
+ "选与": {
+  "card-concept-suspect-lifecycle": 1
+ },
+ "选卡": {
+  "card-concept-retrieval-funnel": 1
+ },
+ "逐卡": {
+  "card-concept-federation-lock": 3
+ },
+ "通过": {
+  "card-concept-card-claim": 1,
+  "card-method-span-provenance": 2
+ },
+ "速缓": {
+  "card-decision-git-source-of-truth": 1
+ },
+ "道质": {
+  "card-method-quality-gates-ci": 4
+ },
+ "道门": {
+  "card-method-quality-gates-ci": 1
+ },
+ "邦依": {
+  "card-concept-federation-lock": 4
+ },
+ "邻居": {
+  "card-concept-retrieval-funnel": 1
+ },
+ "都不": {
+  "card-method-quality-gates-ci": 1
+ },
+ "都是": {
+  "card-concept-compile-first": 1
+ },
+ "配与": {
+  "card-concept-suspect-lifecycle": 1
+ },
+ "配置": {
+  "card-method-commit-hooks": 3,
+  "card-pitfall-stale-editable-install": 1
+ },
+ "释的": {
+  "card-pitfall-typestub-drift": 2
+ },
+ "释随": {
+  "card-pitfall-typestub-drift": 1
+ },
+ "里写": {
+  "card-pitfall-stale-editable-install": 1
+ },
+ "里的": {
+  "card-concept-compile-first": 1,
+  "card-pitfall-stale-editable-install": 3
+ },
+ "重建": {
+  "card-decision-git-source-of-truth": 1
+ },
+ "重新": {
+  "card-pitfall-stale-editable-install": 1,
+  "card-pitfall-typestub-drift": 1
+ },
+ "重算": {
+  "card-concept-card-claim": 1,
+  "card-method-span-provenance": 3
+ },
+ "重读": {
+  "card-concept-card-claim": 1,
+  "card-method-span-provenance": 3
+ },
+ "量门": {
+  "card-method-quality-gates-ci": 8,
+  "card-method-windows-ci": 3
+ },
+ "量闸": {
+  "card-concept-suspect-lifecycle": 1,
+  "card-method-span-provenance": 1
+ },
+ "钩子": {
+  "card-decision-docs-private": 1,
+  "card-method-commit-hooks": 12
+ },
+ "锁定": {
+  "card-concept-federation-lock": 7
+ },
+ "长期": {
+  "card-concept-compile-first": 3
+ },
+ "门必": {
+  "card-method-windows-ci": 1
+ },
+ "门拆": {
+  "card-method-windows-ci": 2
+ },
+ "间某": {
+  "card-method-windows-ci": 1
+ },
+ "闸拒": {
+  "card-concept-suspect-lifecycle": 1,
+  "card-method-span-provenance": 1
+ },
+ "阅读": {
+  "card-concept-card-claim": 3
+ },
+ "降级": {
+  "card-concept-retrieval-funnel": 3
+ },
+ "除并": {
+  "card-decision-docs-private": 1
+ },
+ "除知": {
+  "card-concept-suspect-lifecycle": 1
+ },
+ "随仓": {
+  "card-decision-docs-private": 4
+ },
+ "随依": {
+  "card-pitfall-typestub-drift": 1
+ },
+ "随即": {
+  "card-pitfall-stale-editable-install": 2
+ },
+ "随时": {
+  "card-decision-git-source-of-truth": 1
+ },
+ "零领": {
+  "card-decision-no-llm-kernel": 1
+ },
+ "需求": {
+  "card-decision-no-llm-kernel": 1
+ },
+ "静态": {
+  "card-pitfall-typestub-drift": 3
+ },
+ "静默": {
+  "card-concept-card-claim": 1,
+  "card-concept-federation-lock": 3,
+  "card-method-span-provenance": 2
+ },
+ "面向": {
+  "card-concept-card-claim": 6
+ },
+ "项目": {
+  "card-pitfall-stale-editable-install": 3
+ },
+ "须拆": {
+  "card-method-windows-ci": 1
+ },
+ "须设": {
+  "card-method-windows-ci": 1
+ },
+ "须重": {
+  "card-pitfall-stale-editable-install": 1
+ },
+ "领域": {
+  "card-decision-no-llm-kernel": 2
+ },
+ "馏的": {
+  "card-concept-compile-first": 1
+ },
+ "馏结": {
+  "card-concept-compile-first": 2
+ },
+ "首位": {
+  "card-method-quality-gates-ci": 1
+ },
+ "验与": {
+  "card-concept-card-claim": 2
+ },
+ "验哈": {
+  "card-concept-retrieval-funnel": 1
+ },
+ "验提": {
+  "card-decision-git-source-of-truth": 2
+ },
+ "验收": {
+  "card-method-quality-gates-ci": 1
+ },
+ "默传": {
+  "card-concept-federation-lock": 3
+ },
+ "默认": {
+  "card-concept-retrieval-funnel": 1,
+  "card-method-windows-ci": 1
+ },
+ "默通": {
+  "card-concept-card-claim": 1,
+  "card-method-span-provenance": 2
+ }
+}

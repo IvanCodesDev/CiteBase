@@ -37,8 +37,17 @@ jobs:
       - name: 示例库质量门 lint
         run: vault lint --vault examples/generic-basics
 
-      - name: 示例库质量门 index
-        run: vault index --vault examples/generic-basics
+      - name: 示例库质量门 index（L-IDX-1 一致性）
+        run: vault index --check --vault examples/generic-basics
 
       - name: 示例库质量门 eval
         run: vault eval --vault examples/generic-basics --min-hit 0.8 --min-first 0.8
+
+      - name: 自举库质量门 lint
+        run: vault lint --vault examples/citebase-self
+
+      - name: 自举库质量门 index（L-IDX-1 一致性）
+        run: vault index --check --vault examples/citebase-self
+
+      - name: 自举库质量门 eval
+        run: vault eval --vault examples/citebase-self --min-hit 0.8 --min-first 0.8

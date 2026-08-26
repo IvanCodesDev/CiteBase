@@ -24,3 +24,20 @@
 - **M4**:bench 检索性能基线(合成 N 卡、双后端 P50/P95)。
 - **M5 Vault 联邦**:deps 依赖声明与 vault.lock 锁定(resolved_rev + 逐卡内容哈希)。
 - **M5**:`::` 跨库引用与联邦检索 scope,附依赖过期提示。
+- **自举 vault**:`examples/citebase-self` 用 Citebase 管理 Citebase 自身的工程知识
+  (概念/方法/决策/陷阱四类 14 卡,论断全部绑定 span 哈希),接入 CI 三道质量门。
+- `scripts/refresh_span_hashes.py`:手工撰写卡片的 span 哈希占位回填工具
+  (只填 PENDING 占位,不改写已有哈希,不掩盖漂移)。
+- pre-commit 提交规范钩子(`.githooks/` + `scripts/install-hooks.sh`):
+  强制提交身份,拦截 docs/、缓存与本地配置入库。
+
+### Changed
+
+- 项目更名:CardVault → Citebase(包名 `citebase`,CLI 入口 `vault` / `vault-mcp` 不变)。
+- CI 示例库 index 步骤升级为 `vault index --check`(L-IDX-1 索引一致性核验)。
+- README / PROJECT_STRUCTURE / spec README 不再链接私有 docs/ 目录,设计与工程知识改由自举 vault 公开。
+
+### Fixed
+
+- MCP 服务器类解析与 mcp 2.1.1 类型存根解耦(旧版回退分支改
+  importlib 动态导入 + cast),消除随依赖存根形态漂移的 mypy 报错。

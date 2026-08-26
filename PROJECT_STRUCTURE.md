@@ -42,10 +42,13 @@ Citebase/
 ├─ examples/
 │  ├─ generic-basics/      # 24 卡示例 vault：3 个源、32 条论断全部绑定 span 哈希，
 │  │                       #   evals/golden.yaml 22 问（命中率验收线 ≥ 0.8）
-│  └─ federation/          # M5 双库联邦示例：methods-provider（上游）+ consumer
-│                          #   （path 依赖 + vault.lock 已提交，可复现）
-├─ tests/                  # 210 个确定性单测（不依赖 LLM 与网络；LLM 路径用剧本化替身）
-└─ docs/                   # 全套设计文档（架构 / 治理 / 安全 / 产品 / ADR）
+│  ├─ federation/          # M5 双库联邦示例：methods-provider（上游）+ consumer
+│  │                       #   （path 依赖 + vault.lock 已提交，可复现）
+│  └─ citebase-self/       # 自举 vault（dogfooding）：本项目自身的工程知识，
+│                          #   概念 / 方法 / 决策 / 陷阱四类卡，接入 CI 三道门
+├─ tests/                  # 211 个确定性单测（不依赖 LLM 与网络；LLM 路径用剧本化替身）
+├─ .githooks/ + scripts/   # 提交规范钩子（身份与禁入路径校验）及安装、哈希回填脚本
+└─ docs/                   # 设计文档（本地维护，不随公开仓库分发；公开知识见自举 vault）
 ```
 
 落地说明：目标布局中的顶层 `compiler/`、`adapters/`、`extractors/`、`mcp/` 暂以 `citebase.*`
@@ -107,7 +110,7 @@ flowchart TB
 | 证据事件 id | `evt-<日期>-<短名>` | `evt-2026-08-14-run-0392` |
 | 跨库引用（M5） | `<vault-id>::<card-id>`，`::` 为保留分隔符 | `mathmodel-methods::card-method-gm11` |
 | Schema 文件 | `spec/<对象>.schema.json`，`$id` 带版本 | `spec/card.schema.json` |
-| ADR | `docs/adr/NNNN-short-title.md` | `docs/adr/0002-dual-granularity-card-claim.md` |
+| ADR | `docs/adr/NNNN-short-title.md`（本地维护，不随公开仓库分发） | `docs/adr/0002-dual-granularity-card-claim.md` |
 
 ## 一个 vault 的目录布局（用户侧）
 
@@ -134,7 +137,8 @@ my-vault/
 
 ## 示例与自举
 
-`examples/` 至少包含两个完整示例 vault：
+`examples/` 包含三个完整示例 vault：
 
-1. **generic 示例**：通用概念/方法/陷阱卡，演示零 LLM 的 M0 工作流；
-2. **自举 vault（dogfooding）**：Citebase 自己的设计知识（本 docs 的论断化版本）用 Citebase 管理——项目对自己的机制下注。
+1. **generic-basics**：通用概念/方法/陷阱卡，演示零 LLM 的 M0 工作流；
+2. **federation**：双库联邦（path 依赖 + lock），演示 M5 跨库引用；
+3. **citebase-self（自举，已落地）**：Citebase 自己的设计与工程知识用 Citebase 管理——项目对自己的机制下注。设计要点、开发事件与发布约定先蒸馏为源笔记（`sources/`），再论断化为卡片，每条论断绑定 span 哈希，与其他示例一样过 lint / index --check / eval 三道 CI 门。

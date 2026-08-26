@@ -1,0 +1,15 @@
+name: citebase-dev
+version: 0.1.0
+description: 自举包：Citebase 项目自身的概念 / 方法 / 决策 / 陷阱
+card_kinds:
+  - kind: concept
+    body_sections: [是什么, 为什么, 边界, 关联]
+  - kind: method
+    body_sections: [是什么, 何时用, 怎么用, 边界与陷阱, 关联]
+  - kind: decision
+    body_sections: [背景, 决策, 理由, 后果, 关联]
+  - kind: pitfall
+    body_sections: [现象, 根因, 规避, 触发条件, 关联]
+link_predicates: [related_to, refines, pitfall, cites, used_in]
+tag_vocab:
+  domains: [架构, 治理, 检索, 工程实践, 发布]

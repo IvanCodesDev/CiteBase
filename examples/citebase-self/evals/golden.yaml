@@ -1,0 +1,43 @@
+# citebase-self golden set：自举库检索评测（验收线：命中率与首位命中率 ≥ 0.8）
+- q: 编译式 知识库
+  expect: [card-concept-compile-first]
+  expect_rank: 1
+- q: 卡片 论断 双粒度
+  expect: [card-concept-card-claim]
+  expect_rank: 1
+- q: 检索漏斗
+  expect: [card-concept-retrieval-funnel]
+  expect_rank: 1
+- q: suspect 漂移 复核
+  expect: [card-concept-suspect-lifecycle]
+  expect_rank: 3
+- q: vault.lock 依赖锁定
+  expect: [card-concept-federation-lock]
+  expect_rank: 1
+- q: CI 质量门
+  expect: [card-method-quality-gates-ci]
+  expect_rank: 3
+- q: 出处 哈希 核验
+  expect: [card-method-span-provenance]
+  expect_rank: 3
+- q: 提交 钩子 作者
+  expect: [card-method-commit-hooks]
+  expect_rank: 3
+- q: PYTHONIOENCODING
+  expect: [card-method-windows-ci]
+  expect_rank: 1
+- q: 内核 无 LLM
+  expect: [card-decision-no-llm-kernel]
+  expect_rank: 3
+- q: 索引 提交物 事实源
+  expect: [card-decision-git-source-of-truth]
+  expect_rank: 3
+- q: docs 不公开 设计文档
+  expect: [card-decision-docs-private]
+  expect_rank: 3
+- q: ModuleNotFoundError 可编辑安装
+  expect: [card-pitfall-stale-editable-install]
+  expect_rank: 1
+- q: 类型存根 漂移 unused-ignore
+  expect: [card-pitfall-typestub-drift]
+  expect_rank: 1

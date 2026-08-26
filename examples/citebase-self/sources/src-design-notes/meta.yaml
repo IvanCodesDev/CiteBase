@@ -1,0 +1,10 @@
+id: src-design-notes
+adapter: file
+uri: extracted/text.md
+revision: manual-v1
+fetched_at: 2026-08-28T00:00:00Z
+extractions:
+  - path: extracted/text.md
+    extractor: manual@1
+    confidence: 1.0
+license: Apache-2.0

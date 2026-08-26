@@ -1,0 +1,3 @@
+name: citebase-self
+packs: [citebase-dev]
+low_confidence_threshold: 0.6

@@ -1,0 +1,143 @@
+{
+ "ci 六道质量门": [
+  "card-method-quality-gates-ci"
+ ],
+ "ci 质量门": [
+  "card-method-quality-gates-ci"
+ ],
+ "claim": [
+  "card-concept-card-claim"
+ ],
+ "compile-first": [
+  "card-concept-compile-first"
+ ],
+ "docs 私有": [
+  "card-decision-docs-private"
+ ],
+ "drift": [
+  "card-concept-suspect-lifecycle"
+ ],
+ "dual granularity": [
+  "card-concept-card-claim"
+ ],
+ "editable install": [
+  "card-pitfall-stale-editable-install"
+ ],
+ "federation": [
+  "card-concept-federation-lock"
+ ],
+ "git 是唯一事实源": [
+  "card-decision-git-source-of-truth"
+ ],
+ "modulenotfounderror": [
+  "card-pitfall-stale-editable-install"
+ ],
+ "no-llm kernel": [
+  "card-decision-no-llm-kernel"
+ ],
+ "pre-commit": [
+  "card-method-commit-hooks"
+ ],
+ "private docs": [
+  "card-decision-docs-private"
+ ],
+ "provenance": [
+  "card-method-span-provenance"
+ ],
+ "pwsh": [
+  "card-method-windows-ci"
+ ],
+ "pythonioencoding": [
+  "card-method-windows-ci"
+ ],
+ "quality gates": [
+  "card-method-quality-gates-ci"
+ ],
+ "retrieval funnel": [
+  "card-concept-retrieval-funnel"
+ ],
+ "source of truth": [
+  "card-decision-git-source-of-truth"
+ ],
+ "span hash": [
+  "card-method-span-provenance"
+ ],
+ "suspect": [
+  "card-concept-suspect-lifecycle"
+ ],
+ "type stub drift": [
+  "card-pitfall-typestub-drift"
+ ],
+ "unused-ignore": [
+  "card-pitfall-typestub-drift"
+ ],
+ "vault.lock": [
+  "card-concept-federation-lock"
+ ],
+ "windows ci": [
+  "card-method-windows-ci"
+ ],
+ "windows 平台 ci 约定": [
+  "card-method-windows-ci"
+ ],
+ "事实源": [
+  "card-decision-git-source-of-truth"
+ ],
+ "内核不调用 llm": [
+  "card-decision-no-llm-kernel"
+ ],
+ "出处哈希": [
+  "card-method-span-provenance"
+ ],
+ "卡片与论断双粒度": [
+  "card-concept-card-claim"
+ ],
+ "双粒度": [
+  "card-concept-card-claim"
+ ],
+ "失效治理生命周期": [
+  "card-concept-suspect-lifecycle"
+ ],
+ "提交规范钩子": [
+  "card-method-commit-hooks"
+ ],
+ "提交钩子": [
+  "card-method-commit-hooks"
+ ],
+ "无 llm 内核": [
+  "card-decision-no-llm-kernel"
+ ],
+ "更名后可编辑安装失效": [
+  "card-pitfall-stale-editable-install"
+ ],
+ "检索协议": [
+  "card-concept-retrieval-funnel"
+ ],
+ "检索漏斗": [
+  "card-concept-retrieval-funnel"
+ ],
+ "漂移治理": [
+  "card-concept-suspect-lifecycle"
+ ],
+ "第三方类型存根漂移": [
+  "card-pitfall-typestub-drift"
+ ],
+ "编译式": [
+  "card-concept-compile-first"
+ ],
+ "编译式知识库": [
+  "card-concept-compile-first"
+ ],
+ "联邦": [
+  "card-concept-federation-lock"
+ ],
+ "联邦依赖锁定": [
+  "card-concept-federation-lock"
+ ],
+ "论断出处绑定与核验": [
+  "card-method-span-provenance"
+ ],
+ "设计文档不随仓库公开": [
+  "card-decision-docs-private"
+ ]
+}
