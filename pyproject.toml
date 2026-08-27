@@ -1,0 +1,63 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cardvault"
+version = "0.1.0.dev0"
+description = "Compiled knowledge base: compile once, verify forever, learn from execution."
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "Apache-2.0" }
+dependencies = [
+  "pydantic>=2.7",
+  "PyYAML>=6.0",
+  "jsonschema>=4.18",
+]
+
+[project.scripts]
+vault = "cardvault.cli:main"
+vault-mcp = "cardvault.mcp.server:main"
+
+[project.optional-dependencies]
+pdf = [
+  "pypdf>=4.0",
+]
+mcp = [
+  "mcp>=1.2",
+]
+dev = [
+  "pytest>=8.3",
+  "ruff>=0.8",
+  "mypy>=1.13",
+  "types-PyYAML>=6.0",
+  "types-jsonschema>=4.18",
+  "pypdf>=4.0",
+  "mcp>=1.2",
+]
+
+[tool.setuptools]
+package-dir = { "" = "core" }
+
+[tool.setuptools.packages.find]
+where = ["core"]
+
+[tool.setuptools.package-data]
+cardvault = ["spec/*.json", "compiler/prompts/*.md"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "UP", "B", "SIM", "RUF"]
+# 本项目的文档字符串与注释使用中文标点，RUF001/002/003 的「歧义 Unicode」告警全部为误报。
+ignore = ["RUF001", "RUF002", "RUF003"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+files = ["core/cardvault"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

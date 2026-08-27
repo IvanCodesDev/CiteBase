@@ -1,0 +1,3 @@
+name: methods-provider
+packs: [generic]
+low_confidence_threshold: 0.6

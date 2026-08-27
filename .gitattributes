@@ -1,0 +1,28 @@
+# 跨平台换行符策略:vault.lock 的逐卡内容哈希与卡片的出处 span 哈希对换行符敏感,
+# 必须保证 Windows / Linux / macOS 检出的文件内容逐字节一致。
+# 打底:git 自动识别文本文件,仓库内统一存 LF。
+* text=auto
+
+# 仓库内的文本格式一律强制 LF 检出(examples/ 与 tests/ 实际扩展名已核对:
+# .py .md .yaml .json .lock .jsonl;其余为前瞻保障),
+# 避免 Windows 上 core.autocrlf 把工作区换成 CRLF 导致哈希漂移。
+*.py    text eol=lf
+*.md    text eol=lf
+*.yaml  text eol=lf
+*.yml   text eol=lf
+*.json  text eol=lf
+*.toml  text eol=lf
+*.lock  text eol=lf
+*.jsonl text eol=lf
+*.bib   text eol=lf
+*.txt   text eol=lf
+
+# 二进制:当前 examples/ 与 tests/ 下暂无二进制文件;以下为源原件(pypdf 抽取器
+# 对应的 PDF)、文档配图与 sqlite 缓存预留,禁止任何换行符转换。
+*.pdf    binary
+*.png    binary
+*.jpg    binary
+*.jpeg   binary
+*.gif    binary
+*.webp   binary
+*.sqlite binary

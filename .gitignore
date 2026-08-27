@@ -1,0 +1,19 @@
+.venv/
+__pycache__/
+# 本机 AI 工具的个人配置,与项目无关,不入公开仓库
+.cursor/
+.codex/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+dist/
+build/
+
+# vault 运行期旁路产物：检索日志不入库（_index JSON 是提交物，见 quality-gates L-IDX-1）
+_logs/
+# sqlite 检索缓存是纯生成物（vault index 重建），二进制不入库
+# （**/ 前缀让规则覆盖任意层级的 vault，含 examples/ 下的示例库）
+**/_index/index.sqlite
+# git 依赖的本地克隆缓存（vault deps sync 重建；vault.lock 才是提交物）
+_deps/

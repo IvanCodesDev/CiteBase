@@ -1,0 +1,7 @@
+name: federation-consumer
+packs: [generic]
+low_confidence_threshold: 0.6
+# M5 联邦：像声明包依赖一样声明知识库依赖（本示例用本地路径；生产用 git + rev 锁定）
+deps:
+  methods-provider:
+    path: ../methods-provider

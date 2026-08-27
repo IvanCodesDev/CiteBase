@@ -1,0 +1,69 @@
+# golden set：20+ 问检索评测（M0 验收线：命中率 ≥ 0.8）
+# 条目：q = 查询；expect = 期望卡 id 列表（任一进入 top-limit 记命中）；
+# expect_rank = 期望卡应进入的名次上限（可选）。
+- q: 幂等性
+  expect: [card-concept-idempotency]
+  expect_rank: 1
+- q: exponential backoff
+  expect: [card-method-exponential-backoff]
+  expect_rank: 1
+- q: 重试风暴
+  expect: [card-pitfall-retry-storm]
+  expect_rank: 1
+- q: 缓存同时失效 打到后端
+  expect: [card-pitfall-cache-avalanche]
+  expect_rank: 3
+- q: 热点数据预热
+  expect: [card-method-cache-jitter-warmup, card-pitfall-cache-avalanche]
+  expect_rank: 3
+- q: 内容哈希 去重
+  expect: [card-concept-content-addressing]
+  expect_rank: 3
+- q: 过拟合
+  expect: [card-pitfall-overfitting]
+  expect_rank: 1
+- q: 训练误差下降 验证误差上升
+  expect: [card-pitfall-overfitting]
+  expect_rank: 3
+- q: 早停
+  expect: [card-method-early-stopping]
+  expect_rank: 1
+- q: 交叉验证
+  expect: [card-method-k-fold-cv]
+  expect_rank: 1
+- q: 用未来数据预测过去
+  expect: [card-pitfall-ts-cv-time-order]
+  expect_rank: 3
+- q: 数据泄漏
+  expect: [card-pitfall-data-leakage]
+  expect_rank: 1
+- q: 高维超参数 随机搜索
+  expect: [card-method-random-search]
+  expect_rank: 3
+- q: 移动平均 窗口 滞后
+  expect: [card-method-moving-average]
+  expect_rank: 3
+- q: 中位数 极端值
+  expect: [card-concept-median-robustness]
+  expect_rank: 3
+- q: 相关不能证明因果
+  expect: [card-pitfall-correlation-causation]
+  expect_rank: 3
+- q: 混杂变量
+  expect: [card-concept-confounder]
+  expect_rank: 1
+- q: p值
+  expect: [card-concept-p-value]
+  expect_rank: 1
+- q: 有放回 重抽样
+  expect: [card-method-bootstrap]
+  expect_rank: 3
+- q: 辛普森悖论
+  expect: [card-pitfall-simpsons-paradox]
+  expect_rank: 1
+- q: 幸存者偏差
+  expect: [card-pitfall-survivorship-bias]
+  expect_rank: 1
+- q: 置信区间 覆盖真值
+  expect: [card-concept-confidence-interval]
+  expect_rank: 3

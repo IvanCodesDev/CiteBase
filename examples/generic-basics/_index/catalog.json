@@ -1,0 +1,626 @@
+{
+ "card-concept-confidence-interval": {
+  "aliases": [
+   "confidence interval"
+  ],
+  "claims": [
+   {
+    "id": "c1",
+    "status": "active",
+    "text": "95% 置信区间的含义是重复抽样中约 95% 的区间会覆盖真值。",
+    "valid_from": null,
+    "valid_until": null
+   }
+  ],
+  "injection_risk": false,
+  "kind": "concept",
+  "name": "置信区间",
+  "path": "cards/concept/confidence-interval.md",
+  "status": "active",
+  "summary": "重复抽样中约 95% 的区间会覆盖真值的区间估计。",
+  "tags": [
+   "统计"
+  ]
+ },
+ "card-concept-confounder": {
+  "aliases": [
+   "confounder",
+   "混杂因素"
+  ],
+  "claims": [
+   {
+    "id": "c1",
+    "status": "active",
+    "text": "混杂变量可以让两个无因果关系的变量表现出高相关。",
+    "valid_from": null,
+    "valid_until": null
+   }
+  ],
+  "injection_risk": false,
+  "kind": "concept",
+  "name": "混杂变量",
+  "path": "cards/concept/confounder.md",
+  "status": "active",
+  "summary": "同时影响两个变量、制造虚假相关的第三变量。",
+  "tags": [
+   "统计"
+  ]
+ },
+ "card-concept-content-addressing": {
+  "aliases": [
+   "content addressing",
+   "CAS"
+  ],
+  "claims": [
+   {
+    "id": "c1",
+    "status": "active",
+    "text": "内容寻址存储用内容哈希作为标识，天然去重且可校验完整性。",
+    "valid_from": null,
+    "valid_until": null
+   }
+  ],
+  "injection_risk": false,
+  "kind": "concept",
+  "name": "内容寻址",
+  "path": "cards/concept/content-addressing.md",
+  "status": "active",
+  "summary": "用内容哈希作为标识的存储方式，天然去重且可校验完整性。",
+  "tags": [
+   "工程实践"
+  ]
+ },
+ "card-concept-idempotency": {
+  "aliases": [
+   "idempotency",
+   "幂等"
+  ],
+  "claims": [
+   {
+    "id": "c1",
+    "status": "active",
+    "text": "幂等操作重复执行的效果与执行一次相同，是安全重试的前提。",
+    "valid_from": null,
+    "valid_until": null
+   },
+   {
+    "id": "c2",
+    "status": "active",
+    "text": "网络请求的幂等性通常靠客户端生成的幂等键实现。",
+    "valid_from": null,
+    "valid_until": null
+   }
+  ],
+  "injection_risk": false,
+  "kind": "concept",
+  "name": "幂等性",
+  "path": "cards/concept/idempotency.md",
+  "status": "active",
+  "summary": "重复执行效果与执行一次相同的操作性质，是安全重试的前提。",
+  "tags": [
+   "工程实践"
+  ]
+ },
+ "card-concept-median-robustness": {
+  "aliases": [
+   "median",
+   "中位数"
+  ],
+  "claims": [
+   {
+    "id": "c1",
+    "status": "active",
+    "text": "均值对极端值敏感，中位数对极端值稳健。",
+    "valid_from": null,
+    "valid_until": null
+   },
+   {
+    "id": "c2",
+    "status": "active",
+    "text": "收入、房价等右偏分布的集中趋势应优先报告中位数。",
+    "valid_from": null,
+    "valid_until": null
+   }
+  ],
+  "injection_risk": false,
+  "kind": "concept",
+  "name": "中位数稳健性",
+  "path": "cards/concept/median-robustness.md",
+  "status": "active",
+  "summary": "中位数对极端值稳健，右偏分布应优先报告中位数。",
+  "tags": [
+   "统计"
+  ]
+ },
+ "card-concept-p-value": {
+  "aliases": [
+   "p-value",
+   "p值"
+  ],
+  "claims": [
+   {
+    "id": "c1",
+    "status": "active",
+    "text": "p 值是在原假设为真时观察到当前或更极端数据的概率，不是原假设为真的概率。",
+    "valid_from": null,
+    "valid_until": null
+   }
+  ],
+  "injection_risk": false,
+  "kind": "concept",
+  "name": "p 值",
+  "path": "cards/concept/p-value.md",
+  "status": "active",
+  "summary": "原假设为真时观察到当前或更极端数据的概率。",
+  "tags": [
+   "统计"
+  ]
+ },
+ "card-concept-regularization": {
+  "aliases": [
+   "regularization"
+  ],
+  "claims": [
+   {
+    "id": "c1",
+    "status": "active",
+    "text": "正则化是控制过拟合的常用手段之一。",
+    "valid_from": null,
+    "valid_until": null
+   }
+  ],
+  "injection_risk": false,
+  "kind": "concept",
+  "name": "正则化",
+  "path": "cards/concept/regularization.md",
+  "status": "active",
+  "summary": "通过约束模型复杂度抑制过拟合的一类技术。",
+  "tags": [
+   "机器学习"
+  ]
+ },
+ "card-concept-simple-baseline": {
+  "aliases": [
+   "baseline first",
+   "基线优先"
+  ],
+  "claims": [
+   {
+    "id": "c1",
+    "status": "active",
+    "text": "小样本单调趋势序列可先尝试简单基线再考虑复杂模型。",
+    "valid_from": null,
+    "valid_until": null
+   }
+  ],
+  "injection_risk": false,
+  "kind": "concept",
+  "name": "简单基线优先",
+  "path": "cards/concept/simple-baseline.md",
+  "status": "active",
+  "summary": "先跑简单基线再上复杂模型的建模次序原则。",
+  "tags": [
+   "机器学习",
+   "时间序列"
+  ]
+ },
+ "card-method-bootstrap": {
+  "aliases": [
+   "bootstrap",
+   "自助抽样"
+  ],
+  "claims": [
+   {
+    "id": "c1",
+    "status": "active",
+    "text": "自助法通过有放回重抽样估计统计量的抽样分布，适用于小样本且分布未知的场景。",
+    "valid_from": null,
+    "valid_until": null
+   }
+  ],
+  "injection_risk": false,
+  "kind": "method",
+  "name": "自助法",
+  "path": "cards/method/bootstrap.md",
+  "status": "active",
+  "summary": "有放回重抽样估计抽样分布，适用小样本且分布未知场景。",
+  "tags": [
+   "统计"
+  ]
+ },
+ "card-method-cache-jitter-warmup": {
+  "aliases": [
+   "缓存过期抖动",
+   "热点预热"
+  ],
+  "claims": [
+   {
+    "id": "c1",
+    "status": "active",
+    "text": "给过期时间加随机抖动与热点数据预热是缓解缓存雪崩的常用手段。",
+    "valid_from": null,
+    "valid_until": null
+   }
+  ],
+  "injection_risk": false,
+  "kind": "method",
+  "name": "过期抖动与热点预热",
+  "path": "cards/method/cache-jitter-warmup.md",
+  "status": "active",
+  "summary": "用随机过期抖动和热点预热分散缓存失效时刻的缓解手段。",
+  "tags": [
+   "工程实践"
+  ]
+ },
+ "card-method-early-stopping": {
+  "aliases": [
+   "early stopping"
+  ],
+  "claims": [
+   {
+    "id": "c1",
+    "status": "active",
+    "text": "早停是控制过拟合的常用手段之一。",
+    "valid_from": null,
+    "valid_until": null
+   }
+  ],
+  "injection_risk": false,
+  "kind": "method",
+  "name": "早停",
+  "path": "cards/method/early-stopping.md",
+  "status": "active",
+  "summary": "验证指标不再改善时提前终止训练以控制过拟合。",
+  "tags": [
+   "机器学习"
+  ]
+ },
+ "card-method-exponential-backoff": {
+  "aliases": [
+   "exponential backoff",
+   "退避重试"
+  ],
+  "claims": [
+   {
+    "id": "c1",
+    "status": "active",
+    "text": "指数退避在每次失败后成倍拉长等待时间，配合抖动可避免重试风暴。",
+    "valid_from": null,
+    "valid_until": null
+   },
+   {
+    "id": "c2",
+    "status": "active",
+    "text": "无上限的重试会放大故障，必须设置最大尝试次数与总时长预算。",
+    "valid_from": null,
+    "valid_until": null
+   }
+  ],
+  "injection_risk": false,
+  "kind": "method",
+  "name": "指数退避",
+  "path": "cards/method/exponential-backoff.md",
+  "status": "active",
+  "summary": "失败后成倍拉长重试等待并叠加抖动的重试节流方法。",
+  "tags": [
+   "工程实践"
+  ]
+ },
+ "card-method-k-fold-cv": {
+  "aliases": [
+   "k-fold",
+   "交叉验证",
+   "cross validation"
+  ],
+  "claims": [
+   {
+    "id": "c1",
+    "status": "active",
+    "text": "k 折交叉验证把数据分成 k 份轮流做验证集，比单次划分的评估方差更小。",
+    "valid_from": null,
+    "valid_until": null
+   }
+  ],
+  "injection_risk": false,
+  "kind": "method",
+  "name": "k 折交叉验证",
+  "path": "cards/method/k-fold-cv.md",
+  "status": "active",
+  "summary": "数据分 k 份轮流做验证集，评估方差比单次划分更小。",
+  "tags": [
+   "机器学习",
+   "统计"
+  ]
+ },
+ "card-method-moving-average": {
+  "aliases": [
+   "moving average"
+  ],
+  "claims": [
+   {
+    "id": "c1",
+    "status": "active",
+    "text": "移动平均适合平稳序列的短期平滑预测，窗口越大越平滑但滞后越明显。",
+    "valid_from": null,
+    "valid_until": null
+   }
+  ],
+  "injection_risk": false,
+  "kind": "method",
+  "name": "移动平均",
+  "path": "cards/method/moving-average.md",
+  "status": "active",
+  "summary": "平稳序列短期平滑预测基线，窗口越大越平滑但滞后越明显。",
+  "tags": [
+   "时间序列"
+  ]
+ },
+ "card-method-random-search": {
+  "aliases": [
+   "random search"
+  ],
+  "claims": [
+   {
+    "id": "c1",
+    "status": "active",
+    "text": "网格搜索在低维超参数空间可行，高维时随机搜索通常更高效。",
+    "valid_from": null,
+    "valid_until": null
+   }
+  ],
+  "injection_risk": false,
+  "kind": "method",
+  "name": "随机搜索",
+  "path": "cards/method/random-search.md",
+  "status": "active",
+  "summary": "高维超参数空间中通常比网格搜索更高效的调参方法。",
+  "tags": [
+   "机器学习"
+  ]
+ },
+ "card-pitfall-cache-avalanche": {
+  "aliases": [
+   "cache avalanche"
+  ],
+  "claims": [
+   {
+    "id": "c1",
+    "status": "active",
+    "text": "缓存雪崩指大量缓存同时失效导致请求全部打到后端存储。",
+    "valid_from": null,
+    "valid_until": null
+   },
+   {
+    "id": "c2",
+    "status": "active",
+    "text": "给过期时间加随机抖动与热点数据预热是缓解缓存雪崩的常用手段。",
+    "valid_from": null,
+    "valid_until": null
+   }
+  ],
+  "injection_risk": false,
+  "kind": "pitfall",
+  "name": "缓存雪崩",
+  "path": "cards/pitfall/cache-avalanche.md",
+  "status": "active",
+  "summary": "大量缓存同时失效导致请求全部打到后端存储的故障模式。",
+  "tags": [
+   "工程实践"
+  ]
+ },
+ "card-pitfall-correlation-causation": {
+  "aliases": [
+   "correlation is not causation"
+  ],
+  "claims": [
+   {
+    "id": "c1",
+    "status": "active",
+    "text": "相关系数只度量线性关联强度，不能证明因果关系。",
+    "valid_from": null,
+    "valid_until": null
+   },
+   {
+    "id": "c2",
+    "status": "active",
+    "text": "混杂变量可以让两个无因果关系的变量表现出高相关。",
+    "valid_from": null,
+    "valid_until": null
+   }
+  ],
+  "injection_risk": false,
+  "kind": "pitfall",
+  "name": "相关不等于因果",
+  "path": "cards/pitfall/correlation-causation.md",
+  "status": "active",
+  "summary": "相关系数只度量线性关联，高相关不能证明因果关系。",
+  "tags": [
+   "统计"
+  ]
+ },
+ "card-pitfall-data-leakage": {
+  "aliases": [
+   "data leakage"
+  ],
+  "claims": [
+   {
+    "id": "c1",
+    "status": "active",
+    "text": "数据泄漏指训练特征中混入了目标变量的信息，导致线下指标虚高而线上失效。",
+    "valid_from": null,
+    "valid_until": null
+   },
+   {
+    "id": "c2",
+    "status": "active",
+    "text": "在划分训练与测试集之前做全量标准化或特征选择是常见的泄漏来源。",
+    "valid_from": null,
+    "valid_until": null
+   }
+  ],
+  "injection_risk": false,
+  "kind": "pitfall",
+  "name": "数据泄漏",
+  "path": "cards/pitfall/data-leakage.md",
+  "status": "active",
+  "summary": "训练特征混入目标信息，线下指标虚高而线上失效。",
+  "tags": [
+   "机器学习"
+  ]
+ },
+ "card-pitfall-multiple-comparison": {
+  "aliases": [
+   "multiple comparison",
+   "多重检验"
+  ],
+  "claims": [
+   {
+    "id": "c1",
+    "status": "active",
+    "text": "多次假设检验会使假阳性率累积，需要做多重比较校正。",
+    "valid_from": null,
+    "valid_until": null
+   }
+  ],
+  "injection_risk": false,
+  "kind": "pitfall",
+  "name": "多重比较",
+  "path": "cards/pitfall/multiple-comparison.md",
+  "status": "active",
+  "summary": "多次假设检验使假阳性率累积，需要做校正。",
+  "tags": [
+   "统计"
+  ]
+ },
+ "card-pitfall-overfitting": {
+  "aliases": [
+   "overfitting"
+  ],
+  "claims": [
+   {
+    "id": "c1",
+    "status": "active",
+    "text": "过拟合表现为训练误差持续下降而验证误差开始上升。",
+    "valid_from": null,
+    "valid_until": null
+   },
+   {
+    "id": "c2",
+    "status": "active",
+    "text": "正则化、早停和数据增强是控制过拟合的常用手段。",
+    "valid_from": null,
+    "valid_until": null
+   }
+  ],
+  "injection_risk": false,
+  "kind": "pitfall",
+  "name": "过拟合",
+  "path": "cards/pitfall/overfitting.md",
+  "status": "active",
+  "summary": "模型记住训练集细节导致泛化能力下降的现象。",
+  "tags": [
+   "机器学习"
+  ]
+ },
+ "card-pitfall-retry-storm": {
+  "aliases": [
+   "retry storm"
+  ],
+  "claims": [
+   {
+    "id": "c1",
+    "status": "active",
+    "text": "无上限的重试会放大故障，必须设置最大尝试次数与总时长预算。",
+    "valid_from": null,
+    "valid_until": null
+   },
+   {
+    "id": "c2",
+    "status": "active",
+    "text": "配合抖动的指数退避可避免重试风暴。",
+    "valid_from": null,
+    "valid_until": null
+   }
+  ],
+  "injection_risk": false,
+  "kind": "pitfall",
+  "name": "重试风暴",
+  "path": "cards/pitfall/retry-storm.md",
+  "status": "active",
+  "summary": "大量客户端同步重试压垮下游、把局部故障放大的现象。",
+  "tags": [
+   "工程实践"
+  ]
+ },
+ "card-pitfall-simpsons-paradox": {
+  "aliases": [
+   "simpsons paradox",
+   "辛普森"
+  ],
+  "claims": [
+   {
+    "id": "c1",
+    "status": "active",
+    "text": "辛普森悖论指分组结论与合并结论方向相反的现象，根因是组间权重差异。",
+    "valid_from": null,
+    "valid_until": null
+   }
+  ],
+  "injection_risk": false,
+  "kind": "pitfall",
+  "name": "辛普森悖论",
+  "path": "cards/pitfall/simpsons-paradox.md",
+  "status": "active",
+  "summary": "分组结论与合并结论方向相反，根因是组间权重差异。",
+  "tags": [
+   "统计"
+  ]
+ },
+ "card-pitfall-survivorship-bias": {
+  "aliases": [
+   "survivorship bias"
+  ],
+  "claims": [
+   {
+    "id": "c1",
+    "status": "active",
+    "text": "幸存者偏差指只分析通过筛选的样本而忽略未通过者导致的系统性错误。",
+    "valid_from": null,
+    "valid_until": null
+   }
+  ],
+  "injection_risk": false,
+  "kind": "pitfall",
+  "name": "幸存者偏差",
+  "path": "cards/pitfall/survivorship-bias.md",
+  "status": "active",
+  "summary": "只分析通过筛选的样本导致的系统性错误。",
+  "tags": [
+   "统计"
+  ]
+ },
+ "card-pitfall-ts-cv-time-order": {
+  "aliases": [
+   "时间序列泄漏"
+  ],
+  "claims": [
+   {
+    "id": "c1",
+    "status": "active",
+    "text": "时间序列数据做交叉验证必须保持时间顺序，禁止用未来数据训练预测过去。",
+    "valid_from": null,
+    "valid_until": null
+   }
+  ],
+  "injection_risk": false,
+  "kind": "pitfall",
+  "name": "时间序列交叉验证乱序",
+  "path": "cards/pitfall/ts-cv-time-order.md",
+  "status": "active",
+  "summary": "对时间序列随机切分交叉验证，等于用未来数据预测过去。",
+  "tags": [
+   "机器学习",
+   "时间序列"
+  ]
+ }
+}

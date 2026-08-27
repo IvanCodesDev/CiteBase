@@ -1,0 +1,284 @@
+{
+ "in": {
+  "card-concept-confidence-interval": [
+   {
+    "from": "card-method-bootstrap",
+    "predicate": "related_to"
+   }
+  ],
+  "card-concept-confounder": [
+   {
+    "from": "card-pitfall-correlation-causation",
+    "predicate": "related_to"
+   }
+  ],
+  "card-concept-idempotency": [
+   {
+    "from": "card-method-exponential-backoff",
+    "predicate": "related_to"
+   }
+  ],
+  "card-concept-p-value": [
+   {
+    "from": "card-pitfall-multiple-comparison",
+    "predicate": "related_to"
+   }
+  ],
+  "card-concept-regularization": [
+   {
+    "from": "card-pitfall-overfitting",
+    "predicate": "related_to"
+   }
+  ],
+  "card-concept-simple-baseline": [
+   {
+    "from": "card-method-moving-average",
+    "predicate": "related_to"
+   }
+  ],
+  "card-method-bootstrap": [
+   {
+    "from": "card-concept-confidence-interval",
+    "predicate": "related_to"
+   }
+  ],
+  "card-method-cache-jitter-warmup": [
+   {
+    "from": "card-pitfall-cache-avalanche",
+    "predicate": "related_to"
+   }
+  ],
+  "card-method-early-stopping": [
+   {
+    "from": "card-pitfall-overfitting",
+    "predicate": "related_to"
+   }
+  ],
+  "card-method-exponential-backoff": [
+   {
+    "from": "card-concept-idempotency",
+    "predicate": "related_to"
+   },
+   {
+    "from": "card-pitfall-retry-storm",
+    "predicate": "related_to"
+   }
+  ],
+  "card-method-k-fold-cv": [
+   {
+    "from": "card-method-random-search",
+    "predicate": "related_to"
+   },
+   {
+    "from": "card-pitfall-data-leakage",
+    "predicate": "related_to"
+   }
+  ],
+  "card-method-moving-average": [
+   {
+    "from": "card-concept-simple-baseline",
+    "predicate": "related_to"
+   }
+  ],
+  "card-pitfall-cache-avalanche": [
+   {
+    "from": "card-method-cache-jitter-warmup",
+    "predicate": "related_to"
+   }
+  ],
+  "card-pitfall-correlation-causation": [
+   {
+    "from": "card-concept-confounder",
+    "predicate": "related_to"
+   }
+  ],
+  "card-pitfall-data-leakage": [
+   {
+    "from": "card-pitfall-ts-cv-time-order",
+    "predicate": "refines"
+   }
+  ],
+  "card-pitfall-multiple-comparison": [
+   {
+    "from": "card-concept-p-value",
+    "predicate": "related_to"
+   }
+  ],
+  "card-pitfall-overfitting": [
+   {
+    "from": "card-concept-regularization",
+    "predicate": "related_to"
+   },
+   {
+    "from": "card-method-early-stopping",
+    "predicate": "related_to"
+   }
+  ],
+  "card-pitfall-retry-storm": [
+   {
+    "from": "card-method-exponential-backoff",
+    "predicate": "pitfall"
+   }
+  ],
+  "card-pitfall-simpsons-paradox": [
+   {
+    "from": "card-pitfall-survivorship-bias",
+    "predicate": "related_to"
+   }
+  ],
+  "card-pitfall-survivorship-bias": [
+   {
+    "from": "card-pitfall-simpsons-paradox",
+    "predicate": "related_to"
+   }
+  ],
+  "card-pitfall-ts-cv-time-order": [
+   {
+    "from": "card-method-k-fold-cv",
+    "predicate": "pitfall"
+   }
+  ]
+ },
+ "out": {
+  "card-concept-confidence-interval": [
+   {
+    "predicate": "related_to",
+    "to": "card-method-bootstrap"
+   }
+  ],
+  "card-concept-confounder": [
+   {
+    "predicate": "related_to",
+    "to": "card-pitfall-correlation-causation"
+   }
+  ],
+  "card-concept-idempotency": [
+   {
+    "predicate": "related_to",
+    "to": "card-method-exponential-backoff"
+   }
+  ],
+  "card-concept-p-value": [
+   {
+    "predicate": "related_to",
+    "to": "card-pitfall-multiple-comparison"
+   }
+  ],
+  "card-concept-regularization": [
+   {
+    "predicate": "related_to",
+    "to": "card-pitfall-overfitting"
+   }
+  ],
+  "card-concept-simple-baseline": [
+   {
+    "predicate": "related_to",
+    "to": "card-method-moving-average"
+   }
+  ],
+  "card-method-bootstrap": [
+   {
+    "predicate": "related_to",
+    "to": "card-concept-confidence-interval"
+   }
+  ],
+  "card-method-cache-jitter-warmup": [
+   {
+    "predicate": "related_to",
+    "to": "card-pitfall-cache-avalanche"
+   }
+  ],
+  "card-method-early-stopping": [
+   {
+    "predicate": "related_to",
+    "to": "card-pitfall-overfitting"
+   }
+  ],
+  "card-method-exponential-backoff": [
+   {
+    "predicate": "related_to",
+    "to": "card-concept-idempotency"
+   },
+   {
+    "predicate": "pitfall",
+    "to": "card-pitfall-retry-storm"
+   }
+  ],
+  "card-method-k-fold-cv": [
+   {
+    "predicate": "pitfall",
+    "to": "card-pitfall-ts-cv-time-order"
+   }
+  ],
+  "card-method-moving-average": [
+   {
+    "predicate": "related_to",
+    "to": "card-concept-simple-baseline"
+   }
+  ],
+  "card-method-random-search": [
+   {
+    "predicate": "related_to",
+    "to": "card-method-k-fold-cv"
+   }
+  ],
+  "card-pitfall-cache-avalanche": [
+   {
+    "predicate": "related_to",
+    "to": "card-method-cache-jitter-warmup"
+   }
+  ],
+  "card-pitfall-correlation-causation": [
+   {
+    "predicate": "related_to",
+    "to": "card-concept-confounder"
+   }
+  ],
+  "card-pitfall-data-leakage": [
+   {
+    "predicate": "related_to",
+    "to": "card-method-k-fold-cv"
+   }
+  ],
+  "card-pitfall-multiple-comparison": [
+   {
+    "predicate": "related_to",
+    "to": "card-concept-p-value"
+   }
+  ],
+  "card-pitfall-overfitting": [
+   {
+    "predicate": "related_to",
+    "to": "card-method-early-stopping"
+   },
+   {
+    "predicate": "related_to",
+    "to": "card-concept-regularization"
+   }
+  ],
+  "card-pitfall-retry-storm": [
+   {
+    "predicate": "related_to",
+    "to": "card-method-exponential-backoff"
+   }
+  ],
+  "card-pitfall-simpsons-paradox": [
+   {
+    "predicate": "related_to",
+    "to": "card-pitfall-survivorship-bias"
+   }
+  ],
+  "card-pitfall-survivorship-bias": [
+   {
+    "predicate": "related_to",
+    "to": "card-pitfall-simpsons-paradox"
+   }
+  ],
+  "card-pitfall-ts-cv-time-order": [
+   {
+    "predicate": "refines",
+    "to": "card-pitfall-data-leakage"
+   }
+  ]
+ }
+}

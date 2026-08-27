@@ -1,0 +1,13 @@
+name: generic
+version: 0.1.0
+description: 通用基础包：概念 / 方法 / 陷阱
+card_kinds:
+  - kind: concept
+    body_sections: [是什么, 何时用, 怎么用, 边界与陷阱, 关联]
+  - kind: method
+    body_sections: [是什么, 何时用, 怎么用, 边界与陷阱, 关联]
+  - kind: pitfall
+    body_sections: [现象, 根因, 规避, 触发条件, 关联]
+link_predicates: [related_to, refines, pitfall, cites, used_in]
+tag_vocab:
+  domains: [统计, 机器学习, 工程实践, 时间序列]

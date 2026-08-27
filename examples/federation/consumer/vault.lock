@@ -1,0 +1,6 @@
+methods-provider:
+  cards:
+    card-method-backoff-with-jitter: sha256:03a4d061ea80e71c4286229f443f07505ec8e9eb34170fcad1f9ea9a59fab2b7
+    card-pitfall-sync-retry-storm: sha256:f8d63ac76279eba77a21c545d2c4349449cf3996dba73da7893b619742047404
+  resolved_rev: local-path
+  root_hash: sha256:1e350cafa55e356357dccd68cfa7109f085f20a10d17ffd260222fc74ab95f92

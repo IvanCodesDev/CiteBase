@@ -1,0 +1,173 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cardvault.dev/spec/card/v0.1.json",
+  "title": "CardVault Card Frontmatter",
+  "description": "知识卡片的 YAML frontmatter 契约（v0.1 草案）。schema 验形：结构、格式、长度；跨对象一致性（源存在、哈希一致、谓词在 Pack 词表内）由 lint 规则验义。",
+  "type": "object",
+  "required": ["id", "kind", "name", "summary", "version", "status"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^card-[a-z0-9]+(-[a-z0-9]+)*$",
+      "description": "全局唯一、一经发布永不复用；不得包含保留分隔符 ::"
+    },
+    "kind": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9-]*$",
+      "description": "卡类。取值域 = 启用 Pack 声明的 card_kinds ∪ {contradiction}（内核内置）；词表校验在 lint 层"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 120,
+      "description": "人类可读名；改名不改 id"
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80,
+      "description": "一句话摘要：检索命中列表的唯一正文披露（token 契约，L-SUM-1）"
+    },
+    "aliases": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true,
+      "description": "别名表：检索第一跳的精确锚点"
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true
+    },
+    "links": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/link" }
+    },
+    "claims": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/claim" },
+      "description": "论断：可独立验证的最小事实单元。卡片是读取单元，论断是验证单元"
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "卡片内容版本，编译器并卡时递增"
+    },
+    "status": {
+      "enum": ["active", "suspect", "superseded", "retired", "contested"],
+      "description": "生命周期。contested 仅用于内核矛盾卡；superseded/retired 为终态"
+    },
+    "verified_against": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/verification" },
+      "description": "漂移审计锚：最近一次核验时的源修订"
+    },
+    "injection_risk": {
+      "type": "boolean",
+      "description": "编译期注入扫描命中标记；随检索返回体透传给宿主"
+    },
+    "schema_version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+$",
+      "description": "缺省等于当前主版本；迁移工具按此逐级升级"
+    }
+  },
+  "$defs": {
+    "link": {
+      "type": "object",
+      "required": ["predicate", "to"],
+      "additionalProperties": false,
+      "properties": {
+        "predicate": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]*$",
+          "description": "受控谓词，取值域由启用 Pack 声明（L-LINK-1）；supersedes 有副作用：自动将目标卡置为 superseded"
+        },
+        "to": {
+          "type": "string",
+          "pattern": "^(?:[a-z0-9-]+::)?card-[a-z0-9]+(-[a-z0-9]+)*$",
+          "description": "目标卡 id；带 vault 前缀（<vault-id>::）的跨库引用自 M5 联邦起生效"
+        }
+      }
+    },
+    "source_span": {
+      "type": "object",
+      "required": ["source", "loc", "span_sha256"],
+      "additionalProperties": false,
+      "properties": {
+        "source": {
+          "type": "string",
+          "pattern": "^(src|evt)-[a-z0-9]+([-.][a-z0-9]+)*$",
+          "description": "源 id：普通源 src-*，执行证据事件 evt-*；id 必须存在于 sources/（L-PROV-1）"
+        },
+        "loc": {
+          "type": "string",
+          "minLength": 1,
+          "description": "派生物内定位，如 extracted/text.md#L210-L218 或 evidence/2026-08.jsonl#evt-0392"
+        },
+        "span_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$",
+          "description": "被引片段内容哈希；重算不一致 = 引用造假或源漂移（L-PROV-2）"
+        }
+      }
+    },
+    "claim": {
+      "type": "object",
+      "required": ["id", "text", "sources"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^c[0-9]+$",
+          "description": "卡内唯一；全局引用形如 <card-id>#<claim-id>"
+        },
+        "text": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 500
+        },
+        "sources": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/source_span" },
+          "description": "≥1 个源片段绑定：无源论断被结构性拒绝（出处硬闸）"
+        },
+        "confidence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "low_confidence": {
+          "type": "boolean",
+          "description": "支撑源抽取置信度 < 0.6 时必须置真（L-PROV-4）"
+        },
+        "valid_from": {
+          "type": ["string", "null"],
+          "format": "date-time",
+          "description": "时效起点；长期方法论可空"
+        },
+        "valid_until": {
+          "type": ["string", "null"],
+          "format": "date-time",
+          "description": "时效终点；到期触发失效信号总线"
+        },
+        "status": {
+          "enum": ["active", "superseded", "contested"],
+          "description": "论断级生命周期；缺省 active。矛盾裁决的败方标 superseded，历史可查"
+        }
+      }
+    },
+    "verification": {
+      "type": "object",
+      "required": ["source", "revision", "at"],
+      "additionalProperties": false,
+      "properties": {
+        "source": { "type": "string" },
+        "revision": { "type": "string" },
+        "at": { "type": "string", "format": "date" }
+      }
+    }
+  }
+}

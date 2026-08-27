@@ -1,0 +1,38 @@
+{
+ "avgdl": 107.833333,
+ "cards": 24,
+ "doclen": {
+  "card-concept-confidence-interval": 81,
+  "card-concept-confounder": 87,
+  "card-concept-content-addressing": 103,
+  "card-concept-idempotency": 118,
+  "card-concept-median-robustness": 108,
+  "card-concept-p-value": 93,
+  "card-concept-regularization": 72,
+  "card-concept-simple-baseline": 117,
+  "card-method-bootstrap": 104,
+  "card-method-cache-jitter-warmup": 149,
+  "card-method-early-stopping": 75,
+  "card-method-exponential-backoff": 137,
+  "card-method-k-fold-cv": 122,
+  "card-method-moving-average": 103,
+  "card-method-random-search": 97,
+  "card-pitfall-cache-avalanche": 129,
+  "card-pitfall-correlation-causation": 124,
+  "card-pitfall-data-leakage": 127,
+  "card-pitfall-multiple-comparison": 88,
+  "card-pitfall-overfitting": 100,
+  "card-pitfall-retry-storm": 111,
+  "card-pitfall-simpsons-paradox": 104,
+  "card-pitfall-survivorship-bias": 91,
+  "card-pitfall-ts-cv-time-order": 148
+ },
+ "field_weights": {
+  "aliases": 4,
+  "claims": 1,
+  "name": 4,
+  "summary": 2,
+  "tags": 3
+ },
+ "schema": "cardvault-index/0.1"
+}

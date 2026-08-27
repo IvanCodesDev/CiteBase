@@ -1,0 +1,185 @@
+{
+ "baseline first": [
+  "card-concept-simple-baseline"
+ ],
+ "bootstrap": [
+  "card-method-bootstrap"
+ ],
+ "cache avalanche": [
+  "card-pitfall-cache-avalanche"
+ ],
+ "cas": [
+  "card-concept-content-addressing"
+ ],
+ "confidence interval": [
+  "card-concept-confidence-interval"
+ ],
+ "confounder": [
+  "card-concept-confounder"
+ ],
+ "content addressing": [
+  "card-concept-content-addressing"
+ ],
+ "correlation is not causation": [
+  "card-pitfall-correlation-causation"
+ ],
+ "cross validation": [
+  "card-method-k-fold-cv"
+ ],
+ "data leakage": [
+  "card-pitfall-data-leakage"
+ ],
+ "early stopping": [
+  "card-method-early-stopping"
+ ],
+ "exponential backoff": [
+  "card-method-exponential-backoff"
+ ],
+ "idempotency": [
+  "card-concept-idempotency"
+ ],
+ "k 折交叉验证": [
+  "card-method-k-fold-cv"
+ ],
+ "k-fold": [
+  "card-method-k-fold-cv"
+ ],
+ "median": [
+  "card-concept-median-robustness"
+ ],
+ "moving average": [
+  "card-method-moving-average"
+ ],
+ "multiple comparison": [
+  "card-pitfall-multiple-comparison"
+ ],
+ "overfitting": [
+  "card-pitfall-overfitting"
+ ],
+ "p 值": [
+  "card-concept-p-value"
+ ],
+ "p-value": [
+  "card-concept-p-value"
+ ],
+ "p值": [
+  "card-concept-p-value"
+ ],
+ "random search": [
+  "card-method-random-search"
+ ],
+ "regularization": [
+  "card-concept-regularization"
+ ],
+ "retry storm": [
+  "card-pitfall-retry-storm"
+ ],
+ "simpsons paradox": [
+  "card-pitfall-simpsons-paradox"
+ ],
+ "survivorship bias": [
+  "card-pitfall-survivorship-bias"
+ ],
+ "中位数": [
+  "card-concept-median-robustness"
+ ],
+ "中位数稳健性": [
+  "card-concept-median-robustness"
+ ],
+ "交叉验证": [
+  "card-method-k-fold-cv"
+ ],
+ "内容寻址": [
+  "card-concept-content-addressing"
+ ],
+ "基线优先": [
+  "card-concept-simple-baseline"
+ ],
+ "多重检验": [
+  "card-pitfall-multiple-comparison"
+ ],
+ "多重比较": [
+  "card-pitfall-multiple-comparison"
+ ],
+ "幂等": [
+  "card-concept-idempotency"
+ ],
+ "幂等性": [
+  "card-concept-idempotency"
+ ],
+ "幸存者偏差": [
+  "card-pitfall-survivorship-bias"
+ ],
+ "指数退避": [
+  "card-method-exponential-backoff"
+ ],
+ "数据泄漏": [
+  "card-pitfall-data-leakage"
+ ],
+ "早停": [
+  "card-method-early-stopping"
+ ],
+ "时间序列交叉验证乱序": [
+  "card-pitfall-ts-cv-time-order"
+ ],
+ "时间序列泄漏": [
+  "card-pitfall-ts-cv-time-order"
+ ],
+ "正则化": [
+  "card-concept-regularization"
+ ],
+ "混杂变量": [
+  "card-concept-confounder"
+ ],
+ "混杂因素": [
+  "card-concept-confounder"
+ ],
+ "热点预热": [
+  "card-method-cache-jitter-warmup"
+ ],
+ "相关不等于因果": [
+  "card-pitfall-correlation-causation"
+ ],
+ "移动平均": [
+  "card-method-moving-average"
+ ],
+ "简单基线优先": [
+  "card-concept-simple-baseline"
+ ],
+ "缓存过期抖动": [
+  "card-method-cache-jitter-warmup"
+ ],
+ "缓存雪崩": [
+  "card-pitfall-cache-avalanche"
+ ],
+ "置信区间": [
+  "card-concept-confidence-interval"
+ ],
+ "自助抽样": [
+  "card-method-bootstrap"
+ ],
+ "自助法": [
+  "card-method-bootstrap"
+ ],
+ "辛普森": [
+  "card-pitfall-simpsons-paradox"
+ ],
+ "辛普森悖论": [
+  "card-pitfall-simpsons-paradox"
+ ],
+ "过拟合": [
+  "card-pitfall-overfitting"
+ ],
+ "过期抖动与热点预热": [
+  "card-method-cache-jitter-warmup"
+ ],
+ "退避重试": [
+  "card-method-exponential-backoff"
+ ],
+ "重试风暴": [
+  "card-pitfall-retry-storm"
+ ],
+ "随机搜索": [
+  "card-method-random-search"
+ ]
+}

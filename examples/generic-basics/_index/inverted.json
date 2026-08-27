@@ -1,0 +1,2555 @@
+{
+ "95": {
+  "card-concept-confidence-interval": 4
+ },
+ "addressing": {
+  "card-concept-content-addressing": 4
+ },
+ "avalanche": {
+  "card-pitfall-cache-avalanche": 4
+ },
+ "average": {
+  "card-method-moving-average": 4
+ },
+ "backoff": {
+  "card-method-exponential-backoff": 4
+ },
+ "baseline": {
+  "card-concept-simple-baseline": 4
+ },
+ "bias": {
+  "card-pitfall-survivorship-bias": 4
+ },
+ "bootstrap": {
+  "card-method-bootstrap": 4
+ },
+ "cache": {
+  "card-pitfall-cache-avalanche": 4
+ },
+ "cas": {
+  "card-concept-content-addressing": 4
+ },
+ "causation": {
+  "card-pitfall-correlation-causation": 4
+ },
+ "comparison": {
+  "card-pitfall-multiple-comparison": 4
+ },
+ "confidence": {
+  "card-concept-confidence-interval": 4
+ },
+ "confounder": {
+  "card-concept-confounder": 4
+ },
+ "content": {
+  "card-concept-content-addressing": 4
+ },
+ "correlation": {
+  "card-pitfall-correlation-causation": 4
+ },
+ "cross": {
+  "card-method-k-fold-cv": 4
+ },
+ "data": {
+  "card-pitfall-data-leakage": 4
+ },
+ "early": {
+  "card-method-early-stopping": 4
+ },
+ "exponential": {
+  "card-method-exponential-backoff": 4
+ },
+ "first": {
+  "card-concept-simple-baseline": 4
+ },
+ "idempotency": {
+  "card-concept-idempotency": 4
+ },
+ "interval": {
+  "card-concept-confidence-interval": 4
+ },
+ "is": {
+  "card-pitfall-correlation-causation": 4
+ },
+ "k": {
+  "card-method-k-fold-cv": 8
+ },
+ "k-fold": {
+  "card-method-k-fold-cv": 4
+ },
+ "leakage": {
+  "card-pitfall-data-leakage": 4
+ },
+ "median": {
+  "card-concept-median-robustness": 4
+ },
+ "moving": {
+  "card-method-moving-average": 4
+ },
+ "multiple": {
+  "card-pitfall-multiple-comparison": 4
+ },
+ "not": {
+  "card-pitfall-correlation-causation": 4
+ },
+ "overfitting": {
+  "card-pitfall-overfitting": 4
+ },
+ "p": {
+  "card-concept-p-value": 9
+ },
+ "p-value": {
+  "card-concept-p-value": 4
+ },
+ "paradox": {
+  "card-pitfall-simpsons-paradox": 4
+ },
+ "random": {
+  "card-method-random-search": 4
+ },
+ "regularization": {
+  "card-concept-regularization": 4
+ },
+ "retry": {
+  "card-pitfall-retry-storm": 4
+ },
+ "search": {
+  "card-method-random-search": 4
+ },
+ "simpsons": {
+  "card-pitfall-simpsons-paradox": 4
+ },
+ "stopping": {
+  "card-method-early-stopping": 4
+ },
+ "storm": {
+  "card-pitfall-retry-storm": 4
+ },
+ "survivorship": {
+  "card-pitfall-survivorship-bias": 4
+ },
+ "validation": {
+  "card-method-k-fold-cv": 4
+ },
+ "一次": {
+  "card-concept-idempotency": 3
+ },
+ "一类": {
+  "card-concept-regularization": 2
+ },
+ "三变": {
+  "card-concept-confounder": 2
+ },
+ "上升": {
+  "card-pitfall-overfitting": 1
+ },
+ "上复": {
+  "card-concept-simple-baseline": 2
+ },
+ "上失": {
+  "card-pitfall-data-leakage": 3
+ },
+ "上限": {
+  "card-method-exponential-backoff": 1,
+  "card-pitfall-retry-storm": 1
+ },
+ "下指": {
+  "card-pitfall-data-leakage": 3
+ },
+ "下游": {
+  "card-pitfall-retry-storm": 2
+ },
+ "下降": {
+  "card-pitfall-overfitting": 3
+ },
+ "不再": {
+  "card-method-early-stopping": 2
+ },
+ "不是": {
+  "card-concept-p-value": 1
+ },
+ "不等": {
+  "card-pitfall-correlation-causation": 4
+ },
+ "不能": {
+  "card-pitfall-correlation-causation": 3
+ },
+ "与合": {
+  "card-pitfall-simpsons-paradox": 3
+ },
+ "与总": {
+  "card-method-exponential-backoff": 1,
+  "card-pitfall-retry-storm": 1
+ },
+ "与执": {
+  "card-concept-idempotency": 3
+ },
+ "与测": {
+  "card-pitfall-data-leakage": 1
+ },
+ "与热": {
+  "card-method-cache-jitter-warmup": 5,
+  "card-pitfall-cache-avalanche": 1
+ },
+ "且分": {
+  "card-method-bootstrap": 3
+ },
+ "且可": {
+  "card-concept-content-addressing": 3
+ },
+ "两个": {
+  "card-concept-confounder": 3,
+  "card-pitfall-correlation-causation": 1
+ },
+ "个变": {
+  "card-concept-confounder": 2
+ },
+ "个无": {
+  "card-concept-confounder": 1,
+  "card-pitfall-correlation-causation": 1
+ },
+ "中位": {
+  "card-concept-median-robustness": 14
+ },
+ "中混": {
+  "card-pitfall-data-leakage": 1
+ },
+ "中约": {
+  "card-concept-confidence-interval": 3
+ },
+ "中趋": {
+  "card-concept-median-robustness": 1
+ },
+ "中通": {
+  "card-method-random-search": 2
+ },
+ "为标": {
+  "card-concept-content-addressing": 3
+ },
+ "为真": {
+  "card-concept-p-value": 4
+ },
+ "为训": {
+  "card-pitfall-overfitting": 1
+ },
+ "义是": {
+  "card-concept-confidence-interval": 1
+ },
+ "之一": {
+  "card-concept-regularization": 1,
+  "card-method-early-stopping": 1
+ },
+ "之前": {
+  "card-pitfall-data-leakage": 1
+ },
+ "乱序": {
+  "card-pitfall-ts-cv-time-order": 4
+ },
+ "了目": {
+  "card-pitfall-data-leakage": 1
+ },
+ "于因": {
+  "card-pitfall-correlation-causation": 4
+ },
+ "于小": {
+  "card-method-bootstrap": 1
+ },
+ "于用": {
+  "card-pitfall-ts-cv-time-order": 2
+ },
+ "交叉": {
+  "card-method-k-fold-cv": 9,
+  "card-pitfall-ts-cv-time-order": 7
+ },
+ "以控": {
+  "card-method-early-stopping": 2
+ },
+ "以让": {
+  "card-concept-confounder": 1,
+  "card-pitfall-correlation-causation": 1
+ },
+ "价等": {
+  "card-concept-median-robustness": 1
+ },
+ "份轮": {
+  "card-method-k-fold-cv": 3
+ },
+ "优先": {
+  "card-concept-median-robustness": 3,
+  "card-concept-simple-baseline": 8
+ },
+ "会使": {
+  "card-pitfall-multiple-comparison": 1
+ },
+ "会放": {
+  "card-method-exponential-backoff": 1,
+  "card-pitfall-retry-storm": 1
+ },
+ "会覆": {
+  "card-concept-confidence-interval": 3
+ },
+ "估方": {
+  "card-method-k-fold-cv": 3
+ },
+ "估计": {
+  "card-concept-confidence-interval": 2,
+  "card-method-bootstrap": 3
+ },
+ "但滞": {
+  "card-method-moving-average": 3
+ },
+ "位数": {
+  "card-concept-median-robustness": 14
+ },
+ "低维": {
+  "card-method-random-search": 1
+ },
+ "住训": {
+  "card-pitfall-overfitting": 2
+ },
+ "作为": {
+  "card-concept-content-addressing": 3
+ },
+ "作性": {
+  "card-concept-idempotency": 2
+ },
+ "作重": {
+  "card-concept-idempotency": 1
+ },
+ "使假": {
+  "card-pitfall-multiple-comparison": 3
+ },
+ "保持": {
+  "card-pitfall-ts-cv-time-order": 1
+ },
+ "信区": {
+  "card-concept-confidence-interval": 5
+ },
+ "信息": {
+  "card-pitfall-data-leakage": 3
+ },
+ "倍拉": {
+  "card-method-exponential-backoff": 3
+ },
+ "值": {
+  "card-concept-p-value": 8
+ },
+ "值对": {
+  "card-concept-median-robustness": 1
+ },
+ "值敏": {
+  "card-concept-median-robustness": 1
+ },
+ "值是": {
+  "card-concept-p-value": 1
+ },
+ "值的": {
+  "card-concept-confidence-interval": 2
+ },
+ "值稳": {
+  "card-concept-median-robustness": 3
+ },
+ "假相": {
+  "card-concept-confounder": 2
+ },
+ "假设": {
+  "card-concept-p-value": 4,
+  "card-pitfall-multiple-comparison": 3
+ },
+ "假阳": {
+  "card-pitfall-multiple-comparison": 3
+ },
+ "偏分": {
+  "card-concept-median-robustness": 3
+ },
+ "偏差": {
+  "card-pitfall-survivorship-bias": 5
+ },
+ "做交": {
+  "card-pitfall-ts-cv-time-order": 1
+ },
+ "做全": {
+  "card-pitfall-data-leakage": 1
+ },
+ "做多": {
+  "card-pitfall-multiple-comparison": 1
+ },
+ "做校": {
+  "card-pitfall-multiple-comparison": 2
+ },
+ "做验": {
+  "card-method-k-fold-cv": 3
+ },
+ "停和": {
+  "card-pitfall-overfitting": 1
+ },
+ "停是": {
+  "card-method-early-stopping": 1
+ },
+ "健性": {
+  "card-concept-median-robustness": 4
+ },
+ "储方": {
+  "card-concept-content-addressing": 2
+ },
+ "储用": {
+  "card-concept-content-addressing": 1
+ },
+ "储的": {
+  "card-pitfall-cache-avalanche": 2
+ },
+ "先尝": {
+  "card-concept-simple-baseline": 1
+ },
+ "先报": {
+  "card-concept-median-robustness": 3
+ },
+ "先跑": {
+  "card-concept-simple-baseline": 2
+ },
+ "免重": {
+  "card-method-exponential-backoff": 1,
+  "card-pitfall-retry-storm": 1
+ },
+ "入了": {
+  "card-pitfall-data-leakage": 1
+ },
+ "入目": {
+  "card-pitfall-data-leakage": 2
+ },
+ "全部": {
+  "card-pitfall-cache-avalanche": 3
+ },
+ "全重": {
+  "card-concept-idempotency": 3
+ },
+ "全量": {
+  "card-pitfall-data-leakage": 1
+ },
+ "关不": {
+  "card-pitfall-correlation-causation": 6
+ },
+ "关的": {
+  "card-concept-confounder": 2
+ },
+ "关系": {
+  "card-concept-confounder": 1,
+  "card-pitfall-correlation-causation": 7
+ },
+ "关联": {
+  "card-pitfall-correlation-causation": 3
+ },
+ "内容": {
+  "card-concept-content-addressing": 8
+ },
+ "再上": {
+  "card-concept-simple-baseline": 2
+ },
+ "再改": {
+  "card-method-early-stopping": 2
+ },
+ "再考": {
+  "card-concept-simple-baseline": 1
+ },
+ "准化": {
+  "card-pitfall-data-leakage": 1
+ },
+ "出高": {
+  "card-concept-confounder": 1,
+  "card-pitfall-correlation-causation": 1
+ },
+ "分交": {
+  "card-pitfall-ts-cv-time-order": 2
+ },
+ "分布": {
+  "card-concept-median-robustness": 3,
+  "card-method-bootstrap": 6
+ },
+ "分成": {
+  "card-method-k-fold-cv": 1
+ },
+ "分散": {
+  "card-method-cache-jitter-warmup": 2
+ },
+ "分更": {
+  "card-method-k-fold-cv": 2
+ },
+ "分析": {
+  "card-pitfall-survivorship-bias": 3
+ },
+ "分的": {
+  "card-method-k-fold-cv": 1
+ },
+ "分组": {
+  "card-pitfall-simpsons-paradox": 3
+ },
+ "分训": {
+  "card-pitfall-data-leakage": 1
+ },
+ "切分": {
+  "card-pitfall-ts-cv-time-order": 2
+ },
+ "划分": {
+  "card-method-k-fold-cv": 3,
+  "card-pitfall-data-leakage": 1
+ },
+ "列交": {
+  "card-pitfall-ts-cv-time-order": 4
+ },
+ "列可": {
+  "card-concept-simple-baseline": 1
+ },
+ "列数": {
+  "card-pitfall-ts-cv-time-order": 1
+ },
+ "列泄": {
+  "card-pitfall-ts-cv-time-order": 4
+ },
+ "列的": {
+  "card-method-moving-average": 1
+ },
+ "列短": {
+  "card-method-moving-average": 2
+ },
+ "列随": {
+  "card-pitfall-ts-cv-time-order": 2
+ },
+ "则化": {
+  "card-concept-regularization": 5,
+  "card-pitfall-overfitting": 1
+ },
+ "到后": {
+  "card-pitfall-cache-avalanche": 3
+ },
+ "到当": {
+  "card-concept-p-value": 3
+ },
+ "制过": {
+  "card-concept-regularization": 3,
+  "card-method-early-stopping": 3,
+  "card-pitfall-overfitting": 1
+ },
+ "制造": {
+  "card-concept-confounder": 2
+ },
+ "刻的": {
+  "card-method-cache-jitter-warmup": 2
+ },
+ "前做": {
+  "card-pitfall-data-leakage": 1
+ },
+ "前或": {
+  "card-concept-p-value": 3
+ },
+ "前提": {
+  "card-concept-idempotency": 3
+ },
+ "前终": {
+  "card-method-early-stopping": 2
+ },
+ "力下": {
+  "card-pitfall-overfitting": 2
+ },
+ "加抖": {
+  "card-method-exponential-backoff": 2
+ },
+ "加随": {
+  "card-method-cache-jitter-warmup": 1,
+  "card-pitfall-cache-avalanche": 1
+ },
+ "动与": {
+  "card-method-cache-jitter-warmup": 5,
+  "card-pitfall-cache-avalanche": 1
+ },
+ "动可": {
+  "card-method-exponential-backoff": 1
+ },
+ "动和": {
+  "card-method-cache-jitter-warmup": 2
+ },
+ "动平": {
+  "card-method-moving-average": 5
+ },
+ "动的": {
+  "card-method-exponential-backoff": 2,
+  "card-pitfall-retry-storm": 1
+ },
+ "助抽": {
+  "card-method-bootstrap": 4
+ },
+ "助法": {
+  "card-method-bootstrap": 5
+ },
+ "势序": {
+  "card-concept-simple-baseline": 1
+ },
+ "势应": {
+  "card-concept-median-robustness": 1
+ },
+ "化或": {
+  "card-pitfall-data-leakage": 1
+ },
+ "化是": {
+  "card-concept-regularization": 1
+ },
+ "化能": {
+  "card-pitfall-overfitting": 2
+ },
+ "区间": {
+  "card-concept-confidence-interval": 10
+ },
+ "单基": {
+  "card-concept-simple-baseline": 7
+ },
+ "单次": {
+  "card-method-k-fold-cv": 3
+ },
+ "单调": {
+  "card-concept-simple-baseline": 1
+ },
+ "压垮": {
+  "card-pitfall-retry-storm": 2
+ },
+ "原假": {
+  "card-concept-p-value": 4
+ },
+ "原则": {
+  "card-concept-simple-baseline": 2
+ },
+ "去重": {
+  "card-concept-content-addressing": 3
+ },
+ "参数": {
+  "card-method-random-search": 3
+ },
+ "参方": {
+  "card-method-random-search": 2
+ },
+ "叉验": {
+  "card-method-k-fold-cv": 9,
+  "card-pitfall-ts-cv-time-order": 7
+ },
+ "反的": {
+  "card-pitfall-simpsons-paradox": 1
+ },
+ "变量": {
+  "card-concept-confounder": 10,
+  "card-pitfall-correlation-causation": 2,
+  "card-pitfall-data-leakage": 1
+ },
+ "叠加": {
+  "card-method-exponential-backoff": 2
+ },
+ "口越": {
+  "card-method-moving-average": 3
+ },
+ "只分": {
+  "card-pitfall-survivorship-bias": 3
+ },
+ "只度": {
+  "card-pitfall-correlation-causation": 3
+ },
+ "可以": {
+  "card-concept-confounder": 1,
+  "card-pitfall-correlation-causation": 1
+ },
+ "可先": {
+  "card-concept-simple-baseline": 1
+ },
+ "可校": {
+  "card-concept-content-addressing": 3
+ },
+ "可行": {
+  "card-method-random-search": 1
+ },
+ "可避": {
+  "card-method-exponential-backoff": 1,
+  "card-pitfall-retry-storm": 1
+ },
+ "右偏": {
+  "card-concept-median-robustness": 3
+ },
+ "合平": {
+  "card-method-moving-average": 1
+ },
+ "合并": {
+  "card-pitfall-simpsons-paradox": 3
+ },
+ "合抖": {
+  "card-method-exponential-backoff": 1,
+  "card-pitfall-retry-storm": 1
+ },
+ "合的": {
+  "card-concept-regularization": 3,
+  "card-method-early-stopping": 1,
+  "card-pitfall-overfitting": 1
+ },
+ "合表": {
+  "card-pitfall-overfitting": 1
+ },
+ "同时": {
+  "card-concept-confounder": 2,
+  "card-pitfall-cache-avalanche": 3
+ },
+ "同步": {
+  "card-pitfall-retry-storm": 2
+ },
+ "同的": {
+  "card-concept-idempotency": 2
+ },
+ "后成": {
+  "card-method-exponential-backoff": 3
+ },
+ "后端": {
+  "card-pitfall-cache-avalanche": 3
+ },
+ "后越": {
+  "card-method-moving-average": 3
+ },
+ "向相": {
+  "card-pitfall-simpsons-paradox": 3
+ },
+ "含义": {
+  "card-concept-confidence-interval": 1
+ },
+ "告中": {
+  "card-concept-median-robustness": 3
+ },
+ "和数": {
+  "card-pitfall-overfitting": 1
+ },
+ "和热": {
+  "card-method-cache-jitter-warmup": 2
+ },
+ "哈希": {
+  "card-concept-content-addressing": 3
+ },
+ "响两": {
+  "card-concept-confounder": 2
+ },
+ "善时": {
+  "card-method-early-stopping": 2
+ },
+ "器学": {
+  "card-concept-regularization": 3,
+  "card-concept-simple-baseline": 3,
+  "card-method-early-stopping": 3,
+  "card-method-k-fold-cv": 3,
+  "card-method-random-search": 3,
+  "card-pitfall-data-leakage": 3,
+  "card-pitfall-overfitting": 3,
+  "card-pitfall-ts-cv-time-order": 3
+ },
+ "回重": {
+  "card-method-bootstrap": 3
+ },
+ "因是": {
+  "card-pitfall-simpsons-paradox": 3
+ },
+ "因果": {
+  "card-concept-confounder": 1,
+  "card-pitfall-correlation-causation": 8
+ },
+ "因素": {
+  "card-concept-confounder": 4
+ },
+ "在低": {
+  "card-method-random-search": 1
+ },
+ "在划": {
+  "card-pitfall-data-leakage": 1
+ },
+ "在原": {
+  "card-concept-p-value": 1
+ },
+ "在每": {
+  "card-method-exponential-backoff": 1
+ },
+ "场景": {
+  "card-method-bootstrap": 3
+ },
+ "址存": {
+  "card-concept-content-addressing": 1
+ },
+ "均值": {
+  "card-concept-median-robustness": 1
+ },
+ "均适": {
+  "card-method-moving-average": 1
+ },
+ "型复": {
+  "card-concept-regularization": 2
+ },
+ "型的": {
+  "card-concept-simple-baseline": 2
+ },
+ "型记": {
+  "card-pitfall-overfitting": 2
+ },
+ "垮下": {
+  "card-pitfall-retry-storm": 2
+ },
+ "基线": {
+  "card-concept-simple-baseline": 11,
+  "card-method-moving-average": 2
+ },
+ "增强": {
+  "card-pitfall-overfitting": 1
+ },
+ "复执": {
+  "card-concept-idempotency": 3
+ },
+ "复抽": {
+  "card-concept-confidence-interval": 3
+ },
+ "复杂": {
+  "card-concept-regularization": 2,
+  "card-concept-simple-baseline": 3
+ },
+ "多次": {
+  "card-pitfall-multiple-comparison": 3
+ },
+ "多重": {
+  "card-pitfall-multiple-comparison": 9
+ },
+ "大尝": {
+  "card-method-exponential-backoff": 1,
+  "card-pitfall-retry-storm": 1
+ },
+ "大故": {
+  "card-method-exponential-backoff": 1,
+  "card-pitfall-retry-storm": 1
+ },
+ "大的": {
+  "card-pitfall-retry-storm": 2
+ },
+ "大越": {
+  "card-method-moving-average": 3
+ },
+ "大量": {
+  "card-pitfall-cache-avalanche": 3,
+  "card-pitfall-retry-storm": 2
+ },
+ "天然": {
+  "card-concept-content-addressing": 3
+ },
+ "失效": {
+  "card-method-cache-jitter-warmup": 2,
+  "card-pitfall-cache-avalanche": 3,
+  "card-pitfall-data-leakage": 3
+ },
+ "失败": {
+  "card-method-exponential-backoff": 3
+ },
+ "始上": {
+  "card-pitfall-overfitting": 1
+ },
+ "存储": {
+  "card-concept-content-addressing": 3,
+  "card-pitfall-cache-avalanche": 3
+ },
+ "存同": {
+  "card-pitfall-cache-avalanche": 3
+ },
+ "存失": {
+  "card-method-cache-jitter-warmup": 2
+ },
+ "存者": {
+  "card-pitfall-survivorship-bias": 5
+ },
+ "存过": {
+  "card-method-cache-jitter-warmup": 4
+ },
+ "存雪": {
+  "card-method-cache-jitter-warmup": 1,
+  "card-pitfall-cache-avalanche": 6
+ },
+ "学习": {
+  "card-concept-regularization": 3,
+  "card-concept-simple-baseline": 3,
+  "card-method-early-stopping": 3,
+  "card-method-k-fold-cv": 3,
+  "card-method-random-search": 3,
+  "card-pitfall-data-leakage": 3,
+  "card-pitfall-overfitting": 3,
+  "card-pitfall-ts-cv-time-order": 3
+ },
+ "安全": {
+  "card-concept-idempotency": 3
+ },
+ "完整": {
+  "card-concept-content-addressing": 3
+ },
+ "实现": {
+  "card-concept-idempotency": 1
+ },
+ "实践": {
+  "card-concept-content-addressing": 3,
+  "card-concept-idempotency": 3,
+  "card-method-cache-jitter-warmup": 3,
+  "card-method-exponential-backoff": 3,
+  "card-pitfall-cache-avalanche": 3,
+  "card-pitfall-retry-storm": 3
+ },
+ "客户": {
+  "card-concept-idempotency": 1,
+  "card-pitfall-retry-storm": 2
+ },
+ "容哈": {
+  "card-concept-content-addressing": 3
+ },
+ "容寻": {
+  "card-concept-content-addressing": 5
+ },
+ "察到": {
+  "card-concept-p-value": 3
+ },
+ "对时": {
+  "card-pitfall-ts-cv-time-order": 2
+ },
+ "对极": {
+  "card-concept-median-robustness": 4
+ },
+ "寻址": {
+  "card-concept-content-addressing": 5
+ },
+ "导致": {
+  "card-pitfall-cache-avalanche": 3,
+  "card-pitfall-data-leakage": 1,
+  "card-pitfall-overfitting": 2,
+  "card-pitfall-survivorship-bias": 3
+ },
+ "小样": {
+  "card-concept-simple-baseline": 1,
+  "card-method-bootstrap": 3
+ },
+ "尝试": {
+  "card-concept-simple-baseline": 1,
+  "card-method-exponential-backoff": 1,
+  "card-pitfall-retry-storm": 1
+ },
+ "局部": {
+  "card-pitfall-retry-storm": 2
+ },
+ "崩指": {
+  "card-pitfall-cache-avalanche": 1
+ },
+ "崩的": {
+  "card-method-cache-jitter-warmup": 1,
+  "card-pitfall-cache-avalanche": 1
+ },
+ "工程": {
+  "card-concept-content-addressing": 3,
+  "card-concept-idempotency": 3,
+  "card-method-cache-jitter-warmup": 3,
+  "card-method-exponential-backoff": 3,
+  "card-pitfall-cache-avalanche": 3,
+  "card-pitfall-retry-storm": 3
+ },
+ "差开": {
+  "card-pitfall-overfitting": 1
+ },
+ "差异": {
+  "card-pitfall-simpsons-paradox": 3
+ },
+ "差持": {
+  "card-pitfall-overfitting": 1
+ },
+ "差指": {
+  "card-pitfall-survivorship-bias": 1
+ },
+ "差更": {
+  "card-method-k-fold-cv": 1
+ },
+ "差比": {
+  "card-method-k-fold-cv": 2
+ },
+ "布应": {
+  "card-concept-median-robustness": 2
+ },
+ "布未": {
+  "card-method-bootstrap": 3
+ },
+ "布的": {
+  "card-concept-median-robustness": 1
+ },
+ "希作": {
+  "card-concept-content-addressing": 3
+ },
+ "常更": {
+  "card-method-random-search": 1
+ },
+ "常比": {
+  "card-method-random-search": 2
+ },
+ "常用": {
+  "card-concept-regularization": 1,
+  "card-method-cache-jitter-warmup": 1,
+  "card-method-early-stopping": 1,
+  "card-pitfall-cache-avalanche": 1,
+  "card-pitfall-overfitting": 1
+ },
+ "常见": {
+  "card-pitfall-data-leakage": 1
+ },
+ "常靠": {
+  "card-concept-idempotency": 1
+ },
+ "幂等": {
+  "card-concept-idempotency": 11
+ },
+ "平均": {
+  "card-method-moving-average": 5
+ },
+ "平滑": {
+  "card-method-moving-average": 6
+ },
+ "平稳": {
+  "card-method-moving-average": 3
+ },
+ "并叠": {
+  "card-method-exponential-backoff": 2
+ },
+ "并结": {
+  "card-pitfall-simpsons-paradox": 3
+ },
+ "幸存": {
+  "card-pitfall-survivorship-bias": 5
+ },
+ "序列": {
+  "card-concept-simple-baseline": 4,
+  "card-method-moving-average": 6,
+  "card-pitfall-ts-cv-time-order": 14
+ },
+ "序原": {
+  "card-concept-simple-baseline": 2
+ },
+ "应优": {
+  "card-concept-median-robustness": 3
+ },
+ "度抑": {
+  "card-concept-regularization": 2
+ },
+ "度量": {
+  "card-pitfall-correlation-causation": 3
+ },
+ "建模": {
+  "card-concept-simple-baseline": 2
+ },
+ "开始": {
+  "card-pitfall-overfitting": 1
+ },
+ "强度": {
+  "card-pitfall-correlation-causation": 1
+ },
+ "强是": {
+  "card-pitfall-overfitting": 1
+ },
+ "当前": {
+  "card-concept-p-value": 3
+ },
+ "影响": {
+  "card-concept-confounder": 2
+ },
+ "征中": {
+  "card-pitfall-data-leakage": 1
+ },
+ "征混": {
+  "card-pitfall-data-leakage": 2
+ },
+ "征选": {
+  "card-pitfall-data-leakage": 1
+ },
+ "待并": {
+  "card-method-exponential-backoff": 2
+ },
+ "待时": {
+  "card-method-exponential-backoff": 1
+ },
+ "必须": {
+  "card-method-exponential-backoff": 1,
+  "card-pitfall-retry-storm": 1,
+  "card-pitfall-ts-cv-time-order": 1
+ },
+ "忽略": {
+  "card-pitfall-survivorship-bias": 1
+ },
+ "性关": {
+  "card-pitfall-correlation-causation": 3
+ },
+ "性率": {
+  "card-pitfall-multiple-comparison": 3
+ },
+ "性质": {
+  "card-concept-idempotency": 2
+ },
+ "性通": {
+  "card-concept-idempotency": 1
+ },
+ "性错": {
+  "card-pitfall-survivorship-bias": 3
+ },
+ "总时": {
+  "card-method-exponential-backoff": 1,
+  "card-pitfall-retry-storm": 1
+ },
+ "悖论": {
+  "card-pitfall-simpsons-paradox": 5
+ },
+ "成倍": {
+  "card-method-exponential-backoff": 3
+ },
+ "成的": {
+  "card-concept-idempotency": 1
+ },
+ "或更": {
+  "card-concept-p-value": 3
+ },
+ "或特": {
+  "card-pitfall-data-leakage": 1
+ },
+ "户端": {
+  "card-concept-idempotency": 1,
+  "card-pitfall-retry-storm": 2
+ },
+ "房价": {
+  "card-concept-median-robustness": 1
+ },
+ "手段": {
+  "card-concept-regularization": 1,
+  "card-method-cache-jitter-warmup": 3,
+  "card-method-early-stopping": 1,
+  "card-pitfall-cache-avalanche": 1,
+  "card-pitfall-overfitting": 1
+ },
+ "打到": {
+  "card-pitfall-cache-avalanche": 3
+ },
+ "执行": {
+  "card-concept-idempotency": 6
+ },
+ "技术": {
+  "card-concept-regularization": 2
+ },
+ "把局": {
+  "card-pitfall-retry-storm": 2
+ },
+ "把数": {
+  "card-method-k-fold-cv": 1
+ },
+ "抑制": {
+  "card-concept-regularization": 2
+ },
+ "抖动": {
+  "card-method-cache-jitter-warmup": 11,
+  "card-method-exponential-backoff": 3,
+  "card-pitfall-cache-avalanche": 1,
+  "card-pitfall-retry-storm": 1
+ },
+ "折交": {
+  "card-method-k-fold-cv": 5
+ },
+ "报告": {
+  "card-concept-median-robustness": 3
+ },
+ "抽样": {
+  "card-concept-confidence-interval": 3,
+  "card-method-bootstrap": 10
+ },
+ "拉长": {
+  "card-method-exponential-backoff": 3
+ },
+ "拟合": {
+  "card-concept-regularization": 3,
+  "card-method-early-stopping": 3,
+  "card-pitfall-overfitting": 6
+ },
+ "择是": {
+  "card-pitfall-data-leakage": 1
+ },
+ "持时": {
+  "card-pitfall-ts-cv-time-order": 1
+ },
+ "持续": {
+  "card-pitfall-overfitting": 1
+ },
+ "指分": {
+  "card-pitfall-simpsons-paradox": 1
+ },
+ "指只": {
+  "card-pitfall-survivorship-bias": 1
+ },
+ "指大": {
+  "card-pitfall-cache-avalanche": 1
+ },
+ "指数": {
+  "card-method-exponential-backoff": 5,
+  "card-pitfall-retry-storm": 1
+ },
+ "指标": {
+  "card-method-early-stopping": 2,
+  "card-pitfall-data-leakage": 3
+ },
+ "指训": {
+  "card-pitfall-data-leakage": 1
+ },
+ "据做": {
+  "card-pitfall-ts-cv-time-order": 1
+ },
+ "据分": {
+  "card-method-k-fold-cv": 3
+ },
+ "据增": {
+  "card-pitfall-overfitting": 1
+ },
+ "据泄": {
+  "card-pitfall-data-leakage": 5
+ },
+ "据的": {
+  "card-concept-p-value": 3
+ },
+ "据训": {
+  "card-pitfall-ts-cv-time-order": 1
+ },
+ "据预": {
+  "card-method-cache-jitter-warmup": 1,
+  "card-pitfall-cache-avalanche": 1,
+  "card-pitfall-ts-cv-time-order": 2
+ },
+ "控制": {
+  "card-concept-regularization": 1,
+  "card-method-early-stopping": 3,
+  "card-pitfall-overfitting": 1
+ },
+ "提前": {
+  "card-method-early-stopping": 2
+ },
+ "搜索": {
+  "card-method-random-search": 8
+ },
+ "操作": {
+  "card-concept-idempotency": 3
+ },
+ "收入": {
+  "card-concept-median-robustness": 1
+ },
+ "改善": {
+  "card-method-early-stopping": 2
+ },
+ "放回": {
+  "card-method-bootstrap": 3
+ },
+ "放大": {
+  "card-method-exponential-backoff": 1,
+  "card-pitfall-retry-storm": 3
+ },
+ "故障": {
+  "card-method-exponential-backoff": 1,
+  "card-pitfall-cache-avalanche": 2,
+  "card-pitfall-retry-storm": 3
+ },
+ "效导": {
+  "card-pitfall-cache-avalanche": 3
+ },
+ "效时": {
+  "card-method-cache-jitter-warmup": 2
+ },
+ "效果": {
+  "card-concept-idempotency": 3
+ },
+ "效的": {
+  "card-method-random-search": 2
+ },
+ "敏感": {
+  "card-concept-median-robustness": 1
+ },
+ "散缓": {
+  "card-method-cache-jitter-warmup": 2
+ },
+ "数与": {
+  "card-method-exponential-backoff": 1,
+  "card-pitfall-retry-storm": 1
+ },
+ "数只": {
+  "card-pitfall-correlation-causation": 3
+ },
+ "数对": {
+  "card-concept-median-robustness": 3
+ },
+ "数据": {
+  "card-concept-p-value": 3,
+  "card-method-cache-jitter-warmup": 1,
+  "card-method-k-fold-cv": 3,
+  "card-pitfall-cache-avalanche": 1,
+  "card-pitfall-data-leakage": 5,
+  "card-pitfall-overfitting": 1,
+  "card-pitfall-ts-cv-time-order": 4
+ },
+ "数稳": {
+  "card-concept-median-robustness": 4
+ },
+ "数空": {
+  "card-method-random-search": 3
+ },
+ "数退": {
+  "card-method-exponential-backoff": 5,
+  "card-pitfall-retry-storm": 1
+ },
+ "整性": {
+  "card-concept-content-addressing": 3
+ },
+ "方向": {
+  "card-pitfall-simpsons-paradox": 3
+ },
+ "方差": {
+  "card-method-k-fold-cv": 3
+ },
+ "方式": {
+  "card-concept-content-addressing": 2
+ },
+ "方法": {
+  "card-method-exponential-backoff": 2,
+  "card-method-random-search": 2
+ },
+ "无上": {
+  "card-method-exponential-backoff": 1,
+  "card-pitfall-retry-storm": 1
+ },
+ "无因": {
+  "card-concept-confounder": 1,
+  "card-pitfall-correlation-causation": 1
+ },
+ "早停": {
+  "card-method-early-stopping": 5,
+  "card-pitfall-overfitting": 1
+ },
+ "时刻": {
+  "card-method-cache-jitter-warmup": 2
+ },
+ "时失": {
+  "card-pitfall-cache-avalanche": 3
+ },
+ "时影": {
+  "card-concept-confounder": 2
+ },
+ "时提": {
+  "card-method-early-stopping": 2
+ },
+ "时观": {
+  "card-concept-p-value": 3
+ },
+ "时长": {
+  "card-method-exponential-backoff": 1,
+  "card-pitfall-retry-storm": 1
+ },
+ "时间": {
+  "card-concept-simple-baseline": 3,
+  "card-method-cache-jitter-warmup": 1,
+  "card-method-exponential-backoff": 1,
+  "card-method-moving-average": 3,
+  "card-pitfall-cache-avalanche": 1,
+  "card-pitfall-ts-cv-time-order": 15
+ },
+ "时随": {
+  "card-method-random-search": 1
+ },
+ "明因": {
+  "card-pitfall-correlation-causation": 3
+ },
+ "明显": {
+  "card-method-moving-average": 3
+ },
+ "是原": {
+  "card-concept-p-value": 1
+ },
+ "是在": {
+  "card-concept-p-value": 1
+ },
+ "是安": {
+  "card-concept-idempotency": 3
+ },
+ "是常": {
+  "card-pitfall-data-leakage": 1
+ },
+ "是控": {
+  "card-concept-regularization": 1,
+  "card-method-early-stopping": 1,
+  "card-pitfall-overfitting": 1
+ },
+ "是组": {
+  "card-pitfall-simpsons-paradox": 3
+ },
+ "是缓": {
+  "card-method-cache-jitter-warmup": 1,
+  "card-pitfall-cache-avalanche": 1
+ },
+ "是重": {
+  "card-concept-confidence-interval": 1
+ },
+ "普森": {
+  "card-pitfall-simpsons-paradox": 9
+ },
+ "更小": {
+  "card-method-k-fold-cv": 3
+ },
+ "更极": {
+  "card-concept-p-value": 3
+ },
+ "更高": {
+  "card-method-random-search": 3
+ },
+ "最大": {
+  "card-method-exponential-backoff": 1,
+  "card-pitfall-retry-storm": 1
+ },
+ "有放": {
+  "card-method-bootstrap": 3
+ },
+ "期平": {
+  "card-method-moving-average": 3
+ },
+ "期抖": {
+  "card-method-cache-jitter-warmup": 10
+ },
+ "期时": {
+  "card-method-cache-jitter-warmup": 1,
+  "card-pitfall-cache-avalanche": 1
+ },
+ "未来": {
+  "card-pitfall-ts-cv-time-order": 3
+ },
+ "未知": {
+  "card-method-bootstrap": 3
+ },
+ "未通": {
+  "card-pitfall-survivorship-bias": 1
+ },
+ "本且": {
+  "card-method-bootstrap": 3
+ },
+ "本单": {
+  "card-concept-simple-baseline": 1
+ },
+ "本导": {
+  "card-pitfall-survivorship-bias": 2
+ },
+ "本而": {
+  "card-pitfall-survivorship-bias": 1
+ },
+ "机切": {
+  "card-pitfall-ts-cv-time-order": 2
+ },
+ "机器": {
+  "card-concept-regularization": 3,
+  "card-concept-simple-baseline": 3,
+  "card-method-early-stopping": 3,
+  "card-method-k-fold-cv": 3,
+  "card-method-random-search": 3,
+  "card-pitfall-data-leakage": 3,
+  "card-pitfall-overfitting": 3,
+  "card-pitfall-ts-cv-time-order": 3
+ },
+ "机抖": {
+  "card-method-cache-jitter-warmup": 1,
+  "card-pitfall-cache-avalanche": 1
+ },
+ "机搜": {
+  "card-method-random-search": 5
+ },
+ "机过": {
+  "card-method-cache-jitter-warmup": 2
+ },
+ "杂变": {
+  "card-concept-confounder": 5,
+  "card-pitfall-correlation-causation": 1
+ },
+ "杂因": {
+  "card-concept-confounder": 4
+ },
+ "杂度": {
+  "card-concept-regularization": 2
+ },
+ "杂模": {
+  "card-concept-simple-baseline": 3
+ },
+ "权重": {
+  "card-pitfall-simpsons-paradox": 3
+ },
+ "束模": {
+  "card-concept-regularization": 2
+ },
+ "来数": {
+  "card-pitfall-ts-cv-time-order": 3
+ },
+ "来源": {
+  "card-pitfall-data-leakage": 1
+ },
+ "极端": {
+  "card-concept-median-robustness": 4,
+  "card-concept-p-value": 3
+ },
+ "析通": {
+  "card-pitfall-survivorship-bias": 3
+ },
+ "果与": {
+  "card-concept-idempotency": 3
+ },
+ "果关": {
+  "card-concept-confounder": 1,
+  "card-pitfall-correlation-causation": 4
+ },
+ "标不": {
+  "card-method-early-stopping": 2
+ },
+ "标信": {
+  "card-pitfall-data-leakage": 2
+ },
+ "标准": {
+  "card-pitfall-data-leakage": 1
+ },
+ "标变": {
+  "card-pitfall-data-leakage": 1
+ },
+ "标虚": {
+  "card-pitfall-data-leakage": 3
+ },
+ "标识": {
+  "card-concept-content-addressing": 3
+ },
+ "校正": {
+  "card-pitfall-multiple-comparison": 3
+ },
+ "校验": {
+  "card-concept-content-addressing": 3
+ },
+ "样中": {
+  "card-concept-confidence-interval": 3
+ },
+ "样估": {
+  "card-method-bootstrap": 3
+ },
+ "样分": {
+  "card-method-bootstrap": 3
+ },
+ "样本": {
+  "card-concept-simple-baseline": 1,
+  "card-method-bootstrap": 3,
+  "card-pitfall-survivorship-bias": 3
+ },
+ "根因": {
+  "card-pitfall-simpsons-paradox": 3
+ },
+ "格搜": {
+  "card-method-random-search": 3
+ },
+ "检验": {
+  "card-pitfall-multiple-comparison": 7
+ },
+ "森悖": {
+  "card-pitfall-simpsons-paradox": 5
+ },
+ "概率": {
+  "card-concept-p-value": 4
+ },
+ "模型": {
+  "card-concept-regularization": 2,
+  "card-concept-simple-baseline": 3,
+  "card-pitfall-overfitting": 2
+ },
+ "模式": {
+  "card-pitfall-cache-avalanche": 2
+ },
+ "模次": {
+  "card-concept-simple-baseline": 2
+ },
+ "次假": {
+  "card-pitfall-multiple-comparison": 3
+ },
+ "次划": {
+  "card-method-k-fold-cv": 3
+ },
+ "次失": {
+  "card-method-exponential-backoff": 1
+ },
+ "次序": {
+  "card-concept-simple-baseline": 2
+ },
+ "次数": {
+  "card-method-exponential-backoff": 1,
+  "card-pitfall-retry-storm": 1
+ },
+ "次相": {
+  "card-concept-idempotency": 3
+ },
+ "止用": {
+  "card-pitfall-ts-cv-time-order": 1
+ },
+ "止训": {
+  "card-method-early-stopping": 2
+ },
+ "正则": {
+  "card-concept-regularization": 5,
+  "card-pitfall-overfitting": 1
+ },
+ "步重": {
+  "card-pitfall-retry-storm": 2
+ },
+ "段之": {
+  "card-concept-regularization": 1,
+  "card-method-early-stopping": 1
+ },
+ "每次": {
+  "card-method-exponential-backoff": 1
+ },
+ "比单": {
+  "card-method-k-fold-cv": 3
+ },
+ "比网": {
+  "card-method-random-search": 2
+ },
+ "比较": {
+  "card-pitfall-multiple-comparison": 5
+ },
+ "求全": {
+  "card-pitfall-cache-avalanche": 3
+ },
+ "求的": {
+  "card-concept-idempotency": 1
+ },
+ "泄漏": {
+  "card-pitfall-data-leakage": 6,
+  "card-pitfall-ts-cv-time-order": 4
+ },
+ "法通": {
+  "card-method-bootstrap": 1
+ },
+ "泛化": {
+  "card-pitfall-overfitting": 2
+ },
+ "流做": {
+  "card-method-k-fold-cv": 3
+ },
+ "流方": {
+  "card-method-exponential-backoff": 2
+ },
+ "测基": {
+  "card-method-moving-average": 2
+ },
+ "测试": {
+  "card-pitfall-data-leakage": 1
+ },
+ "测过": {
+  "card-pitfall-ts-cv-time-order": 3
+ },
+ "混入": {
+  "card-pitfall-data-leakage": 3
+ },
+ "混杂": {
+  "card-concept-confounder": 9,
+  "card-pitfall-correlation-causation": 1
+ },
+ "滑但": {
+  "card-method-moving-average": 3
+ },
+ "滑预": {
+  "card-method-moving-average": 3
+ },
+ "滞后": {
+  "card-method-moving-average": 3
+ },
+ "漏指": {
+  "card-pitfall-data-leakage": 1
+ },
+ "漏来": {
+  "card-pitfall-data-leakage": 1
+ },
+ "点数": {
+  "card-method-cache-jitter-warmup": 1,
+  "card-pitfall-cache-avalanche": 1
+ },
+ "点预": {
+  "card-method-cache-jitter-warmup": 10
+ },
+ "热分": {
+  "card-method-cache-jitter-warmup": 2
+ },
+ "热是": {
+  "card-method-cache-jitter-warmup": 1,
+  "card-pitfall-cache-avalanche": 1
+ },
+ "热点": {
+  "card-method-cache-jitter-warmup": 11,
+  "card-pitfall-cache-avalanche": 1
+ },
+ "然去": {
+  "card-concept-content-addressing": 3
+ },
+ "特征": {
+  "card-pitfall-data-leakage": 4
+ },
+ "率累": {
+  "card-pitfall-multiple-comparison": 3
+ },
+ "现为": {
+  "card-pitfall-overfitting": 1
+ },
+ "现出": {
+  "card-concept-confounder": 1,
+  "card-pitfall-correlation-causation": 1
+ },
+ "现象": {
+  "card-pitfall-overfitting": 2,
+  "card-pitfall-retry-storm": 2,
+  "card-pitfall-simpsons-paradox": 1
+ },
+ "生成": {
+  "card-concept-idempotency": 1
+ },
+ "用于": {
+  "card-method-bootstrap": 1
+ },
+ "用内": {
+  "card-concept-content-addressing": 3
+ },
+ "用小": {
+  "card-method-bootstrap": 2
+ },
+ "用手": {
+  "card-concept-regularization": 1,
+  "card-method-cache-jitter-warmup": 1,
+  "card-method-early-stopping": 1,
+  "card-pitfall-cache-avalanche": 1,
+  "card-pitfall-overfitting": 1
+ },
+ "用未": {
+  "card-pitfall-ts-cv-time-order": 3
+ },
+ "用随": {
+  "card-method-cache-jitter-warmup": 2
+ },
+ "略未": {
+  "card-pitfall-survivorship-bias": 1
+ },
+ "的一": {
+  "card-concept-regularization": 2
+ },
+ "的信": {
+  "card-pitfall-data-leakage": 1
+ },
+ "的前": {
+  "card-concept-idempotency": 3
+ },
+ "的区": {
+  "card-concept-confidence-interval": 5
+ },
+ "的变": {
+  "card-concept-confounder": 1,
+  "card-pitfall-correlation-causation": 1
+ },
+ "的含": {
+  "card-concept-confidence-interval": 1
+ },
+ "的场": {
+  "card-method-bootstrap": 1
+ },
+ "的存": {
+  "card-concept-content-addressing": 2
+ },
+ "的常": {
+  "card-concept-regularization": 1,
+  "card-method-cache-jitter-warmup": 1,
+  "card-method-early-stopping": 1,
+  "card-pitfall-cache-avalanche": 1,
+  "card-pitfall-overfitting": 1
+ },
+ "的幂": {
+  "card-concept-idempotency": 2
+ },
+ "的建": {
+  "card-concept-simple-baseline": 2
+ },
+ "的抽": {
+  "card-method-bootstrap": 1
+ },
+ "的指": {
+  "card-pitfall-retry-storm": 1
+ },
+ "的操": {
+  "card-concept-idempotency": 2
+ },
+ "的故": {
+  "card-pitfall-cache-avalanche": 2
+ },
+ "的效": {
+  "card-concept-idempotency": 1
+ },
+ "的样": {
+  "card-pitfall-survivorship-bias": 3
+ },
+ "的概": {
+  "card-concept-p-value": 4
+ },
+ "的泄": {
+  "card-pitfall-data-leakage": 1
+ },
+ "的现": {
+  "card-pitfall-overfitting": 2,
+  "card-pitfall-retry-storm": 2,
+  "card-pitfall-simpsons-paradox": 1
+ },
+ "的短": {
+  "card-method-moving-average": 1
+ },
+ "的第": {
+  "card-concept-confounder": 2
+ },
+ "的系": {
+  "card-pitfall-survivorship-bias": 3
+ },
+ "的缓": {
+  "card-method-cache-jitter-warmup": 2
+ },
+ "的评": {
+  "card-method-k-fold-cv": 1
+ },
+ "的调": {
+  "card-method-random-search": 2
+ },
+ "的重": {
+  "card-method-exponential-backoff": 3,
+  "card-pitfall-retry-storm": 1
+ },
+ "的集": {
+  "card-concept-median-robustness": 1
+ },
+ "盖真": {
+  "card-concept-confidence-interval": 3
+ },
+ "目标": {
+  "card-pitfall-data-leakage": 3
+ },
+ "相关": {
+  "card-concept-confounder": 3,
+  "card-pitfall-correlation-causation": 10
+ },
+ "相反": {
+  "card-pitfall-simpsons-paradox": 3
+ },
+ "相同": {
+  "card-concept-idempotency": 3
+ },
+ "真值": {
+  "card-concept-confidence-interval": 3
+ },
+ "真时": {
+  "card-concept-p-value": 3
+ },
+ "真的": {
+  "card-concept-p-value": 1
+ },
+ "知场": {
+  "card-method-bootstrap": 2
+ },
+ "知的": {
+  "card-method-bootstrap": 1
+ },
+ "短期": {
+  "card-method-moving-average": 3
+ },
+ "禁止": {
+  "card-pitfall-ts-cv-time-order": 1
+ },
+ "移动": {
+  "card-method-moving-average": 5
+ },
+ "程实": {
+  "card-concept-content-addressing": 3,
+  "card-concept-idempotency": 3,
+  "card-method-cache-jitter-warmup": 3,
+  "card-method-exponential-backoff": 3,
+  "card-pitfall-cache-avalanche": 3,
+  "card-pitfall-retry-storm": 3
+ },
+ "稳健": {
+  "card-concept-median-robustness": 7
+ },
+ "稳序": {
+  "card-method-moving-average": 3
+ },
+ "空间": {
+  "card-method-random-search": 3
+ },
+ "窗口": {
+  "card-method-moving-average": 3
+ },
+ "端值": {
+  "card-concept-median-robustness": 4
+ },
+ "端同": {
+  "card-pitfall-retry-storm": 2
+ },
+ "端存": {
+  "card-pitfall-cache-avalanche": 3
+ },
+ "端数": {
+  "card-concept-p-value": 3
+ },
+ "端生": {
+  "card-concept-idempotency": 1
+ },
+ "第三": {
+  "card-concept-confounder": 2
+ },
+ "等于": {
+  "card-pitfall-correlation-causation": 4,
+  "card-pitfall-ts-cv-time-order": 2
+ },
+ "等右": {
+  "card-concept-median-robustness": 1
+ },
+ "等待": {
+  "card-method-exponential-backoff": 3
+ },
+ "等性": {
+  "card-concept-idempotency": 5
+ },
+ "等操": {
+  "card-concept-idempotency": 1
+ },
+ "等键": {
+  "card-concept-idempotency": 1
+ },
+ "筛选": {
+  "card-pitfall-survivorship-bias": 3
+ },
+ "简单": {
+  "card-concept-simple-baseline": 7
+ },
+ "类技": {
+  "card-concept-regularization": 2
+ },
+ "系数": {
+  "card-pitfall-correlation-causation": 3
+ },
+ "系的": {
+  "card-concept-confounder": 1,
+  "card-pitfall-correlation-causation": 1
+ },
+ "系统": {
+  "card-pitfall-survivorship-bias": 3
+ },
+ "索在": {
+  "card-method-random-search": 1
+ },
+ "索更": {
+  "card-method-random-search": 2
+ },
+ "索通": {
+  "card-method-random-search": 1
+ },
+ "累积": {
+  "card-pitfall-multiple-comparison": 3
+ },
+ "约束": {
+  "card-concept-regularization": 2
+ },
+ "线上": {
+  "card-pitfall-data-leakage": 3
+ },
+ "线下": {
+  "card-pitfall-data-leakage": 3
+ },
+ "线优": {
+  "card-concept-simple-baseline": 8
+ },
+ "线再": {
+  "card-concept-simple-baseline": 3
+ },
+ "线性": {
+  "card-pitfall-correlation-causation": 3
+ },
+ "练与": {
+  "card-pitfall-data-leakage": 1
+ },
+ "练以": {
+  "card-method-early-stopping": 2
+ },
+ "练特": {
+  "card-pitfall-data-leakage": 3
+ },
+ "练误": {
+  "card-pitfall-overfitting": 1
+ },
+ "练集": {
+  "card-pitfall-overfitting": 2
+ },
+ "练预": {
+  "card-pitfall-ts-cv-time-order": 1
+ },
+ "组结": {
+  "card-pitfall-simpsons-paradox": 3
+ },
+ "组间": {
+  "card-pitfall-simpsons-paradox": 3
+ },
+ "细节": {
+  "card-pitfall-overfitting": 2
+ },
+ "终止": {
+  "card-method-early-stopping": 2
+ },
+ "结论": {
+  "card-pitfall-simpsons-paradox": 6
+ },
+ "给过": {
+  "card-method-cache-jitter-warmup": 1,
+  "card-pitfall-cache-avalanche": 1
+ },
+ "络请": {
+  "card-concept-idempotency": 1
+ },
+ "统性": {
+  "card-pitfall-survivorship-bias": 3
+ },
+ "统计": {
+  "card-concept-confidence-interval": 3,
+  "card-concept-confounder": 3,
+  "card-concept-median-robustness": 3,
+  "card-concept-p-value": 3,
+  "card-method-bootstrap": 4,
+  "card-method-k-fold-cv": 3,
+  "card-pitfall-correlation-causation": 3,
+  "card-pitfall-multiple-comparison": 3,
+  "card-pitfall-simpsons-paradox": 3,
+  "card-pitfall-survivorship-bias": 3
+ },
+ "续下": {
+  "card-pitfall-overfitting": 1
+ },
+ "维时": {
+  "card-method-random-search": 1
+ },
+ "维超": {
+  "card-method-random-search": 3
+ },
+ "缓存": {
+  "card-method-cache-jitter-warmup": 7,
+  "card-pitfall-cache-avalanche": 9
+ },
+ "缓解": {
+  "card-method-cache-jitter-warmup": 3,
+  "card-pitfall-cache-avalanche": 1
+ },
+ "网格": {
+  "card-method-random-search": 3
+ },
+ "网络": {
+  "card-concept-idempotency": 1
+ },
+ "置信": {
+  "card-concept-confidence-interval": 5
+ },
+ "置最": {
+  "card-method-exponential-backoff": 1,
+  "card-pitfall-retry-storm": 1
+ },
+ "考虑": {
+  "card-concept-simple-baseline": 1
+ },
+ "者偏": {
+  "card-pitfall-survivorship-bias": 5
+ },
+ "者导": {
+  "card-pitfall-survivorship-bias": 1
+ },
+ "而忽": {
+  "card-pitfall-survivorship-bias": 1
+ },
+ "而线": {
+  "card-pitfall-data-leakage": 3
+ },
+ "而验": {
+  "card-pitfall-overfitting": 1
+ },
+ "联强": {
+  "card-pitfall-correlation-causation": 1
+ },
+ "能力": {
+  "card-pitfall-overfitting": 2
+ },
+ "能证": {
+  "card-pitfall-correlation-causation": 3
+ },
+ "自助": {
+  "card-method-bootstrap": 9
+ },
+ "致泛": {
+  "card-pitfall-overfitting": 2
+ },
+ "致的": {
+  "card-pitfall-survivorship-bias": 3
+ },
+ "致线": {
+  "card-pitfall-data-leakage": 1
+ },
+ "致请": {
+  "card-pitfall-cache-avalanche": 3
+ },
+ "节导": {
+  "card-pitfall-overfitting": 2
+ },
+ "节流": {
+  "card-method-exponential-backoff": 2
+ },
+ "虑复": {
+  "card-concept-simple-baseline": 1
+ },
+ "虚假": {
+  "card-concept-confounder": 2
+ },
+ "虚高": {
+  "card-pitfall-data-leakage": 3
+ },
+ "行一": {
+  "card-concept-idempotency": 3
+ },
+ "行效": {
+  "card-concept-idempotency": 2
+ },
+ "行的": {
+  "card-concept-idempotency": 1
+ },
+ "表现": {
+  "card-concept-confounder": 1,
+  "card-pitfall-correlation-causation": 1,
+  "card-pitfall-overfitting": 1
+ },
+ "要做": {
+  "card-pitfall-multiple-comparison": 3
+ },
+ "覆盖": {
+  "card-concept-confidence-interval": 3
+ },
+ "见的": {
+  "card-pitfall-data-leakage": 1
+ },
+ "观察": {
+  "card-concept-p-value": 3
+ },
+ "解手": {
+  "card-method-cache-jitter-warmup": 2
+ },
+ "解缓": {
+  "card-method-cache-jitter-warmup": 1,
+  "card-pitfall-cache-avalanche": 1
+ },
+ "计抽": {
+  "card-method-bootstrap": 2
+ },
+ "计统": {
+  "card-method-bootstrap": 1
+ },
+ "计量": {
+  "card-method-bootstrap": 1
+ },
+ "让两": {
+  "card-concept-confounder": 1,
+  "card-pitfall-correlation-causation": 1
+ },
+ "训练": {
+  "card-method-early-stopping": 2,
+  "card-pitfall-data-leakage": 4,
+  "card-pitfall-overfitting": 3,
+  "card-pitfall-ts-cv-time-order": 1
+ },
+ "记住": {
+  "card-pitfall-overfitting": 2
+ },
+ "论与": {
+  "card-pitfall-simpsons-paradox": 3
+ },
+ "论指": {
+  "card-pitfall-simpsons-paradox": 1
+ },
+ "论方": {
+  "card-pitfall-simpsons-paradox": 3
+ },
+ "设为": {
+  "card-concept-p-value": 4
+ },
+ "设检": {
+  "card-pitfall-multiple-comparison": 3
+ },
+ "设置": {
+  "card-method-exponential-backoff": 1,
+  "card-pitfall-retry-storm": 1
+ },
+ "证乱": {
+  "card-pitfall-ts-cv-time-order": 4
+ },
+ "证必": {
+  "card-pitfall-ts-cv-time-order": 1
+ },
+ "证把": {
+  "card-method-k-fold-cv": 1
+ },
+ "证指": {
+  "card-method-early-stopping": 2
+ },
+ "证明": {
+  "card-pitfall-correlation-causation": 3
+ },
+ "证误": {
+  "card-pitfall-overfitting": 1
+ },
+ "证集": {
+  "card-method-k-fold-cv": 3
+ },
+ "评估": {
+  "card-method-k-fold-cv": 3
+ },
+ "识的": {
+  "card-concept-content-addressing": 2
+ },
+ "试会": {
+  "card-method-exponential-backoff": 1,
+  "card-pitfall-retry-storm": 1
+ },
+ "试压": {
+  "card-pitfall-retry-storm": 2
+ },
+ "试次": {
+  "card-method-exponential-backoff": 1,
+  "card-pitfall-retry-storm": 1
+ },
+ "试的": {
+  "card-concept-idempotency": 3
+ },
+ "试等": {
+  "card-method-exponential-backoff": 2
+ },
+ "试简": {
+  "card-concept-simple-baseline": 1
+ },
+ "试节": {
+  "card-method-exponential-backoff": 2
+ },
+ "试集": {
+  "card-pitfall-data-leakage": 1
+ },
+ "试风": {
+  "card-method-exponential-backoff": 1,
+  "card-pitfall-retry-storm": 5
+ },
+ "误差": {
+  "card-pitfall-overfitting": 2
+ },
+ "请求": {
+  "card-concept-idempotency": 1,
+  "card-pitfall-cache-avalanche": 3
+ },
+ "调参": {
+  "card-method-random-search": 2
+ },
+ "调趋": {
+  "card-concept-simple-baseline": 1
+ },
+ "败后": {
+  "card-method-exponential-backoff": 3
+ },
+ "超参": {
+  "card-method-random-search": 3
+ },
+ "越大": {
+  "card-method-moving-average": 3
+ },
+ "越平": {
+  "card-method-moving-average": 3
+ },
+ "越明": {
+  "card-method-moving-average": 3
+ },
+ "趋势": {
+  "card-concept-median-robustness": 1,
+  "card-concept-simple-baseline": 1
+ },
+ "跑简": {
+  "card-concept-simple-baseline": 2
+ },
+ "轮流": {
+  "card-method-k-fold-cv": 3
+ },
+ "较校": {
+  "card-pitfall-multiple-comparison": 1
+ },
+ "辛普": {
+  "card-pitfall-simpsons-paradox": 9
+ },
+ "过去": {
+  "card-pitfall-ts-cv-time-order": 3
+ },
+ "过拟": {
+  "card-concept-regularization": 3,
+  "card-method-early-stopping": 3,
+  "card-pitfall-overfitting": 6
+ },
+ "过有": {
+  "card-method-bootstrap": 1
+ },
+ "过期": {
+  "card-method-cache-jitter-warmup": 11,
+  "card-pitfall-cache-avalanche": 1
+ },
+ "过筛": {
+  "card-pitfall-survivorship-bias": 3
+ },
+ "过约": {
+  "card-concept-regularization": 2
+ },
+ "过者": {
+  "card-pitfall-survivorship-bias": 1
+ },
+ "退避": {
+  "card-method-exponential-backoff": 9,
+  "card-pitfall-retry-storm": 1
+ },
+ "适合": {
+  "card-method-moving-average": 1
+ },
+ "适用": {
+  "card-method-bootstrap": 3
+ },
+ "选择": {
+  "card-pitfall-data-leakage": 1
+ },
+ "选的": {
+  "card-pitfall-survivorship-bias": 3
+ },
+ "通常": {
+  "card-concept-idempotency": 1,
+  "card-method-random-search": 3
+ },
+ "通过": {
+  "card-concept-regularization": 2,
+  "card-method-bootstrap": 1,
+  "card-pitfall-survivorship-bias": 4
+ },
+ "造虚": {
+  "card-concept-confounder": 2
+ },
+ "避免": {
+  "card-method-exponential-backoff": 1,
+  "card-pitfall-retry-storm": 1
+ },
+ "避可": {
+  "card-pitfall-retry-storm": 1
+ },
+ "避在": {
+  "card-method-exponential-backoff": 1
+ },
+ "避重": {
+  "card-method-exponential-backoff": 4
+ },
+ "部打": {
+  "card-pitfall-cache-avalanche": 3
+ },
+ "部故": {
+  "card-pitfall-retry-storm": 2
+ },
+ "配合": {
+  "card-method-exponential-backoff": 1,
+  "card-pitfall-retry-storm": 1
+ },
+ "重且": {
+  "card-concept-content-addressing": 3
+ },
+ "重复": {
+  "card-concept-confidence-interval": 3,
+  "card-concept-idempotency": 3
+ },
+ "重差": {
+  "card-pitfall-simpsons-paradox": 3
+ },
+ "重抽": {
+  "card-method-bootstrap": 3
+ },
+ "重检": {
+  "card-pitfall-multiple-comparison": 4
+ },
+ "重比": {
+  "card-pitfall-multiple-comparison": 5
+ },
+ "重试": {
+  "card-concept-idempotency": 3,
+  "card-method-exponential-backoff": 10,
+  "card-pitfall-retry-storm": 8
+ },
+ "量可": {
+  "card-concept-confounder": 1,
+  "card-pitfall-correlation-causation": 1
+ },
+ "量客": {
+  "card-pitfall-retry-storm": 2
+ },
+ "量标": {
+  "card-pitfall-data-leakage": 1
+ },
+ "量的": {
+  "card-method-bootstrap": 1,
+  "card-pitfall-data-leakage": 1
+ },
+ "量线": {
+  "card-pitfall-correlation-causation": 3
+ },
+ "量缓": {
+  "card-pitfall-cache-avalanche": 3
+ },
+ "量表": {
+  "card-concept-confounder": 1,
+  "card-pitfall-correlation-causation": 1
+ },
+ "错误": {
+  "card-pitfall-survivorship-bias": 3
+ },
+ "键实": {
+  "card-concept-idempotency": 1
+ },
+ "长等": {
+  "card-method-exponential-backoff": 1
+ },
+ "长重": {
+  "card-method-exponential-backoff": 2
+ },
+ "长预": {
+  "card-method-exponential-backoff": 1,
+  "card-pitfall-retry-storm": 1
+ },
+ "间中": {
+  "card-method-random-search": 2
+ },
+ "间会": {
+  "card-concept-confidence-interval": 3
+ },
+ "间估": {
+  "card-concept-confidence-interval": 2
+ },
+ "间加": {
+  "card-method-cache-jitter-warmup": 1,
+  "card-pitfall-cache-avalanche": 1
+ },
+ "间可": {
+  "card-method-random-search": 1
+ },
+ "间序": {
+  "card-concept-simple-baseline": 3,
+  "card-method-moving-average": 3,
+  "card-pitfall-ts-cv-time-order": 14
+ },
+ "间权": {
+  "card-pitfall-simpsons-paradox": 3
+ },
+ "间的": {
+  "card-concept-confidence-interval": 1
+ },
+ "间顺": {
+  "card-pitfall-ts-cv-time-order": 1
+ },
+ "阳性": {
+  "card-pitfall-multiple-comparison": 3
+ },
+ "降的": {
+  "card-pitfall-overfitting": 2
+ },
+ "降而": {
+  "card-pitfall-overfitting": 1
+ },
+ "限的": {
+  "card-method-exponential-backoff": 1,
+  "card-pitfall-retry-storm": 1
+ },
+ "随机": {
+  "card-method-cache-jitter-warmup": 3,
+  "card-method-random-search": 5,
+  "card-pitfall-cache-avalanche": 1,
+  "card-pitfall-ts-cv-time-order": 2
+ },
+ "障放": {
+  "card-pitfall-retry-storm": 2
+ },
+ "障模": {
+  "card-pitfall-cache-avalanche": 2
+ },
+ "集中": {
+  "card-concept-median-robustness": 1
+ },
+ "集之": {
+  "card-pitfall-data-leakage": 1
+ },
+ "集细": {
+  "card-pitfall-overfitting": 2
+ },
+ "雪崩": {
+  "card-method-cache-jitter-warmup": 1,
+  "card-pitfall-cache-avalanche": 6
+ },
+ "需要": {
+  "card-pitfall-multiple-comparison": 3
+ },
+ "靠客": {
+  "card-concept-idempotency": 1
+ },
+ "顺序": {
+  "card-pitfall-ts-cv-time-order": 1
+ },
+ "须保": {
+  "card-pitfall-ts-cv-time-order": 1
+ },
+ "须设": {
+  "card-method-exponential-backoff": 1,
+  "card-pitfall-retry-storm": 1
+ },
+ "预测": {
+  "card-method-moving-average": 3,
+  "card-pitfall-ts-cv-time-order": 3
+ },
+ "预热": {
+  "card-method-cache-jitter-warmup": 11,
+  "card-pitfall-cache-avalanche": 1
+ },
+ "预算": {
+  "card-method-exponential-backoff": 1,
+  "card-pitfall-retry-storm": 1
+ },
+ "风暴": {
+  "card-method-exponential-backoff": 1,
+  "card-pitfall-retry-storm": 5
+ },
+ "验会": {
+  "card-pitfall-multiple-comparison": 1
+ },
+ "验使": {
+  "card-pitfall-multiple-comparison": 2
+ },
+ "验完": {
+  "card-concept-content-addressing": 3
+ },
+ "验证": {
+  "card-method-early-stopping": 2,
+  "card-method-k-fold-cv": 12,
+  "card-pitfall-overfitting": 1,
+  "card-pitfall-ts-cv-time-order": 7
+ },
+ "高效": {
+  "card-method-random-search": 3
+ },
+ "高相": {
+  "card-concept-confounder": 1,
+  "card-pitfall-correlation-causation": 3
+ },
+ "高维": {
+  "card-method-random-search": 3
+ },
+ "高而": {
+  "card-pitfall-data-leakage": 3
+ }
+}
