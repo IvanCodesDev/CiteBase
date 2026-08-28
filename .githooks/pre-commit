@@ -1,0 +1,64 @@
+#!/bin/sh
+# CiteBase 提交规范钩子 —— 阻止不该入库的路径与非法作者身份。
+# 版本化副本位于 .githooks/pre-commit;安装到本地生效请运行 scripts/install-hooks.sh
+# 或直接:  git config core.hooksPath .githooks
+
+set -eu
+
+# ---- 1. 作者身份必须是 IvanCodesDev ----
+expected_name="IvanCodesDev"
+author_ident="$(git var GIT_AUTHOR_IDENT 2>/dev/null || true)"
+committer_ident="$(git var GIT_COMMITTER_IDENT 2>/dev/null || true)"
+
+check_ident() {
+	# $1 = ident 字符串(形如 "Name <email> ts tz"),$2 = 角色描述
+	name="$(printf '%s' "$1" | sed -n 's/ <.*//p')"
+	if [ "$name" != "$expected_name" ]; then
+		echo "✗ 提交被拒绝:$2 是 \"$name\",必须为 \"$expected_name\"。" >&2
+		echo "  请用: git -c user.name=IvanCodesDev -c user.email=IvanCodesDev@users.noreply.github.com commit ..." >&2
+		return 1
+	fi
+	return 0
+}
+
+check_ident "$author_ident" "作者(author)" || exit 1
+check_ident "$committer_ident" "提交者(committer)" || exit 1
+
+# ---- 2. 禁止入库的路径(docs 文档目录 + 各类本地/生成物) ----
+# 采用前缀/通配匹配,任一暂存文件命中即拒绝。
+forbidden_globs="
+docs/*
+.venv/*
+.cursor/*
+.codex/*
+dist/*
+build/*
+_deps/*
+__pycache__/*
+*.egg-info/*
+*.mypy_cache/*
+*.ruff_cache/*
+*.pytest_cache/*
+"
+
+staged="$(git diff --cached --name-only --diff-filter=ACMR)"
+[ -z "$staged" ] && exit 0
+
+violations=""
+for f in $staged; do
+	for pat in $forbidden_globs; do
+		# shellcheck disable=SC2254
+		case "$f" in
+			$pat) violations="$violations $f"; break ;;
+		esac
+	done
+done
+
+if [ -n "$violations" ]; then
+	echo "✗ 提交被拒绝:以下文件属于禁止入库的目录(docs / 本地配置 / 缓存 / 生成物):" >&2
+	for v in $violations; do echo "    $v" >&2; done
+	echo "  请从暂存区移除,例如: git rm -r --cached docs" >&2
+	exit 1
+fi
+
+exit 0

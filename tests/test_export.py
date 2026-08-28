@@ -6,9 +6,9 @@ import json
 from pathlib import Path
 
 import pytest
-from cardvault import cli
-from cardvault.exporters import build_snapshot, export_json, export_site
-from cardvault.vault import Vault
+from citebase import cli
+from citebase.exporters import build_snapshot, export_json, export_site
+from citebase.vault import Vault
 from helpers import base_meta, make_claim, make_drift_vault, write_card
 
 
@@ -57,7 +57,7 @@ def test_export_json_is_deterministic(tmp_path: Path) -> None:
 
     assert a.read_bytes() == b.read_bytes()
     payload = json.loads(a.read_text(encoding="utf-8"))
-    assert payload["schema"] == "cardvault-snapshot/0.1"
+    assert payload["schema"] == "citebase-snapshot/0.1"
 
 
 def test_export_site_writes_pages(tmp_path: Path) -> None:

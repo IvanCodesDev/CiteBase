@@ -5,9 +5,9 @@ from __future__ import annotations
 from pathlib import Path
 
 import pytest
-from cardvault import cli
-from cardvault.mcp.server import search_impl
-from cardvault.retrievelog import gap_report, read_log
+from citebase import cli
+from citebase.mcp.server import search_impl
+from citebase.retrievelog import gap_report, read_log
 from helpers import base_meta, make_claim, make_drift_vault, write_card
 
 

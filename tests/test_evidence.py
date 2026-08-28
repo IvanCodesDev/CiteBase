@@ -6,8 +6,8 @@ import json
 from pathlib import Path
 
 import pytest
-from cardvault.drift import run_drift
-from cardvault.evidence import (
+from citebase.drift import run_drift
+from citebase.evidence import (
     EvidenceEvent,
     claim_loc,
     load_events,
@@ -15,7 +15,7 @@ from cardvault.evidence import (
     render_event_text,
     source_registered,
 )
-from cardvault.vault import Vault
+from citebase.vault import Vault
 from helpers import make_drift_vault, make_event, write_events
 from pydantic import ValidationError
 

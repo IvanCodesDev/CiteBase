@@ -1,4 +1,4 @@
-# CardVault 仓库结构与依赖边界
+# Citebase 仓库结构与依赖边界
 
 > 状态：M5 实现基线 2026-08-24。内核（lint / 索引 / 检索 / 评测）、编译循环（端口 / 适配器 /
 > 抽取器 / 七步管线 / 审核队列 / 留痕）、治理 + MCP（失效信号总线 / 复核 / 裁决 / 脚手架 /
@@ -10,13 +10,13 @@
 ## 当前实际结构
 
 ```text
-CardVault/
+Citebase/
 ├─ README.md               # 项目门面：定位、支柱、快速开始、导航、路线图速览
 ├─ PROJECT_STRUCTURE.md    # 本文
 ├─ LICENSE                 # Apache-2.0（随 M2 落地）
 ├─ pyproject.toml          # 包定义：core/ 布局、vault / vault-mcp 入口、pytest/ruff/mypy 配置
 ├─ spec/                   # JSON Schema v0.1：card / evidence-event / pack（契约事实源）
-├─ core/cardvault/         # 单一发行包 cardvault（spec 打包副本随包分发）
+├─ core/citebase/         # 单一发行包 citebase（spec 打包副本随包分发）
 │  ├─ model / frontmatter / spanhash / vault      # 对象模型与事实源加载
 │  ├─ lint / index / retrieve / evalrun / cli     # M0：治理规则、索引、检索漏斗、评测
 │  │                       #   （evalrun 含 M3 忠实度抽查：哈希通道 + 人工核对清单）
@@ -33,12 +33,12 @@ CardVault/
 │  ├─ adapters/            # file / dir（url 按需追加；evidence 语义在 evidence.py）
 │  ├─ backends/            # M4：IndexBackend 实现——memory（进程内）/ sqlite（加速缓存），
 │  │                       #   对照测试保证两后端检索结果逐分一致
-│  ├─ extractors/          # plain / pypdf（可选依赖 cardvault[pdf]）
+│  ├─ extractors/          # plain / pypdf（可选依赖 citebase[pdf]）
 │  ├─ exporters/           # M4：site（静态站点）/ json（确定性产品快照）+ 许可证警示
 │  ├─ compiler/            # M1：七步管线、审核队列、_compile_log、prompt 模板、
 │  │                       #   scripted 与 OpenAI 兼容两个 LlmProvider（唯一调 LLM 的子包）；
 │  │                       #   M3：backflow 回流编译器（确定性，失败聚类 → 陷阱卡草案）
-│  └─ mcp/                 # M2：MCP Server 只读四工具（stdio；可选依赖 cardvault[mcp]）
+│  └─ mcp/                 # M2：MCP Server 只读四工具（stdio；可选依赖 citebase[mcp]）
 ├─ examples/
 │  ├─ generic-basics/      # 24 卡示例 vault：3 个源、32 条论断全部绑定 span 哈希，
 │  │                       #   evals/golden.yaml 22 问（命中率验收线 ≥ 0.8）
@@ -48,18 +48,18 @@ CardVault/
 └─ docs/                   # 全套设计文档（架构 / 治理 / 安全 / 产品 / ADR）
 ```
 
-落地说明：目标布局中的顶层 `compiler/`、`adapters/`、`extractors/`、`mcp/` 暂以 `cardvault.*`
+落地说明：目标布局中的顶层 `compiler/`、`adapters/`、`extractors/`、`mcp/` 暂以 `citebase.*`
 子包形态落在单一发行包内（导入路径与目标布局一致，公开后再评估拆分为独立发行包）；「mcp 不得
-import compiler」的铁律当前由导入纪律保证（`cardvault.mcp` 只导入 index / retrieve / vault），
-拆分发行包后升级为包依赖关系强制。`core/cardvault/spec/` 是 `spec/`
+import compiler」的铁律当前由导入纪律保证（`citebase.mcp` 只导入 index / retrieve / vault），
+拆分发行包后升级为包依赖关系强制。`core/citebase/spec/` 是 `spec/`
 的打包副本，由 `test_spec_sync.py` 强制逐字节一致。
 
 ## 目标布局（M0 起逐步落地）
 
 ```text
-cardvault/
+citebase/
 ├─ spec/                     # 三类 JSON Schema：契约事实源，先于代码冻结
-├─ core/cardvault/           # 对象模型、端口定义、lint、索引、检索漏斗
+├─ core/citebase/           # 对象模型、端口定义、lint、索引、检索漏斗
 ├─ compiler/                 # 七步编译循环 + 回流编译器（依赖 core + LLM 端口）
 ├─ mcp/                      # MCP Server：读侧四工具
 ├─ cli/                      # vault 命令行（治理动词只在这里）
@@ -100,7 +100,7 @@ flowchart TB
 
 | 对象 | 约定 | 示例 |
 |---|---|---|
-| Python 包 | `cardvault.*` 命名空间，模块 `snake_case` | `cardvault.core.ports` |
+| Python 包 | `citebase.*` 命名空间，模块 `snake_case` | `citebase.core.ports` |
 | 卡片文件 | `cards/<kind>/<slug>.md`，slug 用 kebab-case | `cards/methods/grey-forecast-gm11.md` |
 | 卡片 id | `card-<kind>-<slug>`，**一经发布永不复用**；改名走 `aliases` | `card-method-gm11` |
 | 源 id | `src-<语义化短名>` | `src-2024-mcm-paper-0417` |
@@ -137,4 +137,4 @@ my-vault/
 `examples/` 至少包含两个完整示例 vault：
 
 1. **generic 示例**：通用概念/方法/陷阱卡，演示零 LLM 的 M0 工作流；
-2. **自举 vault（dogfooding）**：CardVault 自己的设计知识（本 docs 的论断化版本）用 CardVault 管理——项目对自己的机制下注。
+2. **自举 vault（dogfooding）**：Citebase 自己的设计知识（本 docs 的论断化版本）用 Citebase 管理——项目对自己的机制下注。

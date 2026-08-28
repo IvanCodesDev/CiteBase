@@ -7,7 +7,7 @@ import json
 from pathlib import Path
 from typing import Any
 
-from cardvault import frontmatter
+from citebase import frontmatter
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 EXAMPLE_ROOT = REPO_ROOT / "examples" / "generic-basics"
@@ -71,7 +71,7 @@ def make_drift_vault(tmp_path: Path) -> tuple[Path, Path]:
     即可触发通道 A；篡改 extracted/text.md 即可触发通道 B。
     返回 (vault_root, upstream_file)。
     """
-    from cardvault.adapters import FileSourceAdapter
+    from citebase.adapters import FileSourceAdapter
 
     upstream = tmp_path / "upstream" / "notes.md"
     upstream.parent.mkdir(parents=True, exist_ok=True)

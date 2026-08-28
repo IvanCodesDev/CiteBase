@@ -3,9 +3,9 @@ from __future__ import annotations
 from pathlib import Path
 
 import pytest
-from cardvault import spanhash
-from cardvault.model import SourceSpan
-from cardvault.vault import Vault
+from citebase import spanhash
+from citebase.model import SourceSpan
+from citebase.vault import Vault
 from helpers import SOURCE_TEXT, sha256_text, span_text
 
 

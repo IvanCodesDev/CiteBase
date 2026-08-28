@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 import pytest
-from cardvault.compiler.openai_compat import (
+from citebase.compiler.openai_compat import (
     LlmUnavailableError,
     OpenAICompatProvider,
     build_chat_payload,
@@ -12,8 +12,8 @@ from cardvault.compiler.openai_compat import (
     render_propose_user,
     strip_fences,
 )
-from cardvault.model import CardKindDef, LlmSettings, Pack
-from cardvault.ports import CardDigest, ContradictRequest, PromptSpec, ProposeRequest
+from citebase.model import CardKindDef, LlmSettings, Pack
+from citebase.ports import CardDigest, ContradictRequest, PromptSpec, ProposeRequest
 
 PROMPT = PromptSpec(id="propose.v1.prompt.md", sha256="0" * 64, text="system prompt")
 
@@ -117,10 +117,10 @@ def test_from_settings_requires_config_and_key(
         OpenAICompatProvider.from_settings(None)
     with pytest.raises(LlmUnavailableError, match="base_url"):
         OpenAICompatProvider.from_settings(LlmSettings())
-    monkeypatch.delenv("CARDVAULT_API_KEY", raising=False)
-    with pytest.raises(LlmUnavailableError, match="CARDVAULT_API_KEY"):
+    monkeypatch.delenv("CITEBASE_API_KEY", raising=False)
+    with pytest.raises(LlmUnavailableError, match="CITEBASE_API_KEY"):
         OpenAICompatProvider.from_settings(SETTINGS)
-    monkeypatch.setenv("CARDVAULT_API_KEY", "sk-test")
+    monkeypatch.setenv("CITEBASE_API_KEY", "sk-test")
     provider = OpenAICompatProvider.from_settings(SETTINGS)
     described = provider.describe()
     assert described["name"] == "test-model"

@@ -4,9 +4,9 @@ from pathlib import Path
 from typing import Any
 
 import pytest
-from cardvault import evalrun
-from cardvault import index as index_mod
-from cardvault.vault import Vault
+from citebase import evalrun
+from citebase import index as index_mod
+from citebase.vault import Vault
 from helpers import EXAMPLE_ROOT
 
 

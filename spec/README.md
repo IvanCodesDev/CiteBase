@@ -18,7 +18,7 @@
 
 ## 版本策略
 
-1. 三 schema 独立 semver，与代码版本解耦；`$id` 内嵌版本号（`https://cardvault.dev/spec/<name>/v<major.minor>.json`）；
+1. 三 schema 独立 semver，与代码版本解耦；`$id` 内嵌版本号（`https://citebase.dev/spec/<name>/v<major.minor>.json`）；
 2. **破坏性变更**（删字段、改必填、改语义）必须：主版本 +1、附迁移脚本、`vault doctor` 增加旧版本检测；
 3. **兼容变更**（加可选字段、放宽约束）次版本 +1；
 4. 卡片 frontmatter 的 `schema_version` 字段缺省等于当前主版本；迁移工具按版本逐级升级；

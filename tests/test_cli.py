@@ -5,7 +5,7 @@ import re
 from pathlib import Path
 
 import pytest
-from cardvault import cli
+from citebase import cli
 from helpers import EXAMPLE_ROOT
 
 VAULT = ["--vault", str(EXAMPLE_ROOT)]

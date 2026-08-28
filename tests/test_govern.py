@@ -5,11 +5,11 @@ from __future__ import annotations
 from pathlib import Path
 
 import pytest
-from cardvault import govern
-from cardvault.audit import read_audit
-from cardvault.drift import set_card_status
-from cardvault.model import CardMeta
-from cardvault.vault import Vault
+from citebase import govern
+from citebase.audit import read_audit
+from citebase.drift import set_card_status
+from citebase.model import CardMeta
+from citebase.vault import Vault
 from helpers import base_meta, make_claim, make_drift_vault, write_card
 
 CARD_ID = "card-concept-alpha"

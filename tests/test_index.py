@@ -2,8 +2,8 @@ from __future__ import annotations
 
 from pathlib import Path
 
-from cardvault import index as index_mod
-from cardvault.vault import Vault
+from citebase import index as index_mod
+from citebase.vault import Vault
 from helpers import base_meta, make_claim, write_card
 
 

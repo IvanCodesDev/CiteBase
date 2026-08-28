@@ -3,7 +3,7 @@ from __future__ import annotations
 from pathlib import Path
 
 import pytest
-from cardvault.vault import Vault
+from citebase.vault import Vault
 from helpers import base_meta, make_vault, write_card
 
 

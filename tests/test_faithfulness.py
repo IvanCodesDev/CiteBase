@@ -6,8 +6,8 @@ import json
 from pathlib import Path
 
 import pytest
-from cardvault import cli, evalrun
-from cardvault.vault import Vault
+from citebase import cli, evalrun
+from citebase.vault import Vault
 from helpers import EXAMPLE_ROOT, base_meta, make_claim, make_drift_vault, write_card
 
 

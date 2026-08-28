@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from pathlib import Path
 
-from cardvault.extractors import PYPDF_AVAILABLE, PlainTextExtractor, default_extractors
+from citebase.extractors import PYPDF_AVAILABLE, PlainTextExtractor, default_extractors
 
 
 def test_plain_normalizes_newlines(tmp_path: Path) -> None:
@@ -25,7 +25,7 @@ def test_default_extractors_include_pdf_when_available() -> None:
     names = [e.name for e in extractors]
     assert names[0] == "plain@1"
     if PYPDF_AVAILABLE:
-        from cardvault.extractors import PypdfExtractor
+        from citebase.extractors import PypdfExtractor
 
         assert any(isinstance(e, PypdfExtractor) for e in extractors)
         pdf = next(e for e in extractors if isinstance(e, PypdfExtractor))

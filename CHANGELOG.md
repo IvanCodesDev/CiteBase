@@ -14,7 +14,7 @@
 - **M1 编译循环**:七步编译管线(file/dir 适配器 + plain/pypdf 抽取器),产出一律进入人工审核队列,`_compile_log` 逐次留痕模型/成本/产出。
 - **M1**:内置 scripted 与 OpenAI 兼容两个 LlmProvider;compiler 是唯一调用 LLM 的子包。
 - **M2 治理 + MCP**:`drift / audit / resolve` 治理动词与失效信号总线(双通道漂移 + 时效)。
-- **M2**:只读四工具 MCP Server(stdio,可选依赖 `cardvault[mcp]`)。
+- **M2**:只读四工具 MCP Server(stdio,可选依赖 `citebase[mcp]`)。
 - **M2**:`vault init` 脚手架——空 vault + generic 包 + CI 即治理模板。
 - **M3 证据回流 + 评测**:EvidenceEvent 事件源与确定性回流编译器(失败聚类 → 陷阱卡草案)。
 - **M3**:可复算的知识贡献度榜单(负贡献进复核候选)与检索日志缺口清单。

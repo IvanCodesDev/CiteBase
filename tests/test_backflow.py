@@ -5,12 +5,12 @@ from __future__ import annotations
 from pathlib import Path
 
 import pytest
-from cardvault import lint as lint_mod
-from cardvault.audit import read_audit
-from cardvault.compiler.backflow import run_backflow
-from cardvault.compiler.review import approve, load_queue
-from cardvault.drift import run_drift
-from cardvault.vault import Vault
+from citebase import lint as lint_mod
+from citebase.audit import read_audit
+from citebase.compiler.backflow import run_backflow
+from citebase.compiler.review import approve, load_queue
+from citebase.drift import run_drift
+from citebase.vault import Vault
 from helpers import base_meta, make_claim, make_drift_vault, make_event, write_card, write_events
 
 ALPHA = "card-concept-alpha"

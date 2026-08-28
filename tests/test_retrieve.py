@@ -3,9 +3,9 @@ from __future__ import annotations
 from typing import Any
 
 import pytest
-from cardvault import index as index_mod
-from cardvault import retrieve
-from cardvault.vault import Vault
+from citebase import index as index_mod
+from citebase import retrieve
+from citebase.vault import Vault
 from helpers import EXAMPLE_ROOT, base_meta, make_claim, write_card
 
 

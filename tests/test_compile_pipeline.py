@@ -4,14 +4,14 @@ from pathlib import Path
 
 import pytest
 import yaml
-from cardvault import frontmatter
-from cardvault.audit import read_audit
-from cardvault.compiler import approve, compile_vault, load_queue, reject
-from cardvault.compiler.compile_log import read_manifest
-from cardvault.compiler.providers import ScriptedLlmProvider
-from cardvault.compiler.review import load_history
-from cardvault.ports import ConflictPair, DraftCard, DraftClaim, DraftLink, DraftSpan
-from cardvault.vault import Vault
+from citebase import frontmatter
+from citebase.audit import read_audit
+from citebase.compiler import approve, compile_vault, load_queue, reject
+from citebase.compiler.compile_log import read_manifest
+from citebase.compiler.providers import ScriptedLlmProvider
+from citebase.compiler.review import load_history
+from citebase.ports import ConflictPair, DraftCard, DraftClaim, DraftLink, DraftSpan
+from citebase.vault import Vault
 from helpers import base_meta, make_claim, write_card
 
 

@@ -5,8 +5,8 @@ from pathlib import Path
 
 import pytest
 import yaml
-from cardvault import cli
-from cardvault.vault import Vault
+from citebase import cli
+from citebase.vault import Vault
 
 
 def _scenario(source_id: str) -> dict[str, object]:

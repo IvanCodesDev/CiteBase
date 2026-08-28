@@ -5,9 +5,9 @@ from __future__ import annotations
 from pathlib import Path
 
 import pytest
-from cardvault import security
-from cardvault.lint import lint_vault
-from cardvault.vault import Vault
+from citebase import security
+from citebase.lint import lint_vault
+from citebase.vault import Vault
 from helpers import base_meta, make_claim, make_vault, sha256_text, write_card
 
 

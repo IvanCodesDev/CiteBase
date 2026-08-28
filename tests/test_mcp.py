@@ -5,7 +5,7 @@ from __future__ import annotations
 from pathlib import Path
 
 import pytest
-from cardvault.mcp.server import (
+from citebase.mcp.server import (
     DATA_BOUNDARY_CLOSE,
     DATA_BOUNDARY_OPEN,
     follow_impl,
@@ -73,12 +73,12 @@ def test_quote_impl_verified_and_wrapped(example_root: Path) -> None:
 def test_build_server_registers_and_runs(example_root: Path) -> None:
     """冒烟：装了 mcp SDK 时 build_server 必须可构造（工具注册不抛错）。"""
     pytest.importorskip("mcp")
-    from cardvault.mcp.server import build_server
+    from citebase.mcp.server import build_server
 
     assert build_server(example_root) is not None
 
 
 def test_main_rejects_non_vault(tmp_path: Path) -> None:
-    from cardvault.mcp.server import main
+    from citebase.mcp.server import main
 
     assert main(["--vault", str(tmp_path)]) == 2

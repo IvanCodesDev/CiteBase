@@ -6,7 +6,7 @@ import json
 from pathlib import Path
 
 import pytest
-from cardvault import cli
+from citebase import cli
 from helpers import base_meta, make_claim, make_drift_vault, write_card
 
 CARD_ID = "card-concept-alpha"

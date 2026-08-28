@@ -4,10 +4,10 @@ from pathlib import Path
 
 import pytest
 import yaml
-from cardvault.adapters import DirSourceAdapter, FileSourceAdapter
-from cardvault.extractors import PlainTextExtractor
-from cardvault.ingest import derivative_relpath, ingest, slugify
-from cardvault.model import SourceMeta
+from citebase.adapters import DirSourceAdapter, FileSourceAdapter
+from citebase.extractors import PlainTextExtractor
+from citebase.ingest import derivative_relpath, ingest, slugify
+from citebase.model import SourceMeta
 
 
 def test_slugify() -> None:

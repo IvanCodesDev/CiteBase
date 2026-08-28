@@ -5,11 +5,11 @@ from __future__ import annotations
 from datetime import UTC, datetime
 from pathlib import Path
 
-from cardvault import index as index_mod
-from cardvault import retrieve
-from cardvault.audit import read_audit
-from cardvault.drift import run_drift, scan
-from cardvault.vault import Vault
+from citebase import index as index_mod
+from citebase import retrieve
+from citebase.audit import read_audit
+from citebase.drift import run_drift, scan
+from citebase.vault import Vault
 from helpers import base_meta, make_claim, make_drift_vault, write_card
 
 CARD_ID = "card-concept-alpha"

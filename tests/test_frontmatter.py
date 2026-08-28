@@ -3,7 +3,7 @@ from __future__ import annotations
 from datetime import date, datetime
 
 import pytest
-from cardvault import frontmatter
+from citebase import frontmatter
 
 
 def test_parse_roundtrip() -> None:

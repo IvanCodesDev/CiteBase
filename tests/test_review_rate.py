@@ -2,8 +2,8 @@ from __future__ import annotations
 
 from typing import Any
 
-from cardvault.compiler.review import review_rate, sample_size
-from cardvault.model import ReviewSettings
+from citebase.compiler.review import review_rate, sample_size
+from citebase.model import ReviewSettings
 
 SETTINGS = ReviewSettings()
 

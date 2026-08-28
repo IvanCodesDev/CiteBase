@@ -3,7 +3,7 @@ requires = ["setuptools>=69"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "cardvault"
+name = "citebase"
 version = "0.1.0.dev0"
 description = "Compiled knowledge base: compile once, verify forever, learn from execution."
 readme = "README.md"
@@ -16,8 +16,8 @@ dependencies = [
 ]
 
 [project.scripts]
-vault = "cardvault.cli:main"
-vault-mcp = "cardvault.mcp.server:main"
+vault = "citebase.cli:main"
+vault-mcp = "citebase.mcp.server:main"
 
 [project.optional-dependencies]
 pdf = [
@@ -43,7 +43,7 @@ package-dir = { "" = "core" }
 where = ["core"]
 
 [tool.setuptools.package-data]
-cardvault = ["spec/*.json", "compiler/prompts/*.md"]
+citebase = ["spec/*.json", "compiler/prompts/*.md"]
 
 [tool.ruff]
 line-length = 100
@@ -57,7 +57,7 @@ ignore = ["RUF001", "RUF002", "RUF003"]
 [tool.mypy]
 python_version = "3.12"
 strict = true
-files = ["core/cardvault"]
+files = ["core/citebase"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

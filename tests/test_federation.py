@@ -7,9 +7,9 @@ import subprocess
 from pathlib import Path
 
 import pytest
-from cardvault import cli
-from cardvault import lint as lint_mod
-from cardvault.federation import (
+from citebase import cli
+from citebase import lint as lint_mod
+from citebase.federation import (
     PATH_DEP_REV,
     FederationError,
     card_hashes,
@@ -22,9 +22,9 @@ from cardvault.federation import (
     root_hash,
     search_scoped,
 )
-from cardvault.mcp.server import read_impl, search_impl
-from cardvault.model import DepSpec
-from cardvault.vault import Vault
+from citebase.mcp.server import read_impl, search_impl
+from citebase.model import DepSpec
+from citebase.vault import Vault
 from helpers import REPO_ROOT, base_meta, make_claim, make_vault, write_card
 from pydantic import ValidationError
 
@@ -313,7 +313,7 @@ def test_deps_cli(tmp_path: Path, capsys: pytest.CaptureFixture[str]) -> None:
 def test_git_dep_resolution_offline(tmp_path: Path) -> None:
     """git 依赖离线验证：本地裸路径 clone + rev 锁定（不触网）。"""
     provider = _provider(tmp_path)
-    env_args = ["-c", "user.name=cardvault-test", "-c", "user.email=test@local"]
+    env_args = ["-c", "user.name=citebase-test", "-c", "user.email=test@local"]
     subprocess.run(["git", "init", "--quiet"], cwd=provider, check=True)
     subprocess.run(["git", "add", "-A"], cwd=provider, check=True)
     subprocess.run(

@@ -5,9 +5,9 @@ from __future__ import annotations
 from pathlib import Path
 
 import pytest
-from cardvault.audit import read_audit
-from cardvault.contrib import run_contrib
-from cardvault.vault import Vault
+from citebase.audit import read_audit
+from citebase.contrib import run_contrib
+from citebase.vault import Vault
 from helpers import base_meta, make_claim, make_drift_vault, make_event, write_card, write_events
 
 ALPHA = "card-concept-alpha"

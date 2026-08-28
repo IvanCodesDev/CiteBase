@@ -3,6 +3,8 @@ __pycache__/
 # 本机 AI 工具的个人配置,与项目无关,不入公开仓库
 .cursor/
 .codex/
+# 文档目录不入公开仓库(内部架构/治理/安全/产品文档)
+docs/
 *.egg-info/
 .pytest_cache/
 .ruff_cache/

@@ -5,11 +5,11 @@ from __future__ import annotations
 from pathlib import Path
 
 import pytest
-from cardvault import cli, retrieve
-from cardvault import index as index_mod
-from cardvault.backends import select_backend
-from cardvault.backends.sqlite import SqliteIndexBackend, write_sqlite
-from cardvault.vault import Vault
+from citebase import cli, retrieve
+from citebase import index as index_mod
+from citebase.backends import select_backend
+from citebase.backends.sqlite import SqliteIndexBackend, write_sqlite
+from citebase.vault import Vault
 
 #: 覆盖全部漏斗跳与过滤参数的对照查询集。
 PARITY_QUERIES = [

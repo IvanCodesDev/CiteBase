@@ -1,10 +1,10 @@
-# CardVault
+# Citebase
 
 English | [简体中文](./README.zh-CN.md)
 
 > Compile raw material into searchable, verifiable, and governable knowledge cards.
 
-CardVault is a **compile-first knowledge system** for AI agents and team knowledge bases. Rather than re-interpreting the entire corpus every time a question is asked, it organizes documents into structured cards up front, then keeps that knowledge traceable through provenance checks, human spot review, and drift detection.
+Citebase is a **compile-first knowledge system** for AI agents and team knowledge bases. Rather than re-interpreting the entire corpus every time a question is asked, it organizes documents into structured cards up front, then keeps that knowledge traceable through provenance checks, human spot review, and drift detection.
 
 A card is written for people to read; every claim inside it is bound to a source location and a content hash for machines to verify. The final artifacts are still Markdown and YAML, so they fit straight into a Git workflow with no external database or vector service.
 
@@ -18,7 +18,7 @@ A card is written for people to read; every claim inside it is bound to a source
 
 ## Compared with RAG, GraphRAG, and LLM wikis
 
-CardVault is less concerned with "finding more context for a single question" and more with "compiling raw material into a trusted, maintainable knowledge asset for the long term". Traditional RAG and agentic RAG mainly improve query-time recall and reasoning, while GraphRAG also builds graphs and summaries before queries; **LLM wikis and CardVault both belong to compile-first knowledge production in the broad sense**. The real difference between the two is not whether compilation happens up front, but the contract the compiled artifacts obey and how they are governed afterwards.
+Citebase is less concerned with "finding more context for a single question" and more with "compiling raw material into a trusted, maintainable knowledge asset for the long term". Traditional RAG and agentic RAG mainly improve query-time recall and reasoning, while GraphRAG also builds graphs and summaries before queries; **LLM wikis and Citebase both belong to compile-first knowledge production in the broad sense**. The real difference between the two is not whether compilation happens up front, but the contract the compiled artifacts obey and how they are governed afterwards.
 
 | Approach | Primary artifacts | Understanding happens | Good at | Usually not enforced |
 |---|---|---|---|---|
@@ -26,18 +26,18 @@ CardVault is less concerned with "finding more context for a single question" an
 | Agentic RAG | Multi-turn retrieval, tool calls, and dynamic routing | At query time, over multiple steps | Decomposing complex questions, rewriting queries, choosing data sources, and self-verification | Whether the retrieved knowledge itself is governed, up to date, or reviewable in Git |
 | GraphRAG | Entity-relation graphs, community summaries, or graph indexes | At graph-build time + query time | Cross-document relations, global themes, and multi-hop questions | Hard binding of each natural-language claim to its source text; lifecycle management after drift |
 | LLM wiki / AI doc generation | Human-readable pages, sections, and navigation | Generated before queries, regenerated after sources change | Quickly understanding a codebase or corpus through coherent, browsable explanations | Rarely defines each claim as an independent data object with a lifecycle; review, drift, and execution feedback depend on the product |
-| **CardVault** | Markdown cards, structured claims, provenance, and audit records | **Compiled before queries, continuously re-checked afterwards** | **Claim-level verification, Git governance, staleness detection, agent reuse, and experience backflow** | Does not primarily aim to auto-generate full encyclopedia narratives or instantly answer arbitrary questions over raw corpora |
+| **Citebase** | Markdown cards, structured claims, provenance, and audit records | **Compiled before queries, continuously re-checked afterwards** | **Claim-level verification, Git governance, staleness detection, agent reuse, and experience backflow** | Does not primarily aim to auto-generate full encyclopedia narratives or instantly answer arbitrary questions over raw corpora |
 
 The most important difference is the unit of knowledge:
 
 - The basic unit in RAG is usually the **chunk**. A citation can tell you which chunk an answer drew on, but not necessarily prove which source passage supports a specific sentence.
 - The basic units in GraphRAG are usually **entities, relations, and community summaries** — good for discovering connections, though whether every conclusion in the graph can be verified item by item depends on the implementation.
 - An LLM wiki also digests material ahead of time, but its main unit of delivery is usually the **page**: the goal is a coherent, browsable explanation, with claims mostly embedded in the page's narrative.
-- CardVault keeps both **cards** and **claims**: cards handle reading and retrieval, while claims handle provenance binding, hash verification, state transitions, and contradiction resolution.
+- Citebase keeps both **cards** and **claims**: cards handle reading and retrieval, while claims handle provenance binding, hash verification, state transitions, and contradiction resolution.
 
-So CardVault does not draw the line against LLM wikis at "being compiled". It tightens the compiled output from **generated pages** into **schema-constrained knowledge objects that can be verified claim by claim and governed over time**. A page can be regenerated wholesale; CardVault instead records each claim's origin, status, contradictions, and audit history.
+So Citebase does not draw the line against LLM wikis at "being compiled". It tightens the compiled output from **generated pages** into **schema-constrained knowledge objects that can be verified claim by claim and governed over time**. A page can be regenerated wholesale; Citebase instead records each claim's origin, status, contradictions, and audit history.
 
-These approaches are not mutually exclusive. CardVault can serve as the trusted upstream knowledge layer for traditional RAG or GraphRAG, or supply governed page material to an LLM wiki: compile the raw sources into cards first, then run vector retrieval, graph retrieval, agentic orchestration, or page generation on top of the cards. The trade-off is that writes require compilation and review, so it suits knowledge that needs long-term reuse and accountability — not "dump in a pile of temporary files and start asking questions right away".
+These approaches are not mutually exclusive. Citebase can serve as the trusted upstream knowledge layer for traditional RAG or GraphRAG, or supply governed page material to an LLM wiki: compile the raw sources into cards first, then run vector retrieval, graph retrieval, agentic orchestration, or page generation on top of the cards. The trade-off is that writes require compilation and review, so it suits knowledge that needs long-term reuse and accountability — not "dump in a pile of temporary files and start asking questions right away".
 
 ## Key features
 
@@ -167,7 +167,7 @@ vault compile --vault my-vault
 vault review list --vault my-vault
 ```
 
-`ingest` itself never calls an LLM. By default `compile` reads the OpenAI-compatible settings from `vault.yaml`, with the API key supplied through the `CARDVAULT_API_KEY` environment variable; for tests or offline demos, `--scripted answers.yaml` reads scripted responses instead.
+`ingest` itself never calls an LLM. By default `compile` reads the OpenAI-compatible settings from `vault.yaml`, with the API key supplied through the `CITEBASE_API_KEY` environment variable; for tests or offline demos, `--scripted answers.yaml` reads scripted responses instead.
 
 Review the drafts:
 
@@ -181,7 +181,7 @@ Drafts from a new source all go to review by default; once a source builds up a 
 
 ## Retrieval protocol
 
-CardVault splits retrieval into four read-only actions instead of returning the whole vault at once:
+Citebase splits retrieval into four read-only actions instead of returning the whole vault at once:
 
 - `search`: returns candidate cards with summaries.
 - `read`: reads a selected card's body, claims, and links.
@@ -203,7 +203,7 @@ On Windows, use `.venv\Scripts\python.exe` here as well. Then add this to any MC
 ```json
 {
   "mcpServers": {
-    "cardvault": {
+    "citebase": {
       "command": "/absolute/path/to/vault-mcp",
       "args": ["--vault", "/absolute/path/to/my-vault"]
     }
@@ -264,7 +264,7 @@ See [`examples/federation/`](./examples/federation/) for an example federation s
 ## Repository layout
 
 ```text
-core/cardvault/              Python package and CLI
+core/citebase/              Python package and CLI
 ├─ adapters/                 File source adapters
 ├─ backends/                 In-memory and SQLite retrieval backends
 ├─ compiler/                 Compilation, review, and evidence backflow

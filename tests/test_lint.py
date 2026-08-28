@@ -2,9 +2,9 @@ from __future__ import annotations
 
 from pathlib import Path
 
-from cardvault import lint as lint_mod
-from cardvault.lint import Finding
-from cardvault.vault import Vault
+from citebase import lint as lint_mod
+from citebase.lint import Finding
+from citebase.vault import Vault
 from helpers import base_meta, make_claim, make_vault, write_card
 
 

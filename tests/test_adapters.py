@@ -3,7 +3,7 @@ from __future__ import annotations
 from pathlib import Path
 
 import pytest
-from cardvault.adapters import DirSourceAdapter, FileSourceAdapter, adapter_for_path
+from citebase.adapters import DirSourceAdapter, FileSourceAdapter, adapter_for_path
 
 
 def test_file_adapter_revision_and_change(tmp_path: Path) -> None:
