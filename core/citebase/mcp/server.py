@@ -11,7 +11,10 @@ from __future__ import annotations
 
 import argparse
 from pathlib import Path
-from typing import Any
+from typing import TYPE_CHECKING, Any, cast
+
+if TYPE_CHECKING:
+    from mcp.server.mcpserver import MCPServer
 
 from citebase import retrieve
 from citebase.backends import select_backend
@@ -145,16 +148,25 @@ def quote_impl(vault_root: Path, ref: str) -> dict[str, Any]:
     return payload
 
 
-def build_server(vault_root: Path) -> Any:
-    """构造 MCP 服务器（惰性导入 SDK：核心功能不依赖它；兼容 mcp 1.x/2.x）。"""
+def _load_server_cls() -> type[MCPServer]:
+    """解析 MCP 服务器类（惰性导入 SDK：核心功能不依赖它；兼容 mcp 1.x/2.x）。"""
     try:
-        from mcp.server.mcpserver import MCPServer as _Server  # mcp >= 2.0
-    except ImportError:  # pragma: no cover - 旧版 SDK 回退
-        from mcp.server.fastmcp import (  # type: ignore[import-not-found,no-redef]
-            FastMCP as _Server,
-        )
+        from mcp.server.mcpserver import MCPServer  # mcp >= 2.0
 
-    server = _Server("citebase", instructions=_INSTRUCTIONS)
+        return MCPServer
+    except ImportError:  # pragma: no cover - 旧版 SDK 回退
+        # 动态导入而非静态 import：此分支只在 mcp 1.x 下执行,
+        # 静态写法会随新版 SDK 类型存根的增删漂移出 mypy 报错。
+        import importlib
+
+        legacy = importlib.import_module("mcp.server.fastmcp")
+        return cast("type[MCPServer]", legacy.FastMCP)
+
+
+def build_server(vault_root: Path) -> Any:
+    """构造 MCP 服务器（四只读工具与 CLI 同一条漏斗实现）。"""
+    server_cls = _load_server_cls()
+    server = server_cls("citebase", instructions=_INSTRUCTIONS)
     root = vault_root.resolve()
 
     @server.tool(
